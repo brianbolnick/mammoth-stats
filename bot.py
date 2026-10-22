@@ -2,11 +2,9 @@
 """Utah Mammoth franchise stats bot. Deterministic engine; no model touches a number.
 
   python3 bot.py seed            rebuild reference data from the NHL APIs (keeps ledgers)
-  python3 bot.py check           game-day pass: pregame lineup facts + postgame facts; prints candidates
+  python3 bot.py check           game-day pass: prints new pregame/postgame tweets, ready to copy
   python3 bot.py replay GAMEID   what the passes would print for one finished game (no state writes)
   python3 bot.py replay-season   roll state back to opening night and replay every finished RS game
-  python3 bot.py mark 12 13      record that #12 and #13 were posted by hand
-  python3 bot.py post 12 13      publish #12 and #13 through the X API (needs X_* env keys)
   python3 bot.py status
 """
 import datetime as dt
@@ -672,77 +670,18 @@ def game_header(lines):
 
 
 def surface(s, facts, header):
-    """Print new facts with stable ids and remember them; a re-run never repeats one."""
-    led = s["ledger"]
-    seen = led["surfaced"]
+    """Print new tweets, ready to copy, and remember them so a re-run never repeats one."""
+    seen = s["ledger"]["surfaced"]
     new = [f for f in facts if f not in seen]
     if not new:
         return 0
     print(header)
     for f in new:
-        led["next_id"] = led.get("next_id", 0) + 1
-        i = led["next_id"]
-        seen[f] = {"id": i, "at": now_utc().isoformat(), "game": header, "posted": False}
-        print(f"#{i} {f}")
+        seen[f] = {"at": now_utc().isoformat(), "game": header}
+        print()
+        print(f)
     print()
     return len(new)
-
-
-def cmd_mark(ids, posted=True):
-    s = load_state()
-    byid = {v["id"]: k for k, v in s["ledger"]["surfaced"].items() if "id" in v}
-    for i in ids:
-        k = byid.get(i)
-        if k is None:
-            print(f"#{i}: not found")
-            continue
-        s["ledger"]["surfaced"][k]["posted"] = posted
-        s["ledger"]["surfaced"][k]["posted_at"] = now_utc().isoformat() if posted else None
-        print(f"#{i}: {'posted' if posted else 'skipped'}")
-    save_state(s)
-
-
-def oauth1_header(method, url, ck, cs, at, ats):
-    import base64, hashlib, hmac, secrets
-    params = {"oauth_consumer_key": ck, "oauth_nonce": secrets.token_hex(16), "oauth_signature_method": "HMAC-SHA1",
-              "oauth_timestamp": str(int(time.time())), "oauth_token": at, "oauth_version": "1.0"}
-    enc = lambda x: urllib.parse.quote(str(x), safe="~")
-    base = "&".join([method.upper(), enc(url), enc("&".join(f"{enc(k)}={enc(v)}" for k, v in sorted(params.items())))])
-    key = f"{enc(cs)}&{enc(ats)}".encode()
-    params["oauth_signature"] = base64.b64encode(hmac.new(key, base.encode(), hashlib.sha1).digest()).decode()
-    return "OAuth " + ", ".join(f'{enc(k)}="{enc(v)}"' for k, v in sorted(params.items()))
-
-
-def cmd_post(ids):
-    """Publish surfaced facts by id through the X API (OAuth 1.0a user context). Needs X_API_KEY, X_API_SECRET,
-    X_ACCESS_TOKEN, X_ACCESS_SECRET in the environment. Without them, says so and changes nothing."""
-    keys = [os.environ.get(k) for k in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")]
-    if not all(keys):
-        print("X API keys not configured; nothing posted. Post manually and run: python3 bot.py mark " + " ".join(map(str, ids)))
-        return
-    s = load_state()
-    byid = {v["id"]: k for k, v in s["ledger"]["surfaced"].items() if "id" in v}
-    url = "https://api.x.com/2/tweets"
-    for i in ids:
-        text = byid.get(i)
-        if text is None:
-            print(f"#{i}: not found")
-            continue
-        if s["ledger"]["surfaced"][text].get("posted"):
-            print(f"#{i}: already posted")
-            continue
-        body = json.dumps({"text": text}).encode()
-        req = urllib.request.Request(url, data=body, method="POST",
-                                     headers={"Authorization": oauth1_header("POST", url, *keys), "Content-Type": "application/json"})
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                out = json.loads(r.read().decode())
-            tid = out.get("data", {}).get("id")
-            s["ledger"]["surfaced"][text].update({"posted": True, "posted_at": now_utc().isoformat(), "tweet_id": tid})
-            print(f"#{i}: posted ({tid})")
-        except urllib.error.HTTPError as e:
-            print(f"#{i}: X API error {e.code}: {e.read().decode()[:300]}")
-    save_state(s)
 
 
 def maybe_reconcile(s, sched):
@@ -864,11 +803,5 @@ if __name__ == "__main__":
         cmd_replay(int(sys.argv[2]))
     elif cmd == "replay-season":
         cmd_replay_season()
-    elif cmd == "mark":
-        cmd_mark([int(x.lstrip("#")) for x in sys.argv[2:]])
-    elif cmd == "skip":
-        cmd_mark([int(x.lstrip("#")) for x in sys.argv[2:]], posted=False)
-    elif cmd == "post":
-        cmd_post([int(x.lstrip("#")) for x in sys.argv[2:]])
     else:
         cmd_status()
