@@ -705,7 +705,8 @@ def cmd_check():
     sched = get(f"{WEB}/club-schedule-season/{TEAM}/now")
     season = season_id_now(sched)
     rs = [g for g in sched["games"] if g["gameType"] == 2]
-    if maybe_reconcile(s, sched):
+    changed = maybe_reconcile(s, sched)
+    if changed:
         print("(reconciled totals from NHL aggregates)")
     processed = set(s["ledger"]["processed"])
     total = 0
@@ -718,6 +719,7 @@ def cmd_check():
             facts = postgame_facts(s, lines, season)
             total += surface(s, facts, game_header(lines))
             s["ledger"]["processed"].append(g["id"])
+            changed = True
     # pregame: today's game, lineup posted, not yet done
     today = dt.datetime.now(TZ).date().isoformat()
     for g in rs:
@@ -737,11 +739,13 @@ def cmd_check():
         facts = pregame_facts(s, spots, f"{where} {opp}")
         total += surface(s, facts, f"Pregame, {TEAM} {where} {opp} ({today})")
         s["ledger"]["pregame_done"].append(g["id"])
+        changed = True
     if total == 0:
         nxt = next((g for g in sorted(rs, key=lambda g: g["gameDate"]) if g.get("gameState") in ("FUT", "PRE")), None)
         print("No new posts." + (f" Next game: {nxt['gameDate']} {nxt['awayTeam']['abbrev']} at {nxt['homeTeam']['abbrev']}." if nxt else ""))
-    s["meta"]["last_check"] = now_utc().isoformat()
-    save_state(s)
+    if changed or total:
+        s["meta"]["last_check"] = now_utc().isoformat()
+        save_state(s)
 
 
 def cmd_replay(game_id):
