@@ -75,7 +75,7 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 8,
+     "gamesPlayed": 9,
      "goals": 0,
      "points": 0,
      "season": 20262027,
@@ -205,14 +205,14 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-23T05:08:38.356345+00:00",
-  "reconciled_at": "2026-10-22T00:32:48.348737+00:00",
+  "last_check": "2026-10-23T22:09:52.015966+00:00",
+  "reconciled_at": "2026-10-23T22:09:52.013543+00:00",
   "season": 20262027,
-  "seeded_at": "2026-10-22T00:32:42.988460+00:00",
+  "seeded_at": "2026-10-23T22:09:39.292222+00:00",
   "team": "UTA"
  },
  "nhl": {
-  "at": "2026-10-23T05:08:38.172131+00:00",
+  "at": "2026-10-23T22:09:51.961979+00:00",
   "d_lists": {
    "assists": [
     [
@@ -531,11 +531,6 @@
      419
     ],
     [
-     "8448152",
-     "Pierre Pilote",
-     418
-    ],
-    [
      "8452140",
      "Carol Vadnais",
      418
@@ -543,6 +538,11 @@
     [
      "8475764",
      "Cam Fowler",
+     418
+    ],
+    [
+     "8448152",
+     "Pierre Pilote",
      418
     ],
     [
@@ -671,13 +671,13 @@
      361
     ],
     [
-     "8446238",
-     "Doug Crossman",
+     "8450905",
+     "Gordie Roberts",
      359
     ],
     [
-     "8450905",
-     "Gordie Roberts",
+     "8446238",
+     "Doug Crossman",
      359
     ],
     [
@@ -756,13 +756,13 @@
      347
     ],
     [
-     "8448524",
-     "Jerry Korab",
+     "8451789",
+     "Petr Svoboda",
      341
     ],
     [
-     "8451789",
-     "Petr Svoboda",
+     "8448524",
+     "Jerry Korab",
      341
     ],
     [
@@ -801,13 +801,13 @@
      334
     ],
     [
-     "8449155",
-     "Allan Stanley",
+     "8451150",
+     "Serge Savard",
      333
     ],
     [
-     "8451150",
-     "Serge Savard",
+     "8449155",
+     "Allan Stanley",
      333
     ],
     [
@@ -821,13 +821,13 @@
      332
     ],
     [
-     "8469623",
-     "Marek Zidlicky",
+     "8448568",
+     "Tom Kurvers",
      328
     ],
     [
-     "8448568",
-     "Tom Kurvers",
+     "8469623",
+     "Marek Zidlicky",
      328
     ],
     [
@@ -896,13 +896,13 @@
      312
     ],
     [
-     "8448124",
-     "Al Iafrate",
+     "8475218",
+     "Mattias Ekholm",
      311
     ],
     [
-     "8475218",
-     "Mattias Ekholm",
+     "8448124",
+     "Al Iafrate",
      311
     ],
     [
@@ -921,14 +921,14 @@
      306
     ],
     [
+     "8479410",
+     "Mikhail Sergachev",
+     306
+    ],
+    [
      "8446051",
      "Steve Chiasson",
      305
-    ],
-    [
-     "8479410",
-     "Mikhail Sergachev",
-     304
     ],
     [
      "8451558",
@@ -1056,13 +1056,13 @@
      278
     ],
     [
-     "8448740",
-     "Grant Ledyard",
+     "8465210",
+     "Pavel Kubina",
      276
     ],
     [
-     "8465210",
-     "Pavel Kubina",
+     "8448740",
+     "Grant Ledyard",
      276
     ],
     [
@@ -1091,13 +1091,13 @@
      272
     ],
     [
-     "8449315",
-     "Brad Maxwell",
+     "8468542",
+     "Paul Martin",
      270
     ],
     [
-     "8468542",
-     "Paul Martin",
+     "8449315",
+     "Brad Maxwell",
      270
     ],
     [
@@ -1136,13 +1136,13 @@
      265
     ],
     [
-     "8469555",
-     "Christian Ehrhoff",
+     "8451362",
+     "Risto Siltanen",
      265
     ],
     [
-     "8451362",
-     "Risto Siltanen",
+     "8471677",
+     "Jack Johnson",
      265
     ],
     [
@@ -1151,8 +1151,8 @@
      265
     ],
     [
-     "8471677",
-     "Jack Johnson",
+     "8469555",
+     "Christian Ehrhoff",
      265
     ],
     [
@@ -1448,13 +1448,13 @@
      153
     ],
     [
-     "8458494",
-     "Sergei Zubov",
+     "8448124",
+     "Al Iafrate",
      152
     ],
     [
-     "8448124",
-     "Al Iafrate",
+     "8458494",
+     "Sergei Zubov",
      152
     ],
     [
@@ -1538,11 +1538,6 @@
      135
     ],
     [
-     "8448034",
-     "Baldy Northcott",
-     133
-    ],
-    [
      "8450737",
      "Dick Redmond",
      133
@@ -1550,6 +1545,11 @@
     [
      "8450795",
      "Paul Reinhart",
+     133
+    ],
+    [
+     "8448034",
+     "Baldy Northcott",
      133
     ],
     [
@@ -1568,13 +1568,13 @@
      130
     ],
     [
-     "8452371",
-     "Glen Wesley",
+     "8468598",
+     "Lubomir Visnovsky",
      128
     ],
     [
-     "8468598",
-     "Lubomir Visnovsky",
+     "8452371",
+     "Glen Wesley",
      128
     ],
     [
@@ -1688,6 +1688,11 @@
      109
     ],
     [
+     "8449516",
+     "Marty McSorley",
+     108
+    ],
+    [
      "8446324",
      "Reg Fleming",
      108
@@ -1695,11 +1700,6 @@
     [
      "8449420",
      "Mike McEwen",
-     108
-    ],
-    [
-     "8449516",
-     "Marty McSorley",
      108
     ],
     [
@@ -1733,6 +1733,11 @@
      106
     ],
     [
+     "8449941",
+     "Mike O'Connell",
+     105
+    ],
+    [
      "8446238",
      "Doug Crossman",
      105
@@ -1743,23 +1748,18 @@
      105
     ],
     [
-     "8449941",
-     "Mike O'Connell",
-     105
-    ],
-    [
      "8445397",
      "Barry Beck",
      104
     ],
     [
-     "8448025",
-     "Willie Huber",
+     "8450359",
+     "Robert Picard",
      104
     ],
     [
-     "8450359",
-     "Robert Picard",
+     "8448025",
+     "Willie Huber",
      104
     ],
     [
@@ -1803,16 +1803,6 @@
      100
     ],
     [
-     "8452584",
-     "Zarley Zalapski",
-     99
-    ],
-    [
-     "8448038",
-     "Charlie Huddy",
-     99
-    ],
-    [
      "8451075",
      "Phil Russell",
      99
@@ -1820,6 +1810,16 @@
     [
      "8465202",
      "Sami Salo",
+     99
+    ],
+    [
+     "8452584",
+     "Zarley Zalapski",
+     99
+    ],
+    [
+     "8448038",
+     "Charlie Huddy",
      99
     ],
     [
@@ -1833,13 +1833,18 @@
      98
     ],
     [
+     "8449315",
+     "Brad Maxwell",
+     98
+    ],
+    [
      "8447667",
      "Craig Hartsburg",
      98
     ],
     [
-     "8449315",
-     "Brad Maxwell",
+     "8451853",
+     "Dale Tallon",
      98
     ],
     [
@@ -1853,28 +1858,23 @@
      98
     ],
     [
-     "8451853",
-     "Dale Tallon",
-     98
-    ],
-    [
      "8476853",
      "Morgan Rielly",
      98
     ],
     [
-     "8446484",
-     "Bruce Driver",
-     96
-    ],
-    [
-     "8458595",
-     "Alexei Zhitnik",
-     96
+     "8477986",
+     "Brandon Montour",
+     97
     ],
     [
      "8468309",
      "Mark Streit",
+     96
+    ],
+    [
+     "8446484",
+     "Bruce Driver",
      96
     ],
     [
@@ -1883,8 +1883,8 @@
      96
     ],
     [
-     "8477986",
-     "Brandon Montour",
+     "8458595",
+     "Alexei Zhitnik",
      96
     ],
     [
@@ -1893,13 +1893,13 @@
      95
     ],
     [
-     "8446291",
-     "Bob Dailey",
+     "8446926",
+     "Harry Howell",
      94
     ],
     [
-     "8446926",
-     "Harry Howell",
+     "8446291",
+     "Bob Dailey",
      94
     ],
     [
@@ -1918,11 +1918,6 @@
      93
     ],
     [
-     "8448568",
-     "Tom Kurvers",
-     93
-    ],
-    [
      "8460503",
      "Mattias Ohlund",
      93
@@ -1930,6 +1925,11 @@
     [
      "8475218",
      "Mattias Ekholm",
+     93
+    ],
+    [
+     "8448568",
+     "Tom Kurvers",
      93
     ],
     [
@@ -1948,23 +1948,23 @@
      92
     ],
     [
-     "8447604",
-     "Georges Mantha",
-     90
-    ],
-    [
-     "8448740",
-     "Grant Ledyard",
-     90
-    ],
-    [
      "8450348",
      "Michel Petit",
      90
     ],
     [
+     "8447604",
+     "Georges Mantha",
+     90
+    ],
+    [
      "8451362",
      "Risto Siltanen",
+     90
+    ],
+    [
+     "8448740",
+     "Grant Ledyard",
      90
     ],
     [
@@ -1978,11 +1978,6 @@
      89
     ],
     [
-     "8469623",
-     "Marek Zidlicky",
-     89
-    ],
-    [
      "8476792",
      "Torey Krug",
      89
@@ -1990,6 +1985,11 @@
     [
      "8477498",
      "Darnell Nurse",
+     89
+    ],
+    [
+     "8469623",
+     "Marek Zidlicky",
      89
     ],
     [
@@ -2008,13 +2008,13 @@
      88
     ],
     [
-     "8448214",
-     "Marcel Pronovost",
+     "8474166",
+     "Alec Martinez",
      88
     ],
     [
-     "8474166",
-     "Alec Martinez",
+     "8448214",
+     "Marcel Pronovost",
      88
     ],
     [
@@ -2038,13 +2038,13 @@
      87
     ],
     [
-     "8451624",
-     "Ron Stackhouse",
+     "8465200",
+     "Tomas Kaberle",
      87
     ],
     [
-     "8465200",
-     "Tomas Kaberle",
+     "8451624",
+     "Ron Stackhouse",
      87
     ],
     [
@@ -2058,13 +2058,13 @@
      86
     ],
     [
-     "8457191",
-     "Vladimir Malakhov",
+     "8474151",
+     "Ryan McDonagh",
      86
     ],
     [
-     "8474151",
-     "Ryan McDonagh",
+     "8457191",
+     "Vladimir Malakhov",
      86
     ],
     [
@@ -2083,13 +2083,13 @@
      85
     ],
     [
-     "8448370",
-     "Tomas Jonsson",
+     "8449754",
+     "Gord Murphy",
      85
     ],
     [
-     "8449754",
-     "Gord Murphy",
+     "8448370",
+     "Tomas Jonsson",
      85
     ],
     [
@@ -2098,13 +2098,13 @@
      85
     ],
     [
-     "8447420",
-     "Jocelyn Guevremont",
+     "8448884",
+     "Kevin Lowe",
      84
     ],
     [
-     "8448884",
-     "Kevin Lowe",
+     "8447420",
+     "Jocelyn Guevremont",
      84
     ],
     [
@@ -2138,13 +2138,13 @@
      82
     ],
     [
-     "8449476",
-     "Jim McKenny",
+     "8467439",
+     "Jaroslav Spacek",
      82
     ],
     [
-     "8467439",
-     "Jaroslav Spacek",
+     "8449476",
+     "Jim McKenny",
      82
     ],
     [
@@ -2183,18 +2183,13 @@
      81
     ],
     [
-     "8456531",
-     "Derian Hatcher",
-     80
-    ],
-    [
      "8467331",
      "Brad Stuart",
      80
     ],
     [
-     "8448152",
-     "Pierre Pilote",
+     "8456531",
+     "Derian Hatcher",
      80
     ],
     [
@@ -2203,13 +2198,18 @@
      80
     ],
     [
-     "8467856",
-     "Brian Rafalski",
-     79
+     "8448152",
+     "Pierre Pilote",
+     80
     ],
     [
      "8450645",
      "Mike Ramsey",
+     79
+    ],
+    [
+     "8467856",
+     "Brian Rafalski",
      79
     ],
     [
@@ -2315,13 +2315,13 @@
      815
     ],
     [
-     "8458951",
-     "Sergei Gonchar",
+     "8471724",
+     "Kris Letang",
      811
     ],
     [
-     "8471724",
-     "Kris Letang",
+     "8458951",
+     "Sergei Gonchar",
      811
     ],
     [
@@ -2510,13 +2510,13 @@
      568
     ],
     [
-     "8458544",
-     "Sandis Ozolinsh",
+     "8450642",
+     "Rob Ramage",
      564
     ],
     [
-     "8450642",
-     "Rob Ramage",
+     "8458544",
+     "Sandis Ozolinsh",
      564
     ],
     [
@@ -2945,19 +2945,19 @@
      386
     ],
     [
-     "8452584",
-     "Zarley Zalapski",
-     384
-    ],
-    [
      "8449902",
      "Jeff Norton",
      384
     ],
     [
+     "8452584",
+     "Zarley Zalapski",
+     384
+    ],
+    [
      "8479410",
      "Mikhail Sergachev",
-     380
+     382
     ],
     [
      "8471709",
@@ -2970,13 +2970,13 @@
      375
     ],
     [
-     "8449122",
-     "Moe Mantha",
+     "8468639",
+     "John-Michael Liles",
      370
     ],
     [
-     "8468639",
-     "John-Michael Liles",
+     "8449122",
+     "Moe Mantha",
      370
     ],
     [
@@ -2985,13 +2985,13 @@
      369
     ],
     [
-     "8447569",
-     "Mark Hardy",
+     "8449315",
+     "Brad Maxwell",
      368
     ],
     [
-     "8449315",
-     "Brad Maxwell",
+     "8447569",
+     "Mark Hardy",
      368
     ],
     [
@@ -3060,13 +3060,13 @@
      358
     ],
     [
-     "8469465",
-     "Dan Hamhuis",
+     "8471702",
+     "Matt Niskanen",
      356
     ],
     [
-     "8471702",
-     "Matt Niskanen",
+     "8469465",
+     "Dan Hamhuis",
      356
     ],
     [
@@ -3115,23 +3115,23 @@
      346
     ],
     [
-     "8448214",
-     "Marcel Pronovost",
-     345
-    ],
-    [
      "8450645",
      "Mike Ramsey",
      345
     ],
     [
-     "8448370",
-     "Tomas Jonsson",
-     344
+     "8448214",
+     "Marcel Pronovost",
+     345
     ],
     [
      "8451056",
      "Reijo Ruotsalainen",
+     344
+    ],
+    [
+     "8448370",
+     "Tomas Jonsson",
      344
     ],
     [
@@ -3160,11 +3160,6 @@
      342
     ],
     [
-     "8469555",
-     "Christian Ehrhoff",
-     339
-    ],
-    [
      "8465202",
      "Sami Salo",
      339
@@ -3175,13 +3170,18 @@
      339
     ],
     [
-     "8449159",
-     "Pat Stapleton",
-     337
+     "8469555",
+     "Christian Ehrhoff",
+     339
     ],
     [
      "8478407",
      "Vince Dunn",
+     338
+    ],
+    [
+     "8449159",
+     "Pat Stapleton",
      337
     ],
     [
@@ -3190,18 +3190,23 @@
      336
     ],
     [
-     "8459014",
-     "Robert Svehla",
-     335
-    ],
-    [
      "8467331",
      "Brad Stuart",
      335
     ],
     [
+     "8459014",
+     "Robert Svehla",
+     335
+    ],
+    [
      "8462225",
      "Filip Kuba",
+     333
+    ],
+    [
+     "8477986",
+     "Brandon Montour",
      333
     ],
     [
@@ -3212,11 +3217,6 @@
     [
      "8448963",
      "Rod Seiling",
-     331
-    ],
-    [
-     "8456531",
-     "Derian Hatcher",
      331
     ]
    ]
@@ -3574,13 +3574,13 @@
      683
     ],
     [
-     "8458537",
-     "Ray Whitney",
+     "8451476",
+     "Bobby Smith",
      679
     ],
     [
-     "8451476",
-     "Bobby Smith",
+     "8458537",
+     "Ray Whitney",
      679
     ],
     [
@@ -3894,13 +3894,13 @@
      565
     ],
     [
-     "8448222",
-     "Craig Janney",
+     "8451005",
+     "Cliff Ronning",
      563
     ],
     [
-     "8451005",
-     "Cliff Ronning",
+     "8448222",
+     "Craig Janney",
      563
     ],
     [
@@ -3959,13 +3959,13 @@
      545
     ],
     [
-     "8448626",
-     "Pat LaFontaine",
+     "8474563",
+     "Drew Doughty",
      545
     ],
     [
-     "8474563",
-     "Drew Doughty",
+     "8448626",
+     "Pat LaFontaine",
      545
     ],
     [
@@ -4024,13 +4024,13 @@
      529
     ],
     [
-     "8446003",
-     "Andrew Cassels",
+     "8467329",
+     "Vincent Lecavalier",
      528
     ],
     [
-     "8467329",
-     "Vincent Lecavalier",
+     "8446003",
+     "Andrew Cassels",
      528
     ],
     [
@@ -4199,13 +4199,13 @@
      487
     ],
     [
-     "8447627",
-     "Pit Martin",
+     "8449062",
+     "Peter Mahovlich",
      485
     ],
     [
-     "8449062",
-     "Peter Mahovlich",
+     "8447627",
+     "Pit Martin",
      485
     ],
     [
@@ -4269,6 +4269,11 @@
      474
     ],
     [
+     "8450900",
+     "Gary Roberts",
+     472
+    ],
+    [
      "8447500",
      "Ted Lindsay",
      472
@@ -4276,11 +4281,6 @@
     [
      "8447892",
      "Ken Hodge",
-     472
-    ],
-    [
-     "8450900",
-     "Gary Roberts",
      472
     ],
     [
@@ -4299,13 +4299,13 @@
      470
     ],
     [
-     "8448756",
-     "Jacques Lemaire",
+     "8448191",
+     "Dean Prentice",
      469
     ],
     [
-     "8448191",
-     "Dean Prentice",
+     "8448756",
+     "Jacques Lemaire",
      469
     ],
     [
@@ -4344,23 +4344,23 @@
      463
     ],
     [
-     "8448708",
-     "Reed Larson",
-     463
-    ],
-    [
      "8449895",
      "Owen Nolan",
      463
     ],
     [
-     "8447880",
-     "Doug Mohns",
-     462
+     "8448708",
+     "Reed Larson",
+     463
     ],
     [
      "8451122",
      "Tomas Sandstrom",
+     462
+    ],
+    [
+     "8447880",
+     "Doug Mohns",
      462
     ],
     [
@@ -4384,13 +4384,13 @@
      459
     ],
     [
-     "8448464",
-     "Bobby Rousseau",
+     "8450107",
+     "Wilf Paiement",
      458
     ],
     [
-     "8450107",
-     "Wilf Paiement",
+     "8448464",
+     "Bobby Rousseau",
      458
     ],
     [
@@ -4399,13 +4399,13 @@
      457
     ],
     [
-     "8459444",
-     "Todd Bertuzzi",
+     "8460496",
+     "Ryan Smyth",
      456
     ],
     [
-     "8460496",
-     "Ryan Smyth",
+     "8459444",
+     "Todd Bertuzzi",
      456
     ],
     [
@@ -4419,23 +4419,23 @@
      455
     ],
     [
-     "8448056",
-     "Murray Oliver",
-     454
-    ],
-    [
      "8459670",
      "Kimmo Timonen",
      454
     ],
     [
-     "8467496",
-     "Andrei Markov",
-     453
-    ],
-    [
      "8474586",
      "Jordan Eberle",
+     454
+    ],
+    [
+     "8448056",
+     "Murray Oliver",
+     454
+    ],
+    [
+     "8467496",
+     "Andrei Markov",
      453
     ],
     [
@@ -4449,23 +4449,23 @@
      452
     ],
     [
-     "8448694",
-     "Guy Lapointe",
-     451
-    ],
-    [
      "8451916",
      "Walt Tkaczuk",
      451
     ],
     [
-     "8447680",
-     "Kevin Hatcher",
-     450
+     "8448694",
+     "Guy Lapointe",
+     451
     ],
     [
      "8449525",
      "Peter McNab",
+     450
+    ],
+    [
+     "8447680",
+     "Kevin Hatcher",
      450
     ],
     [
@@ -4489,23 +4489,23 @@
      445
     ],
     [
-     "8458939",
-     "Alexei Yashin",
-     444
-    ],
-    [
      "8475172",
      "Nazem Kadri",
      444
     ],
     [
-     "8456966",
-     "Robert Lang",
-     442
+     "8458939",
+     "Alexei Yashin",
+     444
     ],
     [
      "8467096",
      "Dan Boyle",
+     442
+    ],
+    [
+     "8456966",
+     "Robert Lang",
      442
     ],
     [
@@ -4529,13 +4529,13 @@
      435
     ],
     [
-     "8469506",
-     "Jason Pominville",
+     "8449971",
+     "Fredrik Olausson",
      434
     ],
     [
-     "8449971",
-     "Fredrik Olausson",
+     "8469506",
+     "Jason Pominville",
      434
     ],
     [
@@ -4544,13 +4544,13 @@
      433
     ],
     [
-     "8469454",
-     "Ilya Kovalchuk",
+     "8475170",
+     "Brayden Schenn",
      433
     ],
     [
-     "8475170",
-     "Brayden Schenn",
+     "8469454",
+     "Ilya Kovalchuk",
      433
     ],
     [
@@ -4579,18 +4579,13 @@
      430
     ],
     [
-     "8446579",
-     "Bernie Geoffrion",
-     429
-    ],
-    [
      "8449499",
      "John MacLean",
      429
     ],
     [
-     "8448505",
-     "Kelly Kisio",
+     "8446579",
+     "Bernie Geoffrion",
      429
     ],
     [
@@ -4601,6 +4596,11 @@
     [
      "8473533",
      "Jordan Staal",
+     429
+    ],
+    [
+     "8448505",
+     "Kelly Kisio",
      429
     ],
     [
@@ -4644,13 +4644,13 @@
      422
     ],
     [
-     "8448321",
-     "Maurice Richard",
+     "8449887",
+     "Kent Nilsson",
      422
     ],
     [
-     "8449887",
-     "Kent Nilsson",
+     "8448321",
+     "Maurice Richard",
      422
     ],
     [
@@ -4664,13 +4664,13 @@
      421
     ],
     [
-     "8446167",
-     "Shayne Corson",
+     "8450640",
+     "Craig Ramsay",
      420
     ],
     [
-     "8450640",
-     "Craig Ramsay",
+     "8446167",
+     "Shayne Corson",
      420
     ],
     [
@@ -4679,8 +4679,8 @@
      420
     ],
     [
-     "8458525",
-     "Brian Rolston",
+     "8450635",
+     "Dan Quinn",
      419
     ],
     [
@@ -4694,19 +4694,14 @@
      419
     ],
     [
-     "8450635",
-     "Dan Quinn",
+     "8458525",
+     "Brian Rolston",
      419
     ],
     [
      "8470966",
      "Mark Giordano",
      419
-    ],
-    [
-     "8448152",
-     "Pierre Pilote",
-     418
     ],
     [
      "8450408",
@@ -4729,6 +4724,11 @@
      418
     ],
     [
+     "8448152",
+     "Pierre Pilote",
+     418
+    ],
+    [
      "8444971",
      "George Armstrong",
      417
@@ -4739,6 +4739,11 @@
      417
     ],
     [
+     "8450271",
+     "Barry Pederson",
+     416
+    ],
+    [
      "8456760",
      "Joe Juneau",
      416
@@ -4746,11 +4751,6 @@
     [
      "8448287",
      "Calle Johansson",
-     416
-    ],
-    [
-     "8450271",
-     "Barry Pederson",
      416
     ],
     [
@@ -4809,11 +4809,6 @@
      409
     ],
     [
-     "8445977",
-     "Bobby Carpenter",
-     408
-    ],
-    [
      "8447271",
      "Elmer Lach",
      408
@@ -4824,13 +4819,18 @@
      408
     ],
     [
-     "8448772",
-     "Claude Lemieux",
-     407
+     "8445977",
+     "Bobby Carpenter",
+     408
     ],
     [
      "8449807",
      "Petr Nedved",
+     407
+    ],
+    [
+     "8448772",
+     "Claude Lemieux",
      407
     ],
     [
@@ -4854,13 +4854,13 @@
      404
     ],
     [
-     "8446036",
-     "Guy Carbonneau",
+     "8446917",
+     "Tim Horton",
      403
     ],
     [
-     "8446917",
-     "Tim Horton",
+     "8446036",
+     "Guy Carbonneau",
      403
     ],
     [
@@ -4889,11 +4889,6 @@
      401
     ],
     [
-     "8469466",
-     "Ales Hemsky",
-     398
-    ],
-    [
      "8450825",
      "Stephane Richer",
      398
@@ -4909,13 +4904,13 @@
      398
     ],
     [
-     "8445067",
-     "Red Berenson",
-     397
+     "8469466",
+     "Ales Hemsky",
+     398
     ],
     [
-     "8458544",
-     "Sandis Ozolinsh",
+     "8445067",
+     "Red Berenson",
      397
     ],
     [
@@ -4924,13 +4919,18 @@
      397
     ],
     [
-     "8448420",
-     "Rick Kehoe",
-     396
+     "8458544",
+     "Sandis Ozolinsh",
+     397
     ],
     [
      "8474573",
      "Josh Bailey",
+     396
+    ],
+    [
+     "8448420",
+     "Rick Kehoe",
      396
     ],
     [
@@ -4969,13 +4969,13 @@
      391
     ],
     [
-     "8446484",
-     "Bruce Driver",
+     "8467330",
+     "David Legwand",
      390
     ],
     [
-     "8467330",
-     "David Legwand",
+     "8446484",
+     "Bruce Driver",
      390
     ],
     [
@@ -5024,11 +5024,6 @@
      384
     ],
     [
-     "8458540",
-     "Ziggy Palffy",
-     384
-    ],
-    [
      "8451688",
      "Anton Stastny",
      384
@@ -5036,6 +5031,16 @@
     [
      "8475171",
      "Oliver Ekman-Larsson",
+     384
+    ],
+    [
+     "8458540",
+     "Ziggy Palffy",
+     384
+    ],
+    [
+     "8479343",
+     "Clayton Keller",
      384
     ],
     [
@@ -5054,18 +5059,13 @@
      383
     ],
     [
-     "8479343",
-     "Clayton Keller",
-     383
+     "8449769",
+     "Bob Murray",
+     382
     ],
     [
      "8452281",
      "Ryan Walter",
-     382
-    ],
-    [
-     "8449769",
-     "Bob Murray",
      382
     ],
     [
@@ -5134,6 +5134,11 @@
      376
     ],
     [
+     "8474150",
+     "Mikael Backlund",
+     375
+    ],
+    [
      "8458595",
      "Alexei Zhitnik",
      375
@@ -5144,23 +5149,8 @@
      375
     ],
     [
-     "8474150",
-     "Mikael Backlund",
-     375
-    ],
-    [
      "8446876",
      "Mike Foligno",
-     372
-    ],
-    [
-     "8469638",
-     "Jussi Jokinen",
-     372
-    ],
-    [
-     "8451624",
-     "Ron Stackhouse",
      372
     ],
     [
@@ -5169,8 +5159,18 @@
      372
     ],
     [
+     "8451624",
+     "Ron Stackhouse",
+     372
+    ],
+    [
      "8473449",
      "Kyle Okposo",
+     372
+    ],
+    [
+     "8469638",
+     "Jussi Jokinen",
      372
     ],
     [
@@ -5214,13 +5214,13 @@
      368
     ],
     [
-     "8448808",
-     "Don Lever",
+     "8468598",
+     "Lubomir Visnovsky",
      367
     ],
     [
-     "8468598",
-     "Lubomir Visnovsky",
+     "8448808",
+     "Don Lever",
      367
     ],
     [
@@ -5269,11 +5269,6 @@
      363
     ],
     [
-     "8448227",
-     "Bob Pulford",
-     362
-    ],
-    [
      "8449742",
      "Brian Mullen",
      362
@@ -5281,6 +5276,11 @@
     [
      "8450817",
      "Mike Ricci",
+     362
+    ],
+    [
+     "8448227",
+     "Bob Pulford",
      362
     ],
     [
@@ -5304,13 +5304,13 @@
      361
     ],
     [
-     "8455919",
-     "Craig Conroy",
+     "8460562",
+     "Chris Drury",
      360
     ],
     [
-     "8460562",
-     "Chris Drury",
+     "8455919",
+     "Craig Conroy",
      360
     ],
     [
@@ -5324,6 +5324,11 @@
      360
     ],
     [
+     "8450905",
+     "Gordie Roberts",
+     359
+    ],
+    [
      "8446238",
      "Doug Crossman",
      359
@@ -5331,11 +5336,6 @@
     [
      "8447429",
      "Bengt-Ake Gustafsson",
-     359
-    ],
-    [
-     "8450905",
-     "Gordie Roberts",
      359
     ],
     [
@@ -5384,6 +5384,11 @@
      354
     ],
     [
+     "8449773",
+     "Troy Murray",
+     354
+    ],
+    [
      "8446295",
      "Ulf Dahlen",
      354
@@ -5394,23 +5399,18 @@
      354
     ],
     [
+     "8474037",
+     "James van Riemsdyk",
+     354
+    ],
+    [
      "8448038",
      "Charlie Huddy",
      354
     ],
     [
-     "8449773",
-     "Troy Murray",
-     354
-    ],
-    [
      "8459425",
      "Chris Gratton",
-     354
-    ],
-    [
-     "8474037",
-     "James van Riemsdyk",
      354
     ],
     [
@@ -5731,23 +5731,23 @@
      1382
     ],
     [
-     "8446303",
-     "Vincent Damphousse",
-     1378
-    ],
-    [
-     "8448191",
-     "Dean Prentice",
-     1378
-    ],
-    [
      "8451101",
      "Joe Sakic",
      1378
     ],
     [
+     "8446303",
+     "Vincent Damphousse",
+     1378
+    ],
+    [
      "8474141",
      "Patrick Kane",
+     1378
+    ],
+    [
+     "8448191",
+     "Dean Prentice",
      1378
     ],
     [
@@ -5801,13 +5801,13 @@
      1332
     ],
     [
-     "8458537",
-     "Ray Whitney",
+     "8467876",
+     "Henrik Sedin",
      1330
     ],
     [
-     "8467876",
-     "Henrik Sedin",
+     "8458537",
+     "Ray Whitney",
      1330
     ],
     [
@@ -6046,13 +6046,13 @@
      1249
     ],
     [
-     "8446513",
-     "Bill Gadsby",
+     "8446788",
+     "Sergei Fedorov",
      1248
     ],
     [
-     "8446788",
-     "Sergei Fedorov",
+     "8446513",
+     "Bill Gadsby",
      1248
     ],
     [
@@ -6131,13 +6131,13 @@
      1226
     ],
     [
-     "8458637",
-     "Sean O'Donnell",
+     "8450900",
+     "Gary Roberts",
      1224
     ],
     [
-     "8450900",
-     "Gary Roberts",
+     "8458637",
+     "Sean O'Donnell",
      1224
     ],
     [
@@ -6386,13 +6386,13 @@
      1152
     ],
     [
-     "8445111",
-     "Leo Boivin",
-     1150
-    ],
-    [
      "8474586",
      "Jordan Eberle",
+     1151
+    ],
+    [
+     "8445111",
+     "Leo Boivin",
      1150
     ],
     [
@@ -6416,13 +6416,13 @@
      1149
     ],
     [
-     "8469465",
-     "Dan Hamhuis",
+     "8451102",
+     "Borje Salming",
      1148
     ],
     [
-     "8451102",
-     "Borje Salming",
+     "8469465",
+     "Dan Hamhuis",
      1148
     ],
     [
@@ -6461,13 +6461,13 @@
      1137
     ],
     [
-     "8455521",
-     "Stu Barnes",
+     "8467330",
+     "David Legwand",
      1136
     ],
     [
-     "8467330",
-     "David Legwand",
+     "8455521",
+     "Stu Barnes",
      1136
     ],
     [
@@ -6516,23 +6516,23 @@
      1128
     ],
     [
-     "8448001",
-     "Bob Nevin",
-     1128
-    ],
-    [
      "8460492",
      "Ed Jovanovski",
      1128
     ],
     [
-     "8448056",
-     "Murray Oliver",
-     1127
+     "8448001",
+     "Bob Nevin",
+     1128
     ],
     [
      "8449881",
      "Bernie Nicholls",
+     1127
+    ],
+    [
+     "8448056",
+     "Murray Oliver",
      1127
     ],
     [
@@ -6571,11 +6571,6 @@
      1114
     ],
     [
-     "8446494",
-     "Steve Duchesne",
-     1113
-    ],
-    [
      "8446728",
      "Doug Harvey",
      1113
@@ -6583,6 +6578,11 @@
     [
      "8450206",
      "Brad Park",
+     1113
+    ],
+    [
+     "8446494",
+     "Steve Duchesne",
      1113
     ],
     [
@@ -6616,6 +6616,11 @@
      1110
     ],
     [
+     "8471735",
+     "Keith Yandle",
+     1109
+    ],
+    [
      "8448287",
      "Calle Johansson",
      1109
@@ -6624,16 +6629,6 @@
      "8459457",
      "Jamie Langenbrunner",
      1109
-    ],
-    [
-     "8471735",
-     "Keith Yandle",
-     1109
-    ],
-    [
-     "8459053",
-     "Adrian Aucoin",
-     1108
     ],
     [
      "8459492",
@@ -6648,6 +6643,11 @@
     [
      "8459670",
      "Kimmo Timonen",
+     1108
+    ],
+    [
+     "8459053",
+     "Adrian Aucoin",
      1108
     ],
     [
@@ -6676,13 +6676,13 @@
      1105
     ],
     [
-     "8457921",
-     "Geoff Sanderson",
+     "8467370",
+     "Mike Fisher",
      1104
     ],
     [
-     "8467370",
-     "Mike Fisher",
+     "8457921",
+     "Geoff Sanderson",
      1104
     ],
     [
@@ -6726,13 +6726,13 @@
      1096
     ],
     [
-     "8449020",
-     "Craig MacTavish",
+     "8467096",
+     "Dan Boyle",
      1093
     ],
     [
-     "8467096",
-     "Dan Boyle",
+     "8449020",
+     "Craig MacTavish",
      1093
     ],
     [
@@ -6851,13 +6851,13 @@
      1074
     ],
     [
-     "8459001",
-     "Kirk Maltby",
+     "8475172",
+     "Nazem Kadri",
      1072
     ],
     [
-     "8475172",
-     "Nazem Kadri",
+     "8459001",
+     "Kirk Maltby",
      1072
     ],
     [
@@ -6896,6 +6896,11 @@
      1068
     ],
     [
+     "8475753",
+     "Justin Faulk",
+     1068
+    ],
+    [
      "8458494",
      "Sergei Zubov",
      1068
@@ -6906,23 +6911,18 @@
      1068
     ],
     [
-     "8475753",
-     "Justin Faulk",
-     1068
-    ],
-    [
      "8474151",
      "Ryan McDonagh",
      1067
     ],
     [
-     "8447568",
-     "Terry Harper",
+     "8449214",
+     "Jean-Guy Talbot",
      1066
     ],
     [
-     "8449214",
-     "Jean-Guy Talbot",
+     "8447568",
+     "Terry Harper",
      1066
     ],
     [
@@ -6956,11 +6956,6 @@
      1061
     ],
     [
-     "8469506",
-     "Jason Pominville",
-     1060
-    ],
-    [
      "8450505",
      "Denis Potvin",
      1060
@@ -6968,6 +6963,11 @@
     [
      "8459640",
      "Mike Grier",
+     1060
+    ],
+    [
+     "8469506",
+     "Jason Pominville",
      1060
     ],
     [
@@ -7021,8 +7021,8 @@
      1056
     ],
     [
-     "8458069",
-     "Bryan Smolinski",
+     "8449957",
+     "Lyle Odelein",
      1056
     ],
     [
@@ -7031,8 +7031,8 @@
      1056
     ],
     [
-     "8449957",
-     "Lyle Odelein",
+     "8458069",
+     "Bryan Smolinski",
      1056
     ],
     [
@@ -7271,11 +7271,6 @@
      1028
     ],
     [
-     "8448740",
-     "Grant Ledyard",
-     1028
-    ],
-    [
      "8451789",
      "Petr Svoboda",
      1028
@@ -7283,6 +7278,11 @@
     [
      "8451917",
      "John Tonelli",
+     1028
+    ],
+    [
+     "8448740",
+     "Grant Ledyard",
      1028
     ],
     [
@@ -7321,13 +7321,13 @@
      1025
     ],
     [
-     "8452489",
-     "Doug Wilson",
+     "8447996",
+     "Jim Neilson",
      1024
     ],
     [
-     "8447996",
-     "Jim Neilson",
+     "8452489",
+     "Doug Wilson",
      1024
     ],
     [
@@ -7346,6 +7346,11 @@
      1023
     ],
     [
+     "8476457",
+     "Adam Larsson",
+     1023
+    ],
+    [
      "8476459",
      "Mika Zibanejad",
      1023
@@ -7353,11 +7358,6 @@
     [
      "8449971",
      "Fredrik Olausson",
-     1022
-    ],
-    [
-     "8476457",
-     "Adam Larsson",
      1022
     ],
     [
@@ -7401,13 +7401,13 @@
      1018
     ],
     [
-     "8448038",
-     "Charlie Huddy",
+     "8460465",
+     "Petr Sykora",
      1017
     ],
     [
-     "8460465",
-     "Petr Sykora",
+     "8448038",
+     "Charlie Huddy",
      1017
     ],
     [
@@ -7466,6 +7466,16 @@
      1009
     ],
     [
+     "8462129",
+     "Michal Handzus",
+     1009
+    ],
+    [
+     "8466142",
+     "Eric Brewer",
+     1009
+    ],
+    [
      "8455919",
      "Craig Conroy",
      1009
@@ -7481,14 +7491,14 @@
      1009
     ],
     [
-     "8462129",
-     "Michal Handzus",
-     1009
+     "8449769",
+     "Bob Murray",
+     1008
     ],
     [
-     "8466142",
-     "Eric Brewer",
-     1009
+     "8467423",
+     "Shawn Horcoff",
+     1008
     ],
     [
      "8448811",
@@ -7498,16 +7508,6 @@
     [
      "8458954",
      "Jason Smith",
-     1008
-    ],
-    [
-     "8467423",
-     "Shawn Horcoff",
-     1008
-    ],
-    [
-     "8449769",
-     "Bob Murray",
      1008
     ],
     [
@@ -7551,6 +7551,11 @@
      1003
     ],
     [
+     "8475169",
+     "Evander Kane",
+     1001
+    ],
+    [
      "8458541",
      "Steve Staios",
      1001
@@ -7558,11 +7563,6 @@
     [
      "8469521",
      "Tomas Plekanec",
-     1001
-    ],
-    [
-     "8475169",
-     "Evander Kane",
      1001
     ],
     [
@@ -7616,8 +7616,8 @@
      993
     ],
     [
-     "8458524",
-     "Martin Lapointe",
+     "8467334",
+     "Manny Malhotra",
      991
     ],
     [
@@ -7626,8 +7626,8 @@
      991
     ],
     [
-     "8467334",
-     "Manny Malhotra",
+     "8458524",
+     "Martin Lapointe",
      991
     ],
     [
@@ -7711,13 +7711,13 @@
      983
     ],
     [
-     "8448846",
-     "Nick Libett",
+     "8449807",
+     "Petr Nedved",
      982
     ],
     [
-     "8449807",
-     "Petr Nedved",
+     "8448846",
+     "Nick Libett",
      982
     ],
     [
@@ -8103,13 +8103,13 @@
      442
     ],
     [
-     "8448703",
-     "Steve Larmer",
+     "8452152",
+     "Rick Vaive",
      441
     ],
     [
-     "8452152",
-     "Rick Vaive",
+     "8448703",
+     "Steve Larmer",
      441
     ],
     [
@@ -8153,13 +8153,13 @@
      431
     ],
     [
-     "8458529",
-     "Alex Kovalev",
+     "8466138",
+     "Joe Thornton",
      430
     ],
     [
-     "8466138",
-     "Joe Thornton",
+     "8458529",
+     "Alex Kovalev",
      430
     ],
     [
@@ -8203,13 +8203,13 @@
      422
     ],
     [
-     "8467329",
-     "Vincent Lecavalier",
+     "8450825",
+     "Stephane Richer",
      421
     ],
     [
-     "8450825",
-     "Stephane Richer",
+     "8467329",
+     "Vincent Lecavalier",
      421
     ],
     [
@@ -8298,13 +8298,13 @@
      402
     ],
     [
-     "8459426",
-     "Paul Kariya",
+     "8462038",
+     "Shane Doan",
      402
     ],
     [
-     "8462038",
-     "Shane Doan",
+     "8459426",
+     "Paul Kariya",
      402
     ],
     [
@@ -8318,8 +8318,8 @@
      396
     ],
     [
-     "8458530",
-     "Markus Naslund",
+     "8449812",
+     "Cam Neely",
      395
     ],
     [
@@ -8328,8 +8328,8 @@
      395
     ],
     [
-     "8449812",
-     "Cam Neely",
+     "8458530",
+     "Markus Naslund",
      395
     ],
     [
@@ -8338,14 +8338,19 @@
      394
     ],
     [
+     "8467875",
+     "Daniel Sedin",
+     393
+    ],
+    [
      "8446579",
      "Bernie Geoffrion",
      393
     ],
     [
-     "8467875",
-     "Daniel Sedin",
-     393
+     "8450566",
+     "Jean Pronovost",
+     391
     ],
     [
      "8466378",
@@ -8355,11 +8360,6 @@
     [
      "8448191",
      "Dean Prentice",
-     391
-    ],
-    [
-     "8450566",
-     "Jean Pronovost",
      391
     ],
     [
@@ -8388,23 +8388,23 @@
      383
     ],
     [
-     "8448729",
-     "Reggie Leach",
-     381
-    ],
-    [
      "8473512",
      "Claude Giroux",
      381
     ],
     [
-     "8447500",
-     "Ted Lindsay",
-     379
+     "8448729",
+     "Reggie Leach",
+     381
     ],
     [
      "8448772",
      "Claude Lemieux",
+     379
+    ],
+    [
+     "8447500",
+     "Ted Lindsay",
      379
     ],
     [
@@ -8438,13 +8438,13 @@
      373
     ],
     [
-     "8458515",
-     "Eric Lindros",
+     "8468482",
+     "Dany Heatley",
      372
     ],
     [
-     "8468482",
-     "Dany Heatley",
+     "8458515",
+     "Eric Lindros",
      372
     ],
     [
@@ -8488,8 +8488,8 @@
      363
     ],
     [
-     "8469455",
-     "Jason Spezza",
+     "8459534",
+     "Miroslav Satan",
      363
     ],
     [
@@ -8498,8 +8498,8 @@
      363
     ],
     [
-     "8459534",
-     "Miroslav Satan",
+     "8469455",
+     "Jason Spezza",
      363
     ],
     [
@@ -8538,6 +8538,11 @@
      357
     ],
     [
+     "8450107",
+     "Wilf Paiement",
+     356
+    ],
+    [
      "8449284",
      "Dennis Maruk",
      356
@@ -8548,23 +8553,18 @@
      356
     ],
     [
-     "8450107",
-     "Wilf Paiement",
-     356
-    ],
-    [
      "8444894",
      "Greg Adams",
      355
     ],
     [
-     "8446423",
-     "Kevin Dineen",
+     "8446876",
+     "Mike Foligno",
      355
     ],
     [
-     "8446876",
-     "Mike Foligno",
+     "8446423",
+     "Kevin Dineen",
      355
     ],
     [
@@ -8598,16 +8598,6 @@
      349
     ],
     [
-     "8452569",
-     "Scott Young",
-     342
-    ],
-    [
-     "8458525",
-     "Brian Rolston",
-     342
-    ],
-    [
      "8449973",
      "Eddie Olczyk",
      342
@@ -8618,8 +8608,18 @@
      342
     ],
     [
+     "8452569",
+     "Scott Young",
+     342
+    ],
+    [
      "8474037",
      "James van Riemsdyk",
+     342
+    ],
+    [
+     "8458525",
+     "Brian Rolston",
      342
     ],
     [
@@ -8648,14 +8648,9 @@
      338
     ],
     [
-     "8458532",
-     "Glen Murray",
-     337
-    ],
-    [
-     "8458939",
-     "Alexei Yashin",
-     337
+     "8474586",
+     "Jordan Eberle",
+     338
     ],
     [
      "8468083",
@@ -8663,13 +8658,18 @@
      337
     ],
     [
-     "8474586",
-     "Jordan Eberle",
+     "8475754",
+     "Brock Nelson",
      337
     ],
     [
-     "8475754",
-     "Brock Nelson",
+     "8458532",
+     "Glen Murray",
+     337
+    ],
+    [
+     "8458939",
+     "Alexei Yashin",
      337
     ],
     [
@@ -8718,13 +8718,13 @@
      329
     ],
     [
-     "8458540",
-     "Ziggy Palffy",
+     "8451711",
+     "Kevin Stevens",
      329
     ],
     [
-     "8451711",
-     "Kevin Stevens",
+     "8458540",
+     "Ziggy Palffy",
      329
     ],
     [
@@ -8768,11 +8768,6 @@
      325
     ],
     [
-     "8447627",
-     "Pit Martin",
-     324
-    ],
-    [
      "8448981",
      "Paul MacLean",
      324
@@ -8783,13 +8778,13 @@
      324
     ],
     [
-     "8446658",
-     "Vic Hadfield",
-     323
+     "8447627",
+     "Pit Martin",
+     324
     ],
     [
-     "8448117",
-     "Dale Hunter",
+     "8446658",
+     "Vic Hadfield",
      323
     ],
     [
@@ -8808,6 +8803,11 @@
      323
     ],
     [
+     "8448117",
+     "Dale Hunter",
+     323
+    ],
+    [
      "8466140",
      "Olli Jokinen",
      321
@@ -8823,6 +8823,11 @@
      321
     ],
     [
+     "8468508",
+     "Justin Williams",
+     320
+    ],
+    [
      "8445977",
      "Bobby Carpenter",
      320
@@ -8830,11 +8835,6 @@
     [
      "8449445",
      "Tony McKegney",
-     320
-    ],
-    [
-     "8468508",
-     "Justin Williams",
      320
     ],
     [
@@ -8873,13 +8873,13 @@
      313
     ],
     [
-     "8448490",
-     "Petr Klima",
+     "8475726",
+     "Tyler Toffoli",
      313
     ],
     [
-     "8475726",
-     "Tyler Toffoli",
+     "8448490",
+     "Petr Klima",
      313
     ],
     [
@@ -8908,13 +8908,13 @@
      309
     ],
     [
-     "8448001",
-     "Bob Nevin",
+     "8464975",
+     "Daniel Bri\u00e8re",
      307
     ],
     [
-     "8464975",
-     "Daniel Bri\u00e8re",
+     "8448001",
+     "Bob Nevin",
      307
     ],
     [
@@ -8998,23 +8998,23 @@
      294
     ],
     [
-     "8469506",
-     "Jason Pominville",
-     293
-    ],
-    [
      "8471669",
      "Paul Stastny",
      293
     ],
     [
-     "8448911",
-     "Tom Lysiak",
-     292
+     "8469506",
+     "Jason Pominville",
+     293
     ],
     [
      "8450832",
      "Mike Ridley",
+     292
+    ],
+    [
+     "8448911",
+     "Tom Lysiak",
      292
     ],
     [
@@ -9043,23 +9043,23 @@
      289
     ],
     [
-     "8449062",
-     "Peter Mahovlich",
-     288
-    ],
-    [
      "8449745",
      "Larry Murphy",
      288
     ],
     [
-     "8469544",
-     "Patrick Sharp",
-     287
+     "8449062",
+     "Peter Mahovlich",
+     288
     ],
     [
      "8451858",
      "Tony Tanti",
+     287
+    ],
+    [
+     "8469544",
+     "Patrick Sharp",
      287
     ],
     [
@@ -9073,14 +9073,19 @@
      284
     ],
     [
+     "8450894",
+     "Rene Robert",
+     284
+    ],
+    [
      "8468085",
      "Radim Vrbata",
      284
     ],
     [
-     "8450894",
-     "Rene Robert",
-     284
+     "8467338",
+     "Alex Tanguay",
+     283
     ],
     [
      "8445957",
@@ -9090,11 +9095,6 @@
     [
      "8446605",
      "Bill Goldsworthy",
-     283
-    ],
-    [
-     "8467338",
-     "Alex Tanguay",
      283
     ],
     [
@@ -9138,6 +9138,26 @@
      278
     ],
     [
+     "8467370",
+     "Mike Fisher",
+     278
+    ],
+    [
+     "8474641",
+     "Adam Henrique",
+     278
+    ],
+    [
+     "8475151",
+     "Kyle Palmieri",
+     278
+    ],
+    [
+     "8448085",
+     "Jim Pappin",
+     278
+    ],
+    [
      "8458361",
      "Doug Weight",
      278
@@ -9150,26 +9170,6 @@
     [
      "8458943",
      "Cory Stillman",
-     278
-    ],
-    [
-     "8467370",
-     "Mike Fisher",
-     278
-    ],
-    [
-     "8448085",
-     "Jim Pappin",
-     278
-    ],
-    [
-     "8474641",
-     "Adam Henrique",
-     278
-    ],
-    [
-     "8475151",
-     "Kyle Palmieri",
      278
     ],
     [
@@ -9203,23 +9203,23 @@
      274
     ],
     [
-     "8458069",
-     "Bryan Smolinski",
-     274
-    ],
-    [
      "8448056",
      "Murray Oliver",
      274
     ],
     [
-     "8446167",
-     "Shayne Corson",
-     273
+     "8458069",
+     "Bryan Smolinski",
+     274
     ],
     [
      "8451253",
      "Al Secord",
+     273
+    ],
+    [
+     "8446167",
+     "Shayne Corson",
      273
     ],
     [
@@ -9233,13 +9233,13 @@
      272
     ],
     [
-     "8447888",
-     "Howie Morenz",
+     "8451204",
+     "Bobby Schmautz",
      271
     ],
     [
-     "8451204",
-     "Bobby Schmautz",
+     "8447888",
+     "Howie Morenz",
      271
     ],
     [
@@ -9288,11 +9288,6 @@
      267
     ],
     [
-     "8446217",
-     "Murray Craven",
-     266
-    ],
-    [
      "8450550",
      "Keith Primeau",
      266
@@ -9300,6 +9295,11 @@
     [
      "8450635",
      "Dan Quinn",
+     266
+    ],
+    [
+     "8446217",
+     "Murray Craven",
      266
     ],
     [
@@ -9313,8 +9313,8 @@
      266
     ],
     [
-     "8447620",
-     "Donnie Marshall",
+     "8467396",
+     "Erik Cole",
      265
     ],
     [
@@ -9323,24 +9323,14 @@
      265
     ],
     [
-     "8467396",
-     "Erik Cole",
+     "8447620",
+     "Donnie Marshall",
      265
     ],
     [
      "8476539",
      "Jonathan Marchessault",
      265
-    ],
-    [
-     "8452281",
-     "Ryan Walter",
-     264
-    ],
-    [
-     "8457063",
-     "Nicklas Lidstrom",
-     264
     ],
     [
      "8449887",
@@ -9353,8 +9343,18 @@
      264
     ],
     [
+     "8452281",
+     "Ryan Walter",
+     264
+    ],
+    [
      "8471887",
      "Patric Hornqvist",
+     264
+    ],
+    [
+     "8457063",
+     "Nicklas Lidstrom",
      264
     ],
     [
@@ -9388,6 +9388,11 @@
      261
     ],
     [
+     "8447886",
+     "Dickie Moore",
+     261
+    ],
+    [
      "8455521",
      "Stu Barnes",
      261
@@ -9398,18 +9403,13 @@
      261
     ],
     [
-     "8447886",
-     "Dickie Moore",
+     "8471676",
+     "Bobby Ryan",
      261
     ],
     [
      "8448489",
      "Derek King",
-     261
-    ],
-    [
-     "8471676",
-     "Bobby Ryan",
      261
     ],
     [
@@ -9423,13 +9423,13 @@
      260
     ],
     [
-     "8446036",
-     "Guy Carbonneau",
+     "8449742",
+     "Brian Mullen",
      260
     ],
     [
-     "8449742",
-     "Brian Mullen",
+     "8446036",
+     "Guy Carbonneau",
      260
     ],
     [
@@ -9468,6 +9468,11 @@
      257
     ],
     [
+     "8451025",
+     "Darcy Rota",
+     256
+    ],
+    [
      "8448857",
      "Ken Linseman",
      256
@@ -9480,11 +9485,6 @@
     [
      "8457297",
      "Shawn McEachern",
-     256
-    ],
-    [
-     "8451025",
-     "Darcy Rota",
      256
     ],
     [
@@ -9503,11 +9503,6 @@
      256
     ],
     [
-     "8459442",
-     "Saku Koivu",
-     255
-    ],
-    [
      "8459492",
      "Vinny Prospal",
      255
@@ -9515,6 +9510,11 @@
     [
      "8460562",
      "Chris Drury",
+     255
+    ],
+    [
+     "8459442",
+     "Saku Koivu",
      255
     ],
     [
@@ -9543,11 +9543,6 @@
      252
     ],
     [
-     "8449385",
-     "Kenny Wharram",
-     252
-    ],
-    [
      "8450640",
      "Craig Ramsay",
      252
@@ -9555,6 +9550,11 @@
     [
      "8450767",
      "Robert Reichel",
+     252
+    ],
+    [
+     "8449385",
+     "Kenny Wharram",
      252
     ],
     [
@@ -9628,13 +9628,13 @@
      247
     ],
     [
-     "8458561",
-     "Yanic Perreault",
+     "8451376",
+     "Craig Simpson",
      247
     ],
     [
-     "8451376",
-     "Craig Simpson",
+     "8458561",
+     "Yanic Perreault",
      247
     ],
     [
@@ -9678,6 +9678,11 @@
      243
     ],
     [
+     "8460743",
+     "Tomas Holmstrom",
+     243
+    ],
+    [
      "8459024",
      "Jere Lehtinen",
      243
@@ -9685,11 +9690,6 @@
     [
      "8459457",
      "Jamie Langenbrunner",
-     243
-    ],
-    [
-     "8460743",
-     "Tomas Holmstrom",
      243
     ],
     [
@@ -9723,6 +9723,11 @@
      242
     ],
     [
+     "8476389",
+     "Vincent Trocheck",
+     242
+    ],
+    [
      "8478414",
      "Timo Meier",
      242
@@ -9738,18 +9743,13 @@
      241
     ],
     [
-     "8458534",
-     "Martin Rucinsky",
-     241
-    ],
-    [
      "8448566",
      "Mike Krushelnyski",
      241
     ],
     [
-     "8476389",
-     "Vincent Trocheck",
+     "8458534",
+     "Martin Rucinsky",
      241
     ],
     [
@@ -9763,13 +9763,13 @@
      240
     ],
     [
-     "8448915",
-     "Al MacAdam",
+     "8467876",
+     "Henrik Sedin",
      240
     ],
     [
-     "8467876",
-     "Henrik Sedin",
+     "8448915",
+     "Al MacAdam",
      240
     ],
     [
@@ -9813,8 +9813,8 @@
      237
     ],
     [
-     "8447792",
-     "Don McKenney",
+     "8467545",
+     "Michael Ryder",
      237
     ],
     [
@@ -9823,28 +9823,28 @@
      237
     ],
     [
-     "8452489",
-     "Doug Wilson",
-     237
-    ],
-    [
-     "8467545",
-     "Michael Ryder",
-     237
-    ],
-    [
      "8460495",
      "Jeff O'Neill",
      237
     ],
     [
-     "8447730",
-     "Paul Henderson",
-     236
+     "8447792",
+     "Don McKenney",
+     237
+    ],
+    [
+     "8452489",
+     "Doug Wilson",
+     237
     ],
     [
      "8449369",
      "Harry Watson",
+     236
+    ],
+    [
+     "8447730",
+     "Paul Henderson",
      236
     ],
     [
@@ -9883,11 +9883,6 @@
      235
     ],
     [
-     "8469521",
-     "Tomas Plekanec",
-     233
-    ],
-    [
      "8449751",
      "Joe Murphy",
      233
@@ -9913,6 +9908,11 @@
      233
     ],
     [
+     "8469521",
+     "Tomas Plekanec",
+     233
+    ],
+    [
      "8460556",
      "Freddy Modin",
      232
@@ -9923,13 +9923,13 @@
      232
     ],
     [
-     "8447658",
-     "Billy Harris",
+     "8449384",
+     "Ed Westfall",
      231
     ],
     [
-     "8449384",
-     "Ed Westfall",
+     "8447658",
+     "Billy Harris",
      231
     ],
     [
@@ -9943,13 +9943,13 @@
      230
     ],
     [
-     "8449138",
-     "Don Marcotte",
+     "8449773",
+     "Troy Murray",
      230
     ],
     [
-     "8449773",
-     "Troy Murray",
+     "8449138",
+     "Don Marcotte",
      230
     ],
     [
@@ -10420,11 +10420,6 @@
      1035
     ],
     [
-     "8458361",
-     "Doug Weight",
-     1033
-    ],
-    [
      "8466378",
      "Martin St. Louis",
      1033
@@ -10432,6 +10427,11 @@
     [
      "8473563",
      "Nicklas Backstrom",
+     1033
+    ],
+    [
+     "8458361",
+     "Doug Weight",
      1033
     ],
     [
@@ -10690,13 +10690,13 @@
      888
     ],
     [
-     "8458520",
-     "Peter Forsberg",
+     "8449895",
+     "Owen Nolan",
      885
     ],
     [
-     "8449895",
-     "Owen Nolan",
+     "8458520",
+     "Peter Forsberg",
      885
     ],
     [
@@ -10715,13 +10715,13 @@
      876
     ],
     [
-     "8458530",
-     "Markus Naslund",
+     "8451005",
+     "Cliff Ronning",
      869
     ],
     [
-     "8451005",
-     "Cliff Ronning",
+     "8458530",
+     "Markus Naslund",
      869
     ],
     [
@@ -10740,13 +10740,13 @@
      865
     ],
     [
-     "8446200",
-     "Yvan Cournoyer",
+     "8467338",
+     "Alex Tanguay",
      863
     ],
     [
-     "8467338",
-     "Alex Tanguay",
+     "8446200",
+     "Yvan Cournoyer",
      863
     ],
     [
@@ -10755,13 +10755,13 @@
      860
     ],
     [
-     "8456464",
-     "Bill Guerin",
+     "8451122",
+     "Tomas Sandstrom",
      856
     ],
     [
-     "8451122",
-     "Tomas Sandstrom",
+     "8456464",
+     "Bill Guerin",
      856
     ],
     [
@@ -10840,13 +10840,13 @@
      829
     ],
     [
-     "8452489",
-     "Doug Wilson",
+     "8449972",
+     "John Ogrodnick",
      827
     ],
     [
-     "8449972",
-     "John Ogrodnick",
+     "8452489",
+     "Doug Wilson",
      827
     ],
     [
@@ -10860,23 +10860,23 @@
      822
     ],
     [
-     "8448707",
-     "Pierre Larouche",
-     822
-    ],
-    [
      "8471669",
      "Paul Stastny",
      822
     ],
     [
-     "8448622",
-     "John LeClair",
-     819
+     "8448707",
+     "Pierre Larouche",
+     822
     ],
     [
      "8450825",
      "Stephane Richer",
+     819
+    ],
+    [
+     "8448622",
+     "John LeClair",
      819
     ],
     [
@@ -10915,13 +10915,13 @@
      812
     ],
     [
-     "8458951",
-     "Sergei Gonchar",
+     "8471724",
+     "Kris Letang",
      811
     ],
     [
-     "8471724",
-     "Kris Letang",
+     "8458951",
+     "Sergei Gonchar",
      811
     ],
     [
@@ -10995,14 +10995,19 @@
      794
     ],
     [
+     "8467371",
+     "Mike Ribeiro",
+     793
+    ],
+    [
      "8446002",
      "Wayne Cashman",
      793
     ],
     [
-     "8467371",
-     "Mike Ribeiro",
-     793
+     "8474586",
+     "Jordan Eberle",
+     792
     ],
     [
      "8475791",
@@ -11013,11 +11018,6 @@
      "8468482",
      "Dany Heatley",
      791
-    ],
-    [
-     "8474586",
-     "Jordan Eberle",
-     790
     ],
     [
      "8474590",
@@ -11110,13 +11110,13 @@
      768
     ],
     [
-     "8448420",
-     "Rick Kehoe",
+     "8475172",
+     "Nazem Kadri",
      767
     ],
     [
-     "8475172",
-     "Nazem Kadri",
+     "8448420",
+     "Rick Kehoe",
      767
     ],
     [
@@ -11180,13 +11180,13 @@
      750
     ],
     [
-     "8447958",
-     "Bobby Holik",
+     "8460719",
+     "Steve Sullivan",
      747
     ],
     [
-     "8460719",
-     "Steve Sullivan",
+     "8447958",
+     "Bobby Holik",
      747
     ],
     [
@@ -11275,13 +11275,13 @@
      727
     ],
     [
-     "8469506",
-     "Jason Pominville",
+     "8478427",
+     "Sebastian Aho",
      727
     ],
     [
-     "8478427",
-     "Sebastian Aho",
+     "8469506",
+     "Jason Pominville",
      727
     ],
     [
@@ -11320,13 +11320,13 @@
      719
     ],
     [
-     "8458955",
-     "Martin Straka",
+     "8449807",
+     "Petr Nedved",
      717
     ],
     [
-     "8449807",
-     "Petr Nedved",
+     "8458955",
+     "Martin Straka",
      717
     ],
     [
@@ -11360,13 +11360,13 @@
      712
     ],
     [
-     "8469459",
-     "Mikko Koivu",
+     "8451365",
+     "Charlie Simmer",
      711
     ],
     [
-     "8451365",
-     "Charlie Simmer",
+     "8469459",
+     "Mikko Koivu",
      711
     ],
     [
@@ -11500,13 +11500,13 @@
      685
     ],
     [
-     "8448708",
-     "Reed Larson",
+     "8450635",
+     "Dan Quinn",
      685
     ],
     [
-     "8450635",
-     "Dan Quinn",
+     "8448708",
+     "Reed Larson",
      685
     ],
     [
@@ -11715,13 +11715,13 @@
      639
     ],
     [
-     "8449445",
-     "Tony McKegney",
+     "8450223",
+     "James Patrick",
      639
     ],
     [
-     "8450223",
-     "James Patrick",
+     "8449445",
+     "Tony McKegney",
      639
     ],
     [
@@ -11757,7 +11757,7 @@
     [
      "8476389",
      "Vincent Trocheck",
-     635
+     636
     ],
     [
      "8449796",
@@ -11815,13 +11815,13 @@
      623
     ],
     [
-     "8448694",
-     "Guy Lapointe",
+     "8449742",
+     "Brian Mullen",
      622
     ],
     [
-     "8449742",
-     "Brian Mullen",
+     "8448694",
+     "Guy Lapointe",
      622
     ],
     [
@@ -11860,13 +11860,13 @@
      618
     ],
     [
-     "8447364",
-     "Adam Graves",
+     "8449149",
+     "Fred Stanfield",
      616
     ],
     [
-     "8449149",
-     "Fred Stanfield",
+     "8447364",
+     "Adam Graves",
      616
     ],
     [
@@ -11895,13 +11895,13 @@
      613
     ],
     [
-     "8458534",
-     "Martin Rucinsky",
+     "8448489",
+     "Derek King",
      612
     ],
     [
-     "8448489",
-     "Derek King",
+     "8458534",
+     "Martin Rucinsky",
      612
     ],
     [
@@ -11917,12 +11917,7 @@
     [
      "8479343",
      "Clayton Keller",
-     609
-    ],
-    [
-     "8469521",
-     "Tomas Plekanec",
-     608
+     610
     ],
     [
      "8474150",
@@ -11930,13 +11925,18 @@
      608
     ],
     [
-     "8452685",
-     "Peter Zezel",
-     607
+     "8469521",
+     "Tomas Plekanec",
+     608
     ],
     [
      "8447886",
      "Dickie Moore",
+     607
+    ],
+    [
+     "8452685",
+     "Peter Zezel",
      607
     ],
     [
@@ -11950,23 +11950,23 @@
      606
     ],
     [
-     "8449440",
-     "Walt McKechnie",
-     606
-    ],
-    [
      "8450075",
      "Terry O'Reilly",
      606
     ],
     [
-     "8467096",
-     "Dan Boyle",
-     605
+     "8449440",
+     "Walt McKechnie",
+     606
     ],
     [
      "8450817",
      "Mike Ricci",
+     605
+    ],
+    [
+     "8467096",
+     "Dan Boyle",
      605
     ],
     [
@@ -12015,13 +12015,13 @@
      595
     ],
     [
-     "8467899",
-     "Martin Havlat",
+     "8450196",
+     "J.P. Parise",
      594
     ],
     [
-     "8450196",
-     "J.P. Parise",
+     "8467899",
+     "Martin Havlat",
      594
     ],
     [
@@ -12045,13 +12045,13 @@
      590
     ],
     [
-     "8447620",
-     "Donnie Marshall",
+     "8467370",
+     "Mike Fisher",
      589
     ],
     [
-     "8467370",
-     "Mike Fisher",
+     "8447620",
+     "Donnie Marshall",
      589
     ],
     [
@@ -12135,13 +12135,13 @@
      580
     ],
     [
-     "8457297",
-     "Shawn McEachern",
+     "8475191",
+     "Reilly Smith",
      579
     ],
     [
-     "8475191",
-     "Reilly Smith",
+     "8457297",
+     "Shawn McEachern",
      579
     ],
     [
@@ -12220,13 +12220,13 @@
      573
     ],
     [
-     "8445957",
-     "Dick Duff",
+     "8467496",
+     "Andrei Markov",
      572
     ],
     [
-     "8456760",
-     "Joe Juneau",
+     "8445957",
+     "Dick Duff",
      572
     ]
    ]
@@ -48191,10 +48191,10 @@
     "points": 0
    },
    "8474586": {
-    "assists": 453,
-    "gamesPlayed": 1150,
-    "goals": 337,
-    "points": 790
+    "assists": 454,
+    "gamesPlayed": 1151,
+    "goals": 338,
+    "points": 792
    },
    "8474587": {
     "assists": 1,
@@ -49368,7 +49368,7 @@
    },
    "8475314": {
     "assists": 244,
-    "gamesPlayed": 933,
+    "gamesPlayed": 934,
     "goals": 310,
     "points": 554
    },
@@ -50598,9 +50598,9 @@
    },
    "8476389": {
     "assists": 394,
-    "gamesPlayed": 878,
-    "goals": 241,
-    "points": 635
+    "gamesPlayed": 879,
+    "goals": 242,
+    "points": 636
    },
    "8476390": {
     "assists": 8,
@@ -50916,7 +50916,7 @@
    },
    "8476457": {
     "assists": 209,
-    "gamesPlayed": 1022,
+    "gamesPlayed": 1023,
     "goals": 59,
     "points": 268
    },
@@ -51480,7 +51480,7 @@
    },
    "8476905": {
     "assists": 260,
-    "gamesPlayed": 663,
+    "gamesPlayed": 664,
     "goals": 119,
     "points": 379
    },
@@ -51894,7 +51894,7 @@
    },
    "8477220": {
     "assists": 206,
-    "gamesPlayed": 833,
+    "gamesPlayed": 834,
     "goals": 58,
     "points": 264
    },
@@ -52001,10 +52001,10 @@
     "points": 3
    },
    "8477346": {
-    "assists": 216,
-    "gamesPlayed": 639,
+    "assists": 217,
+    "gamesPlayed": 640,
     "goals": 65,
-    "points": 281
+    "points": 282
    },
    "8477353": {
     "assists": 46,
@@ -52722,9 +52722,9 @@
    },
    "8477919": {
     "assists": 110,
-    "gamesPlayed": 488,
-    "goals": 73,
-    "points": 183
+    "gamesPlayed": 489,
+    "goals": 74,
+    "points": 184
    },
    "8477922": {
     "assists": 52,
@@ -52872,7 +52872,7 @@
    },
    "8477951": {
     "assists": 328,
-    "gamesPlayed": 680,
+    "gamesPlayed": 681,
     "goals": 182,
     "points": 510
    },
@@ -52890,7 +52890,7 @@
    },
    "8477955": {
     "assists": 239,
-    "gamesPlayed": 730,
+    "gamesPlayed": 731,
     "goals": 207,
     "points": 446
    },
@@ -52997,10 +52997,10 @@
     "points": 1
    },
    "8477986": {
-    "assists": 235,
-    "gamesPlayed": 674,
-    "goals": 96,
-    "points": 331
+    "assists": 236,
+    "gamesPlayed": 675,
+    "goals": 97,
+    "points": 333
    },
    "8477987": {
     "assists": 135,
@@ -53441,10 +53441,10 @@
     "points": 717
    },
    "8478407": {
-    "assists": 249,
-    "gamesPlayed": 633,
+    "assists": 250,
+    "gamesPlayed": 634,
     "goals": 88,
-    "points": 337
+    "points": 338
    },
    "8478408": {
     "assists": 46,
@@ -53700,7 +53700,7 @@
    },
    "8478474": {
     "assists": 123,
-    "gamesPlayed": 676,
+    "gamesPlayed": 677,
     "goals": 140,
     "points": 263
    },
@@ -53892,7 +53892,7 @@
    },
    "8478831": {
     "assists": 48,
-    "gamesPlayed": 378,
+    "gamesPlayed": 379,
     "goals": 47,
     "points": 95
    },
@@ -54311,10 +54311,10 @@
     "points": 7
    },
    "8479343": {
-    "assists": 383,
-    "gamesPlayed": 693,
+    "assists": 384,
+    "gamesPlayed": 694,
     "goals": 226,
-    "points": 609
+    "points": 610
    },
    "8479344": {
     "assists": 70,
@@ -54420,7 +54420,7 @@
    },
    "8479369": {
     "assists": 61,
-    "gamesPlayed": 396,
+    "gamesPlayed": 397,
     "goals": 17,
     "points": 78
    },
@@ -54438,7 +54438,7 @@
    },
    "8479372": {
     "assists": 48,
-    "gamesPlayed": 285,
+    "gamesPlayed": 286,
     "goals": 11,
     "points": 59
    },
@@ -54557,10 +54557,10 @@
     "points": 527
    },
    "8479410": {
-    "assists": 304,
-    "gamesPlayed": 640,
+    "assists": 306,
+    "gamesPlayed": 641,
     "goals": 76,
-    "points": 380
+    "points": 382
    },
    "8479411": {
     "assists": 0,
@@ -55055,10 +55055,10 @@
     "points": 74
    },
    "8479977": {
-    "assists": 90,
-    "gamesPlayed": 379,
+    "assists": 91,
+    "gamesPlayed": 380,
     "goals": 75,
-    "points": 165
+    "points": 166
    },
    "8479980": {
     "assists": 76,
@@ -55434,7 +55434,7 @@
    },
    "8480084": {
     "assists": 16,
-    "gamesPlayed": 99,
+    "gamesPlayed": 100,
     "goals": 5,
     "points": 21
    },
@@ -56076,7 +56076,7 @@
    },
    "8480849": {
     "assists": 96,
-    "gamesPlayed": 368,
+    "gamesPlayed": 369,
     "goals": 66,
     "points": 162
    },
@@ -56094,7 +56094,7 @@
    },
    "8480855": {
     "assists": 65,
-    "gamesPlayed": 326,
+    "gamesPlayed": 327,
     "goals": 45,
     "points": 110
    },
@@ -56795,10 +56795,10 @@
     "points": 103
    },
    "8481554": {
-    "assists": 123,
-    "gamesPlayed": 454,
+    "assists": 124,
+    "gamesPlayed": 455,
     "goals": 86,
-    "points": 209
+    "points": 210
    },
    "8481555": {
     "assists": 1,
@@ -57815,10 +57815,10 @@
     "points": 1
    },
    "8482259": {
-    "assists": 42,
-    "gamesPlayed": 228,
+    "assists": 43,
+    "gamesPlayed": 229,
     "goals": 67,
-    "points": 109
+    "points": 110
    },
    "8482369": {
     "assists": 0,
@@ -57996,9 +57996,9 @@
    },
    "8482665": {
     "assists": 116,
-    "gamesPlayed": 341,
-    "goals": 84,
-    "points": 200
+    "gamesPlayed": 342,
+    "goals": 85,
+    "points": 201
    },
    "8482666": {
     "assists": 11,
@@ -58050,7 +58050,7 @@
    },
    "8482699": {
     "assists": 97,
-    "gamesPlayed": 237,
+    "gamesPlayed": 238,
     "goals": 95,
     "points": 192
    },
@@ -58092,9 +58092,9 @@
    },
    "8482713": {
     "assists": 37,
-    "gamesPlayed": 165,
-    "goals": 31,
-    "points": 68
+    "gamesPlayed": 166,
+    "goals": 32,
+    "points": 69
    },
    "8482715": {
     "assists": 9,
@@ -58176,7 +58176,7 @@
    },
    "8482751": {
     "assists": 19,
-    "gamesPlayed": 99,
+    "gamesPlayed": 100,
     "goals": 6,
     "points": 25
    },
@@ -58307,10 +58307,10 @@
     "points": 5
    },
    "8482858": {
-    "assists": 40,
-    "gamesPlayed": 186,
+    "assists": 41,
+    "gamesPlayed": 187,
     "goals": 16,
-    "points": 56
+    "points": 57
    },
    "8482859": {
     "assists": 6,
@@ -58326,7 +58326,7 @@
    },
    "8482866": {
     "assists": 1,
-    "gamesPlayed": 8,
+    "gamesPlayed": 9,
     "goals": 1,
     "points": 2
    },
@@ -58476,9 +58476,9 @@
    },
    "8483431": {
     "assists": 91,
-    "gamesPlayed": 221,
-    "goals": 70,
-    "points": 161
+    "gamesPlayed": 222,
+    "goals": 72,
+    "points": 163
    },
    "8483432": {
     "assists": 7,
@@ -58746,7 +58746,7 @@
    },
    "8483524": {
     "assists": 43,
-    "gamesPlayed": 179,
+    "gamesPlayed": 180,
     "goals": 39,
     "points": 82
    },
@@ -58812,7 +58812,7 @@
    },
    "8483570": {
     "assists": 14,
-    "gamesPlayed": 135,
+    "gamesPlayed": 136,
     "goals": 14,
     "points": 28
    },
@@ -59334,7 +59334,7 @@
    },
    "8484386": {
     "assists": 3,
-    "gamesPlayed": 38,
+    "gamesPlayed": 39,
     "goals": 0,
     "points": 3
    },
@@ -59346,7 +59346,7 @@
    },
    "8484388": {
     "assists": 6,
-    "gamesPlayed": 39,
+    "gamesPlayed": 40,
     "goals": 5,
     "points": 11
    },
@@ -59471,10 +59471,10 @@
     "points": 29
    },
    "8484800": {
-    "assists": 15,
-    "gamesPlayed": 76,
+    "assists": 16,
+    "gamesPlayed": 77,
     "goals": 9,
-    "points": 24
+    "points": 25
    },
    "8484801": {
     "assists": 117,
@@ -59789,7 +59789,7 @@
     "900": 20
    },
    "gamesPlayed": {
-    "100": 4214,
+    "100": 4216,
     "1000": 421,
     "1100": 244,
     "1200": 141,
@@ -60065,7 +60065,7 @@
     },
     {
      "assists": 3,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 2,
      "points": 5,
      "season": 20262027,
@@ -60276,9 +60276,9 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 10,
-     "goals": 2,
-     "points": 4,
+     "gamesPlayed": 11,
+     "goals": 3,
+     "points": 5,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -60589,7 +60589,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 3,
      "season": 20262027,
@@ -60726,10 +60726,10 @@
      "wins": 0
     },
     {
-     "assists": 0,
-     "gamesPlayed": 10,
+     "assists": 1,
+     "gamesPlayed": 11,
      "goals": 2,
-     "points": 2,
+     "points": 3,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -60888,7 +60888,7 @@
     },
     {
      "assists": 6,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 7,
      "points": 13,
      "season": 20262027,
@@ -61017,7 +61017,7 @@
     },
     {
      "assists": 3,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 4,
      "season": 20262027,
@@ -61230,7 +61230,7 @@
     },
     {
      "assists": 4,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 5,
      "season": 20262027,
@@ -61404,10 +61404,10 @@
      "wins": 0
     },
     {
-     "assists": 9,
-     "gamesPlayed": 10,
+     "assists": 10,
+     "gamesPlayed": 11,
      "goals": 4,
-     "points": 13,
+     "points": 14,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -61516,7 +61516,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 3,
      "season": 20262027,
@@ -61644,10 +61644,10 @@
      "wins": 0
     },
     {
-     "assists": 8,
-     "gamesPlayed": 10,
+     "assists": 10,
+     "gamesPlayed": 11,
      "goals": 3,
-     "points": 11,
+     "points": 13,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -61871,10 +61871,10 @@
      "wins": 0
     },
     {
-     "assists": 3,
-     "gamesPlayed": 5,
+     "assists": 4,
+     "gamesPlayed": 6,
      "goals": 2,
-     "points": 5,
+     "points": 6,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -61956,7 +61956,7 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 1,
+     "gamesPlayed": 2,
      "goals": 0,
      "points": 0,
      "season": 20262027,
@@ -62081,7 +62081,7 @@
     },
     {
      "assists": 6,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 7,
      "season": 20262027,
@@ -62165,7 +62165,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 3,
      "season": 20262027,
@@ -62355,7 +62355,7 @@
     },
     {
      "assists": 5,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 4,
      "points": 9,
      "season": 20262027,
@@ -62421,9 +62421,9 @@
     },
     {
      "assists": 8,
-     "gamesPlayed": 10,
-     "goals": 1,
-     "points": 9,
+     "gamesPlayed": 11,
+     "goals": 3,
+     "points": 11,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -62517,7 +62517,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 0,
      "points": 2,
      "season": 20262027,
@@ -62565,7 +62565,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 2,
      "points": 4,
      "season": 20262027,
@@ -62577,11 +62577,11 @@
  },
  "season_rows": [
   {
-   "assists": 9,
+   "assists": 10,
    "goals": 4,
    "name": "Clayton Keller",
    "pid": "8479343",
-   "points": 13,
+   "points": 14,
    "season": 20262027
   },
   {
@@ -62594,10 +62594,10 @@
   },
   {
    "assists": 8,
-   "goals": 1,
+   "goals": 3,
    "name": "Logan Cooley",
    "pid": "8483431",
-   "points": 9,
+   "points": 11,
    "season": 20262027
   },
   {
@@ -62705,11 +62705,11 @@
    "season": 20262027
   },
   {
-   "assists": 8,
+   "assists": 10,
    "goals": 3,
    "name": "Mikhail Sergachev",
    "pid": "8479410",
-   "points": 11,
+   "points": 13,
    "season": 20262027
   },
   {
@@ -62785,11 +62785,11 @@
    "season": 20252026
   },
   {
-   "assists": 0,
+   "assists": 1,
    "goals": 2,
    "name": "MacKenzie Weegar",
    "pid": "8477346",
-   "points": 2,
+   "points": 3,
    "season": 20262027
   },
   {
@@ -62986,10 +62986,10 @@
   },
   {
    "assists": 2,
-   "goals": 2,
+   "goals": 3,
    "name": "Vincent Trocheck",
    "pid": "8476389",
-   "points": 4,
+   "points": 5,
    "season": 20262027
   },
   {
@@ -63025,11 +63025,11 @@
    "season": 20252026
   },
   {
-   "assists": 3,
+   "assists": 4,
    "goals": 2,
    "name": "Kailer Yamamoto",
    "pid": "8479977",
-   "points": 5,
+   "points": 6,
    "season": 20262027
   },
   {
