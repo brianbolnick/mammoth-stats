@@ -700,6 +700,28 @@ def maybe_reconcile(s, sched):
     return True
 
 
+OUT_PATH = os.path.join(ROOT, "out.txt")
+
+
+def projected_lineup(s, rs):
+    """Skaters who dressed in the last final game, minus names in out.txt. Goalies rotate, so none."""
+    done = [g for g in rs if g.get("gameState") in ("OFF", "FINAL")]
+    if not done:
+        return []
+    last = max(done, key=lambda g: g["startTimeUTC"])
+    lines = utah_lines(get(f"{WEB}/gamecenter/{last['id']}/boxscore"))
+    out = set()
+    if os.path.exists(OUT_PATH):
+        with open(OUT_PATH) as f:
+            out = {ln.split("#")[0].strip().lower() for ln in f} - {""}
+    keep = []
+    for l in lines["skaters"]:
+        name = s["players"].get(l["pid"], {}).get("name", l["short"]).lower()
+        if name not in out and l["short"].lower() not in out:
+            keep.append(l["pid"])
+    return keep
+
+
 def cmd_check():
     s = load_state()
     sched = get(f"{WEB}/club-schedule-season/{TEAM}/now")
@@ -732,12 +754,16 @@ def cmd_check():
             continue
         pbp = get(f"{WEB}/gamecenter/{g['id']}/play-by-play")
         spots = [str(r["playerId"]) for r in pbp.get("rosterSpots", []) if r.get("teamId") == TEAM_ID]
+        label = "Pregame"
+        if not spots:
+            spots = projected_lineup(s, rs)
+            label = "Pregame (projected: last game's skaters minus out.txt; confirm before posting)"
         if not spots:
             continue
         opp = g["awayTeam"]["abbrev"] if g["homeTeam"]["abbrev"] == TEAM else g["homeTeam"]["abbrev"]
         where = "vs" if g["homeTeam"]["abbrev"] == TEAM else "at"
         facts = pregame_facts(s, spots, f"{where} {opp}")
-        total += surface(s, facts, f"Pregame, {TEAM} {where} {opp} ({today})")
+        total += surface(s, facts, f"{label}, {TEAM} {where} {opp} ({today})")
         s["ledger"]["pregame_done"].append(g["id"])
         changed = True
     if total == 0:

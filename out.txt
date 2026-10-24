@@ -1,0 +1,2 @@
+# Players out (injured or scratched), one full name per line, e.g. Clayton Keller
+# Used only when the NHL hasn't posted the lineup yet: projected lineup = last game's skaters minus these.
