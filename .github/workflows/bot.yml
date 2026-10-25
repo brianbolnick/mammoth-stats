@@ -1,0 +1,35 @@
+name: bot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          git config user.name "mammoth-stats-bot"
+          git config user.email "mammoth-stats-bot@users.noreply.github.com"
+      - run: python3 bot.py tick
+        env:
+          BOT_GIT: "1"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - if: failure()
+        run: >
+          curl -s -H "Title: Mammoth bot error" -H "Priority: 4"
+          -d "Run failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          "https://ntfy.sh/${{ secrets.NTFY_TOPIC }}"

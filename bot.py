@@ -2,17 +2,25 @@
 """Utah Mammoth franchise stats bot. Deterministic engine; no model touches a number.
 
   python3 bot.py seed            rebuild reference data from the NHL APIs (keeps ledgers)
-  python3 bot.py check           game-day pass: prints new pregame/postgame tweets, ready to copy
+  python3 bot.py tick            scheduled entry point: check, then the live watcher if a game is on or about to start
+  python3 bot.py check           pregame/postgame/off-day pass: prints (and pushes) new tweets
+  python3 bot.py live            watch today's game until it ends, pushing goal facts once they settle
+  python3 bot.py daily           print today's off-day candidates, best first (no state writes)
+  python3 bot.py live-replay ID  what the live watcher would have pushed, goal by goal, for a finished game
+  python3 bot.py backfill        fetch per-game summaries (first goal, period scores, scorers) for every franchise game
   python3 bot.py replay GAMEID   what the passes would print for one finished game (no state writes)
   python3 bot.py replay-season   roll state back to opening night and replay every finished RS game
   python3 bot.py status
 """
+import copy
 import datetime as dt
 import json
 import math
 import os
+import subprocess
 import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
@@ -52,6 +60,14 @@ SEASON_THRESHOLDS = {"goals": [20, 30, 40, 50], "points": [50, 100]}
 FRANCHISE_FIRST_STEP = {"points": 50, "goals": 25, "assists": 50}
 STAT_WORD = {"points": "points", "goals": "goals", "assists": "assists", "gamesPlayed": "games played"}
 UNIT = {"points": ("point", "points"), "goals": ("goal", "goals"), "assists": ("assist", "assists")}
+ESPN_INJURIES = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/injuries"
+SETTLE = dt.timedelta(minutes=10)  # scorer/assist changes land within ~10 minutes of a goal
+POLL_SECONDS = 15
+LIVE_LEAD = dt.timedelta(minutes=25)  # start watching this long before puck drop
+LIVE_MAX = dt.timedelta(hours=5, minutes=30)  # Actions jobs die at 6h; the next tick picks the game back up
+LIVE_PER_POLL = 3  # most live tweets pushed in one poll; the rest wait for the next
+EARLY_PREGAME_HOUR = 11  # local hour the projected-lineup pregame posts go out
+DAILY_HOUR = 10  # local hour of the off-day post
 
 # ----------------------------------------------------------------------------- http
 
@@ -59,7 +75,7 @@ def get(url, retries=3):
     last = None
     for i in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "utmammothstats-bot/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "utmammothstats/1.0"})
             with urllib.request.urlopen(req, timeout=40) as r:
                 return json.loads(r.read().decode())
         except Exception as e:  # noqa
@@ -119,6 +135,60 @@ def now_utc():
     return dt.datetime.now(dt.timezone.utc)
 
 
+def persist(s, msg="check"):
+    """Save state; on the Actions runner (BOT_GIT=1) also commit and push it so a crash never loses the ledger."""
+    s["meta"]["last_check"] = now_utc().isoformat()
+    save_state(s)
+    if not os.environ.get("BOT_GIT"):
+        return
+    git = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True)
+    git("add", "state.json")
+    if git("diff", "--cached", "--quiet").returncode == 0:
+        return
+    git("commit", "-m", msg)
+    for _ in range(3):
+        if git("push").returncode == 0:
+            return
+        git("pull", "--rebase", "-X", "theirs")
+    raise RuntimeError("git push failed three times")
+
+
+def notify(title, body, click=None, priority=3):
+    """One phone push through ntfy (NTFY_TOPIC). Without a topic, does nothing; stdout still has everything."""
+    topic = os.environ.get("NTFY_TOPIC")
+    if not topic:
+        return
+    msg = {"topic": topic, "title": title, "message": body, "priority": priority}
+    if click:
+        msg["click"] = click
+        msg["actions"] = [{"action": "view", "label": "Post", "url": click, "clear": True}]
+    req = urllib.request.Request("https://ntfy.sh/", data=json.dumps(msg).encode(),
+                                 headers={"Content-Type": "application/json"})
+    for i in range(3):
+        try:
+            urllib.request.urlopen(req, timeout=20).read()
+            return
+        except Exception:  # noqa
+            time.sleep(2 * (i + 1))
+
+
+def compose_url(text):
+    return "https://x.com/intent/post?text=" + urllib.parse.quote(text, safe="")
+
+
+def norm_name(n):
+    n = unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode()
+    return " ".join(n.lower().replace(".", "").replace("-", " ").split())
+
+
+def local_now():
+    return dt.datetime.now(TZ)
+
+
+def parse_utc(x):
+    return dt.datetime.fromisoformat(x.replace("Z", "+00:00"))
+
+
 def season_id_now(schedule):
     return int(schedule["games"][0]["season"]) if schedule.get("games") else None
 
@@ -131,6 +201,7 @@ def seed(keep=None):
          "nhl": {}, "ledger": {"surfaced": {}, "processed": [], "pregame_done": [], "alerts": {}}}
     if keep:
         s["ledger"] = keep.get("ledger", s["ledger"])
+        s["games"] = keep.get("games", {})
 
     sched = get(f"{WEB}/club-schedule-season/{TEAM}/now")
     season = season_id_now(sched)
@@ -250,6 +321,86 @@ def utah_lines(box):
     return {"skaters": skaters, "goalies": goalies, "us": us, "them": them, "home": side == "homeTeam",
             "opp": box[opp]["abbrev"], "win": us > them, "otl": us < them and last_type in ("OT", "SO"),
             "date": box["gameDate"], "id": box["id"], "season": int(box["season"])}
+
+
+def scoring_goals(land):
+    """Every non-shootout goal in a gamecenter landing: (period, eventId, ours, goal dict)."""
+    out = []
+    for per in (land.get("summary") or {}).get("scoring", []):
+        pd = per["periodDescriptor"]
+        if pd.get("periodType") == "SO":
+            continue
+        for g in per.get("goals", []):
+            out.append((pd["number"], g.get("eventId"), g["teamAbbrev"]["default"] == TEAM, g))
+    return out
+
+
+def game_summary(land):
+    """What a box score doesn't keep: who scored first, the score after 1 and 2, and Utah's scorers."""
+    goals = scoring_goals(land)
+    home = land["homeTeam"]["abbrev"] == TEAM
+    after = {}
+    us = them = 0
+    first = None
+    scorers = {}
+    for per, _, ours, g in goals:
+        if first is None:
+            first = "us" if ours else "them"
+        if ours:
+            us += 1
+            pid = str(g["playerId"])
+            scorers[pid] = scorers.get(pid, 0) + 1
+        else:
+            them += 1
+        after[per] = [us, them]
+    def at(n):
+        best = [0, 0]
+        for per in sorted(after):
+            if per <= n:
+                best = after[per]
+        return best
+    return {"first": first, "p1": at(1), "p2": at(2), "reg": at(3), "scorers": scorers,
+            "home": home, "opp": land["awayTeam" if home else "homeTeam"]["abbrev"]}
+
+
+def ensure_summaries(s, quiet=True):
+    """Fill s["games"][gameId] for every finished franchise game we don't have yet."""
+    games = s.setdefault("games", {})
+    missing = [t["gameId"] for t in s["team_games"] if str(t["gameId"]) not in games]
+    for gid in missing:
+        games[str(gid)] = game_summary(get(f"{WEB}/gamecenter/{gid}/landing"))
+    if missing and not quiet:
+        print(f"summaries: +{len(missing)}")
+    return bool(missing)
+
+
+def season_games(s, season):
+    """Finished games this season, oldest first, each joined with its summary."""
+    out = []
+    for t in s["team_games"]:
+        sm = s.get("games", {}).get(str(t["gameId"]))
+        if t["season"] == season and sm:
+            out.append({**t, **sm})
+    return out
+
+
+def record(gs):
+    w = sum(1 for g in gs if g["win"])
+    o = sum(1 for g in gs if g["otl"])
+    return w, len(gs) - w - o, o
+
+
+def split_fact(gs, phrase, min_n=5, min_pct=0.7):
+    """'The @utahmammoth are W-L-OTL {phrase}' when the sample is big enough and the record is worth bragging about.
+    Returns (score, text) or None."""
+    if len(gs) < min_n:
+        return None
+    w, l, o = record(gs)
+    pct = (2 * w + o) / (2 * len(gs))
+    if pct < min_pct:
+        return None
+    score = 4 + 6 * (pct - min_pct) / (1 - min_pct) + (2 if l == 0 and o == 0 else 0) + min(len(gs), 20) / 10
+    return score, f"The {TEAM_HANDLE} are {w}-{l}-{o} {phrase} {TAG}"
 
 
 def ensure_player(s, line, box_line_sign=1):
@@ -448,7 +599,41 @@ def prior_season_record(s, stat, season):
     return best, who
 
 
-def postgame_facts(s, lines, season):
+_CAREER_ROWS = {}
+
+
+def career_games(pid, exclude_game):
+    """Every regular-season NHL game line for a player, tonight excluded (cached per run)."""
+    if pid not in _CAREER_ROWS:
+        _CAREER_ROWS[pid] = rest_all("skater/summary", f"playerId={pid} and gameTypeId=2", game=True)
+    return [r for r in _CAREER_ROWS[pid] if r["gameId"] != exclude_game]
+
+
+def career_first_facts(name, pid, l, car, game_id):
+    """First career multi-goal game, hat trick, 3- and 4-point game. Skipped when it's also his first goal(s),
+    which the first-goal line already covers."""
+    facts = []
+    first_goals = l["goals"] and car["goals"] == l["goals"]
+    checks = []
+    if l["goals"] >= 3 and not first_goals:
+        checks.append(("goals", 3, f"{name} records his first career @NHL hat trick {TAG}"))
+    elif l["goals"] == 2 and not first_goals:
+        checks.append(("goals", 2, f"{name} scores twice for his first career multi-goal @NHL game {TAG}"))
+    if l["points"] >= 4:
+        checks.append(("points", 4, f"{name} records the first {l['points']}-point game of his @NHL career {TAG}"))
+    elif l["points"] == 3 and car["points"] > 3:
+        checks.append(("points", 3, f"{name} records the first 3-point game of his @NHL career {TAG}"))
+    if not checks:
+        return facts
+    rows = career_games(pid, game_id)
+    for stat, n, text in checks:
+        if not any(r[stat] >= n for r in rows):
+            facts.append(text)
+    return facts
+
+
+def postgame_facts(s, lines, season, live=False):
+    """live=True: called mid-game with only settled goals in `lines`; games-played, goalie and team facts wait for the final."""
     facts = []  # (tier, text)
     before = {}
     for l in lines["skaters"]:
@@ -474,13 +659,18 @@ def postgame_facts(s, lines, season):
         name, b = p["name"], before[pid]
         car, carb = p.get("career"), b["career"]
         if car and carb is not None:
-            if car["gamesPlayed"] == 1:
+            if car["gamesPlayed"] == 1 and not live:
                 facts.append((TIER["first"], f"{name} makes his @NHL debut {TAG}"))
             if l["goals"] and car["goals"] == l["goals"]:
-                facts.append((TIER["first"], f"{name} scores his first @NHL goal {TAG}"))
+                first = {1: "his first @NHL goal", 2: "his first two @NHL goals",
+                         3: "a hat trick for his first three @NHL goals"}.get(l["goals"], f"his first {l['goals']} @NHL goals")
+                facts.append((TIER["first"], f"{name} scores {first} {TAG}"))
             elif l["points"] and car["points"] == l["points"]:
                 facts.append((TIER["first"], f"{name} records his first @NHL point {TAG}"))
+            facts += [(TIER["first"], f) for f in career_first_facts(name, pid, l, car, lines["id"])]
             for stat, step in CAREER_STEP.items():
+                if live and stat == "gamesPlayed":
+                    continue
                 if car[stat] // step > carb[stat] // step:
                     n = (car[stat] // step) * step
                     if n == 0:
@@ -495,6 +685,8 @@ def postgame_facts(s, lines, season):
                             facts.append((TIER["milestone"], f"{name} records his {ordinal(n)} career @NHL {UNIT[stat][0]} {TAG}"))
             p["pid"] = pid
             for stat in NHL_CUTOFF:
+                if live and stat == "gamesPlayed":
+                    continue
                 facts += [(TIER["nhl"], f) for f in nhl_ladder_facts(s, p, stat, carb[stat], car[stat])]
             p.pop("pid", None)
         for stat, step in FRANCHISE_FIRST_STEP.items():
@@ -535,6 +727,8 @@ def postgame_facts(s, lines, season):
     pairs = s["ledger"].setdefault("pairs", {})
     gdate = dt.date.fromisoformat(lines["date"])
     for stat, label in SKATER_LADDERS.items():
+        if live and stat in ("gamesPlayed", "penaltyMinutes"):
+            continue
         tier = TIER["ladder"] if stat in ("points", "goals", "assists") else TIER["ladder2"]
         for item in ladder_pass_facts(pre_pools[("skater", stat)], pool(s, "skater", stat), movers,
                                       RANK_LIMIT[stat], label, TIE_LIMIT.get(stat, 0)):
@@ -547,6 +741,9 @@ def postgame_facts(s, lines, season):
                 facts.append((tier, text))
             else:
                 facts.append((tier, item))
+    if live:
+        facts.sort(key=lambda x: x[0])
+        return [f for _, f in facts]
     for l in lines["goalies"]:
         pid, g = l["pid"], s["goalies"][l["pid"]]
         name, b = g["name"], gbefore[pid]
@@ -629,20 +826,22 @@ def team_facts(s, lines, team_before):
     return facts
 
 
-def pregame_facts(s, pids_in_lineup, game_label):
+def pregame_facts(s, pids_in_lineup):
+    """[(text, pid)] for tonight's lineup. The pid lets a later lineup check flag a tweet about a scratched player."""
     facts = []
     alerts = s["ledger"]["alerts"]
     skaters = [pid for pid in pids_in_lineup if pid in s["players"]]
     pre = pool(s, "skater", "gamesPlayed")
     post = {pid: (n, v + (1 if pid in skaters else 0)) for pid, (n, v) in pre.items()}
-    facts += [f[0] if isinstance(f, tuple) else f for f in ladder_pass_facts(pre, post, skaters, RANK_LIMIT["gamesPlayed"], "games played", 0, pregame=True)]
+    for pid in skaters:
+        facts += [(f, pid) for f in ladder_pass_facts(pre, post, [pid], RANK_LIMIT["gamesPlayed"], "games played", 0, pregame=True)]
     for pid in skaters:
         p = s["players"][pid]
         name, car = p["name"], p.get("career")
         if not car:
             continue
         if (car["gamesPlayed"] + 1) % 100 == 0:
-            facts.append(f"{name} plays his {ordinal(car['gamesPlayed'] + 1)} career @NHL game tonight {TAG}")
+            facts.append((f"{name} plays his {ordinal(car['gamesPlayed'] + 1)} career @NHL game tonight {TAG}", pid))
         for stat, window in APPROACH_WINDOW.items():
             step = CAREER_STEP[stat]
             nxt = ((car[stat] // step) + 1) * step
@@ -654,12 +853,12 @@ def pregame_facts(s, pids_in_lineup, game_label):
             if gap in st["posted"] or (st["posted"] and gap != 1):
                 continue
             unit = UNIT[stat][0] if gap == 1 else UNIT[stat][1]
-            facts.append(f"{name} is {gap} {unit} away from {nxt} career @NHL {STAT_WORD[stat]} {TAG}")
+            facts.append((f"{name} is {gap} {unit} away from {nxt} career @NHL {STAT_WORD[stat]} {TAG}", pid))
             st["posted"].append(gap)
     for pid in pids_in_lineup:
         g = s["goalies"].get(pid)
         if g and g.get("career") and (g["career"]["gamesPlayed"] + 1) % 100 == 0:
-            facts.append(f"{g['name']} is set to play his {ordinal(g['career']['gamesPlayed'] + 1)} career @NHL game {TAG}")
+            facts.append((f"{g['name']} is set to play his {ordinal(g['career']['gamesPlayed'] + 1)} career @NHL game {TAG}", pid))
     return facts
 
 
@@ -669,10 +868,11 @@ def game_header(lines):
     return f"{TEAM} {lines['us']}, {lines['opp']} {lines['them']} ({lines['date']})" if lines["win"] else f"{lines['opp']} {lines['them']}, {TEAM} {lines['us']} ({lines['date']})"
 
 
-def surface(s, facts, header):
-    """Print new tweets, ready to copy, and remember them so a re-run never repeats one."""
+def surface(s, facts, header, push=True, limit=None):
+    """Print new tweets, push each one to the phone with a one-tap compose link, and remember them so none repeats.
+    Returns the number surfaced."""
     seen = s["ledger"]["surfaced"]
-    new = [f for f in facts if f not in seen]
+    new = [f for f in dict.fromkeys(facts) if f not in seen][:limit]
     if not new:
         return 0
     print(header)
@@ -680,6 +880,8 @@ def surface(s, facts, header):
         seen[f] = {"at": now_utc().isoformat(), "game": header}
         print()
         print(f)
+        if push:
+            notify(header, f, click=compose_url(f))
     print()
     return len(new)
 
@@ -695,34 +897,80 @@ def maybe_reconcile(s, sched):
         return False
     fresh = seed(keep=s)
     fresh["ledger"] = s["ledger"]
+    fresh["games"] = s.get("games", {})
     s.clear()
     s.update(fresh)
     return True
 
 
-OUT_PATH = os.path.join(ROOT, "out.txt")
+def injured(rs_unused=None):
+    """Normalized names of Utah players ESPN lists as Out, Day-To-Day or on IR. Empty if the feed is down."""
+    try:
+        data = get(ESPN_INJURIES)
+    except Exception:  # noqa
+        return set()
+    for t in data.get("injuries", []):
+        if "Utah" in t.get("displayName", ""):
+            return {norm_name(i["athlete"]["displayName"]) for i in t.get("injuries", [])}
+    return set()
 
 
 def projected_lineup(s, rs):
-    """Skaters who dressed in the last final game, minus names in out.txt. Goalies rotate, so none."""
+    """Skaters who dressed in the last final game, minus anyone on the injury report. Goalies rotate, so none."""
     done = [g for g in rs if g.get("gameState") in ("OFF", "FINAL")]
     if not done:
         return []
     last = max(done, key=lambda g: g["startTimeUTC"])
     lines = utah_lines(get(f"{WEB}/gamecenter/{last['id']}/boxscore"))
-    out = set()
-    if os.path.exists(OUT_PATH):
-        with open(OUT_PATH) as f:
-            out = {ln.split("#")[0].strip().lower() for ln in f} - {""}
-    keep = []
-    for l in lines["skaters"]:
-        name = s["players"].get(l["pid"], {}).get("name", l["short"]).lower()
-        if name not in out and l["short"].lower() not in out:
-            keep.append(l["pid"])
-    return keep
+    hurt = injured()
+    return [l["pid"] for l in lines["skaters"]
+            if norm_name(s["players"].get(l["pid"], {}).get("name", l["short"])) not in hurt]
 
 
-def cmd_check():
+def game_label(g):
+    home = g["homeTeam"]["abbrev"] == TEAM
+    return f"{'vs' if home else 'at'} {g['awayTeam']['abbrev'] if home else g['homeTeam']['abbrev']}"
+
+
+def official_lineup(gid):
+    pbp = get(f"{WEB}/gamecenter/{gid}/play-by-play")
+    return [str(r["playerId"]) for r in pbp.get("rosterSpots", []) if r.get("teamId") == TEAM_ID]
+
+
+def pregame_pass(s, rs):
+    """Morning: projected lineup (last game minus injuries). Once the NHL posts the lineup: anything new, plus a
+    heads-up for any morning tweet about a player who isn't dressing."""
+    led = s["ledger"]
+    early = led.setdefault("pregame_early", {})
+    now, today = local_now(), local_now().date().isoformat()
+    total, changed = 0, False
+    for g in rs:
+        if g["gameDate"] != today or g.get("gameState") not in ("FUT", "PRE", "LIVE", "CRIT"):
+            continue
+        gid, start = str(g["id"]), parse_utc(g["startTimeUTC"])
+        header = f"Pregame, {TEAM} {game_label(g)} ({today})"
+        if g["id"] in led["pregame_done"]:
+            continue
+        spots = official_lineup(g["id"])
+        if spots:
+            for text, pid in early.get(gid, {}).items():
+                if pid not in spots:
+                    name = s["players"].get(pid, {}).get("name", "A player")
+                    notify(f"{name} is not in tonight's lineup", f"Skip or delete this one: {text}", priority=4)
+                    print(f"NOT IN LINEUP: {name}. Skip or delete: {text}\n")
+            facts = pregame_facts(s, spots)
+            total += surface(s, [t for t, _ in facts], header)
+            led["pregame_done"].append(g["id"])
+            changed = True
+        elif gid not in early and (now.hour >= EARLY_PREGAME_HOUR or start - now_utc() <= dt.timedelta(hours=3)):
+            facts = pregame_facts(s, projected_lineup(s, rs))
+            early[gid] = {t: pid for t, pid in facts}
+            total += surface(s, [t for t, _ in facts], header)
+            changed = True
+    return total, changed
+
+
+def cmd_check(push=True):
     s = load_state()
     sched = get(f"{WEB}/club-schedule-season/{TEAM}/now")
     season = season_id_now(sched)
@@ -730,48 +978,303 @@ def cmd_check():
     changed = maybe_reconcile(s, sched)
     if changed:
         print("(reconciled totals from NHL aggregates)")
+    changed |= ensure_summaries(s)
     processed = set(s["ledger"]["processed"])
     total = 0
-    # postgame, oldest first, self-healing
+    # postgame, oldest first, self-healing; waits SETTLE after the final so late scoring changes are in
     for g in sorted(rs, key=lambda g: g["gameDate"]):
         if g.get("gameState") in ("OFF", "FINAL") and g["id"] not in processed:
+            fin = s["ledger"].setdefault("final_seen", {}).setdefault(str(g["id"]), now_utc().isoformat())
+            if now_utc() - dt.datetime.fromisoformat(fin) < SETTLE and g.get("gameState") != "OFF":
+                changed = True
+                continue
             refresh_nhl(s)
             box = get(f"{WEB}/gamecenter/{g['id']}/boxscore")
             lines = utah_lines(box)
             facts = postgame_facts(s, lines, season)
-            total += surface(s, facts, game_header(lines))
+            total += surface(s, facts, game_header(lines), push)
             s["ledger"]["processed"].append(g["id"])
+            ensure_summaries(s)
             changed = True
-    # pregame: today's game, lineup posted, not yet done
-    today = dt.datetime.now(TZ).date().isoformat()
-    for g in rs:
-        if g["gameDate"] != today or g["id"] in s["ledger"]["pregame_done"]:
-            continue
-        if g.get("gameState") not in ("FUT", "PRE", "LIVE", "CRIT"):
-            continue
-        start = dt.datetime.fromisoformat(g["startTimeUTC"].replace("Z", "+00:00"))
-        if start - now_utc() > dt.timedelta(minutes=150):
-            continue
-        pbp = get(f"{WEB}/gamecenter/{g['id']}/play-by-play")
-        spots = [str(r["playerId"]) for r in pbp.get("rosterSpots", []) if r.get("teamId") == TEAM_ID]
-        label = "Pregame"
-        if not spots:
-            spots = projected_lineup(s, rs)
-            label = "Pregame (projected: last game's skaters minus out.txt; confirm before posting)"
-        if not spots:
-            continue
-        opp = g["awayTeam"]["abbrev"] if g["homeTeam"]["abbrev"] == TEAM else g["homeTeam"]["abbrev"]
-        where = "vs" if g["homeTeam"]["abbrev"] == TEAM else "at"
-        facts = pregame_facts(s, spots, f"{where} {opp}")
-        total += surface(s, facts, f"{label}, {TEAM} {where} {opp} ({today})")
-        s["ledger"]["pregame_done"].append(g["id"])
-        changed = True
+    t, c = pregame_pass(s, rs)
+    total, changed = total + t, changed or c
+    t, c = daily_pass(s, rs, season, push)
+    total, changed = total + t, changed or c
     if total == 0:
         nxt = next((g for g in sorted(rs, key=lambda g: g["gameDate"]) if g.get("gameState") in ("FUT", "PRE")), None)
         print("No new posts." + (f" Next game: {nxt['gameDate']} {nxt['awayTeam']['abbrev']} at {nxt['homeTeam']['abbrev']}." if nxt else ""))
     if changed or total:
-        s["meta"]["last_check"] = now_utc().isoformat()
-        save_state(s)
+        persist(s)
+    return s, rs, season
+
+
+# ----------------------------------------------------------------------------- live
+
+def live_lines(s, land, goals):
+    """Box-score-shaped lines built from settled Utah goals only."""
+    per = {}
+    for _, _, ours, g in goals:
+        if not ours:
+            continue
+        sc = str(g["playerId"])
+        d = per.setdefault(sc, {"goals": 0, "assists": 0, "ppg": 0})
+        d["goals"] += 1
+        d["ppg"] += 1 if g.get("strength") == "pp" else 0
+        for a in g.get("assists", []):
+            per.setdefault(str(a["playerId"]), {"goals": 0, "assists": 0, "ppg": 0})["assists"] += 1
+    skaters = []
+    for pid, d in per.items():
+        if pid not in s["players"]:
+            continue
+        p = s["players"][pid]
+        skaters.append({"pid": pid, "short": p["name"], "pos": p["pos"], "goals": d["goals"], "assists": d["assists"],
+                        "points": d["goals"] + d["assists"], "pim": 0, "ppg": d["ppg"]})
+    home = land["homeTeam"]["abbrev"] == TEAM
+    return {"skaters": skaters, "goalies": [], "us": 0, "them": 0, "home": home,
+            "opp": land["awayTeam" if home else "homeTeam"]["abbrev"], "win": False, "otl": False,
+            "date": land["gameDate"], "id": land["id"], "season": int(land["season"])}
+
+
+def live_facts(s, land, settled, season, all_goals, in_second_intermission):
+    """Everything worth a tweet given the goals settled so far. Pure: works on a copy of state."""
+    facts = []
+    lines = live_lines(s, land, settled)
+    if lines["skaters"]:
+        facts += postgame_facts(copy.deepcopy(s), lines, season, live=True)
+    gs = season_games(s, season)
+    ours = [x for x in settled if x[2]]
+    if all_goals and all_goals[0][2] and settled and settled[0][1] == all_goals[0][1]:
+        f = split_fact([g for g in gs if g["first"] == "us"], "this season when scoring first")
+        if f:
+            facts.append(f[1])
+    for pid in dict.fromkeys(str(g["playerId"]) for _, _, _, g in ours):
+        name = s["players"].get(pid, {}).get("name")
+        f = name and split_fact([g for g in gs if pid in g["scorers"]], f"this season when {name} scores", min_pct=0.75)
+        if f:
+            facts.append(f[1])
+    if in_second_intermission:
+        us = sum(1 for p, _, o, _ in all_goals if p <= 2 and o)
+        them = sum(1 for p, _, o, _ in all_goals if p <= 2 and not o)
+        if us > them:
+            f = split_fact([g for g in gs if g["p2"][0] > g["p2"][1]], "this season when leading after two periods", min_pct=0.8)
+            if f:
+                facts.append(f[1])
+    return facts
+
+
+def cmd_live(s=None, rs=None, season=None, started=None):
+    """Poll today's game every POLL_SECONDS; a goal is tweetable once its scorer and assists have held for SETTLE."""
+    started = started or now_utc()
+    if s is None:
+        s, rs, season = cmd_check()
+    g = live_game(rs)
+    if not g or g["id"] in s["ledger"]["processed"]:  # state must be pre-game or every total double counts
+        print("No game on.")
+        return
+    gid = str(g["id"])
+    header = f"Live, {TEAM} {game_label(g)} ({g['gameDate']})"
+    watch = s["ledger"].setdefault("live", {}).setdefault(gid, {})
+    refresh_nhl(s)
+    for pid in official_lineup(g["id"]):  # call-ups: learn pre-game career totals before they can score
+        if pid not in s["players"] and pid not in s["goalies"]:
+            try:
+                land = get(f"{WEB}/player/{pid}/landing")
+                if land.get("position") != "G":
+                    ensure_player(s, {"pid": pid, "short": "", "points": 0, "goals": 0, "assists": 0}, 0)
+            except Exception:  # noqa
+                pass
+    final_at = None
+    print(f"watching {gid}")
+    while now_utc() - started < LIVE_MAX:
+        land = get(f"{WEB}/gamecenter/{gid}/landing")
+        state = land.get("gameState")
+        if state in ("FUT", "PRE"):
+            time.sleep(60)
+            continue
+        goals = scoring_goals(land)
+        now = now_utc()
+        present = set()
+        for _, eid, ours, gl in goals:
+            key = str(eid)
+            present.add(key)
+            sig = f"{gl['playerId']}|{','.join(str(a['playerId']) for a in gl.get('assists', []))}"
+            w = watch.get(key)
+            if not w or w["sig"] != sig:
+                watch[key] = {"sig": sig, "since": now.isoformat()}
+        for key in [k for k in watch if k not in present]:
+            del watch[key]  # overturned
+        settled = [x for x in goals if now - dt.datetime.fromisoformat(watch[str(x[1])]["since"]) >= SETTLE]
+        pd = land.get("periodDescriptor") or {}
+        intermission2 = pd.get("number") == 2 and (land.get("clock") or {}).get("inIntermission")
+        facts = live_facts(s, land, settled, season, goals, intermission2)
+        if surface(s, facts, header, limit=LIVE_PER_POLL):
+            persist(s, "live")
+        if state in ("FINAL", "OFF"):
+            final_at = final_at or now
+            if now - final_at >= SETTLE:
+                break
+        time.sleep(POLL_SECONDS)
+    persist(s, "live")
+    if final_at:
+        cmd_check()
+
+
+def live_game(rs):
+    """Today's Utah game if it's on, or starts within LIVE_LEAD."""
+    for g in rs:
+        st = g.get("gameState")
+        if st in ("LIVE", "CRIT"):
+            return g
+        if st in ("FUT", "PRE") and parse_utc(g["startTimeUTC"]) - now_utc() <= LIVE_LEAD and parse_utc(g["startTimeUTC"]) > now_utc() - dt.timedelta(hours=6):
+            return g
+    return None
+
+
+def cmd_tick():
+    if os.environ.get("BOT_GIT") and not os.environ.get("NTFY_TOPIC"):
+        sys.exit("NTFY_TOPIC is not set; refusing to surface tweets nobody would see")
+    started = now_utc()
+    s, rs, season = cmd_check()
+    if live_game(rs):
+        cmd_live(s, rs, season, started)
+
+
+# ----------------------------------------------------------------------------- off-day
+
+def fewest(r, noun):
+    """'allow the 3rd-fewest shots per game' / 'are tied for the fewest shots allowed per game'."""
+    tied, r = r.startswith("t-"), r.removeprefix("t-")
+    core = "the fewest" if r == "1st" else f"the {r}-fewest"
+    return f"are tied for {core} {noun} allowed per game" if tied else f"allow {core} {noun} per game"
+
+
+TEAM_RANKS = [  # (field, higher is better, phrase builder)
+    ("powerPlayPct", True, lambda r, v: f"The {TEAM_HANDLE} power play is {r} in the NHL at {v * 100:.1f}%"),
+    ("penaltyKillPct", True, lambda r, v: f"The {TEAM_HANDLE} penalty kill is {r} in the NHL at {v * 100:.1f}%"),
+    ("goalsForPerGame", True, lambda r, v: f"The {TEAM_HANDLE} are {r} in the NHL in goals per game ({v:.2f})"),
+    ("goalsAgainstPerGame", False, lambda r, v: f"The {TEAM_HANDLE} {fewest(r, "goals")} in the NHL ({v:.2f})"),
+    ("shotsForPerGame", True, lambda r, v: f"The {TEAM_HANDLE} are {r} in the NHL in shots per game ({v:.1f})"),
+    ("shotsAgainstPerGame", False, lambda r, v: f"The {TEAM_HANDLE} {fewest(r, "shots")} in the NHL ({v:.1f})"),
+    ("faceoffWinPct", True, lambda r, v: f"The {TEAM_HANDLE} are {r} in the NHL in faceoff percentage ({v * 100:.1f}%)"),
+]
+RANK_SCORE = {1: 10, 2: 7, 3: 5}
+
+
+def daily_candidates(s, season):
+    """Every off-day fact worth posting: (score, family, signature, text). Families cool down so the feed rotates."""
+    out = []
+    rows = rest_all("team/summary", f"seasonId={season} and gameTypeId=2")
+    me = next((r for r in rows if r["teamId"] == TEAM_ID), None)
+    if not me or me["gamesPlayed"] < 10:
+        return out
+    for field, hi, phrase in TEAM_RANKS:
+        v = me[field]
+        others = [(-r[field] if not hi else r[field]) for r in rows if r["teamId"] != TEAM_ID]
+        lab, rk, _ = rank_label(-v if not hi else v, others)
+        if rk in RANK_SCORE:
+            out.append((RANK_SCORE[rk], f"rank:{field}", lab, f"{phrase(lab, v)} {TAG}"))
+    st = next((r for r in get(f"{WEB}/standings/now")["standings"] if r["teamAbbrev"]["default"] == TEAM), None)
+    if st and st["divisionSequence"] <= 2:
+        out.append((6 if st["divisionSequence"] == 1 else 4, "standings", f"{st['divisionSequence']}:{st['points']}",
+                    f"The {TEAM_HANDLE} sit {ordinal(st['divisionSequence'])} in the {st['divisionName']} with {st['points']} points through {st['gamesPlayed']} games {TAG}"))
+    if me["gamesPlayed"] >= 15:
+        pace = round(me["points"] / me["gamesPlayed"] * 82)
+        by = {}
+        for t in s["team_games"]:
+            if t["season"] < season:
+                by[t["season"]] = by.get(t["season"], 0) + t["pts"]
+        best = max(by.values(), default=0)
+        if best and pace > best:
+            out.append((9, "pace", str(pace), f"The {TEAM_HANDLE} are on pace for {pace} points. The franchise record is {best} {TAG}"))
+    gs = season_games(s, season)
+    for fam, sub, phrase, pct in (("first", lambda g: g["first"] == "us", "this season when scoring first", 0.7),
+                                  ("lead2", lambda g: g["p2"][0] > g["p2"][1], "this season when leading after two periods", 0.85),
+                                  ("onegoal", lambda g: abs(g["reg"][0] - g["reg"][1]) <= 1 or g["otl"], "in one-goal games this season", 0.7),
+                                  ("trail1", lambda g: g["p1"][0] < g["p1"][1], "this season when trailing after the first period", 0.6),
+                                  ("home", lambda g: g["home"], "at home this season", 0.75),
+                                  ("road", lambda g: not g["home"], "on the road this season", 0.7)):
+        f = split_fact([g for g in gs if sub(g)], phrase, min_pct=pct)
+        if f:
+            out.append((f[0], f"split:{fam}", f[1], f[1]))
+    for pid, p in s["players"].items():
+        if not p.get("on_roster"):
+            continue
+        f = split_fact([g for g in gs if pid in g["scorers"]], f"this season when {p['name']} scores", min_pct=0.8)
+        if f:
+            out.append((f[0], f"scorer:{pid}", f[1], f[1]))
+    out.sort(key=lambda x: -x[0])
+    return out
+
+
+def pick_daily(s, cands, today):
+    """Best candidate whose family hasn't posted in 3 days and whose exact signature hasn't in 14."""
+    fam = s["ledger"].setdefault("daily", {}).setdefault("fam", {})
+    for score, family, sig, text in cands:
+        last = fam.get(family)
+        if last:
+            days = (dt.date.fromisoformat(today) - dt.date.fromisoformat(last["at"])).days
+            if days < 3 or (last["sig"] == sig and days < 14):
+                continue
+        if text in s["ledger"]["surfaced"]:
+            continue
+        return family, sig, text
+    return None
+
+
+def daily_pass(s, rs, season, push=True):
+    """One off-day post, at DAILY_HOUR on days Utah doesn't play."""
+    now = local_now()
+    today = now.date().isoformat()
+    d = s["ledger"].setdefault("daily", {})
+    if now.hour < DAILY_HOUR or d.get("last") == today or any(g["gameDate"] == today for g in rs):
+        return 0, False
+    d["last"] = today
+    pick = pick_daily(s, daily_candidates(s, season), today)
+    if not pick:
+        return 0, True
+    family, sig, text = pick
+    d.setdefault("fam", {})[family] = {"at": today, "sig": sig}
+    return surface(s, [text], f"Off day ({today})", push), True
+
+
+def cmd_daily():
+    s = load_state()
+    sched = get(f"{WEB}/club-schedule-season/{TEAM}/now")
+    season = season_id_now(sched)
+    ensure_summaries(s, quiet=False)
+    cands = daily_candidates(s, season)
+    pick = pick_daily(copy.deepcopy(s), cands, local_now().date().isoformat())
+    for score, family, sig, text in cands:
+        print(f"{score:5.1f}  {'>> ' if pick and pick[2] == text else '   '}{text}")
+
+
+def cmd_live_replay(game_id):
+    """Replay a finished game through the live watcher, assuming every goal settles in order."""
+    s = load_state()
+    box = get(f"{WEB}/gamecenter/{game_id}/boxscore")
+    lines = utah_lines(box)
+    if game_id in s["ledger"]["processed"]:
+        apply_game(s, lines, -1)
+    s["ledger"]["surfaced"] = {}
+    s.get("games", {}).pop(str(game_id), None)
+    season = lines["season"]
+    land = get(f"{WEB}/gamecenter/{game_id}/landing")
+    goals = scoring_goals(land)
+    print(f"Live replay {game_header(lines)}\n")
+    for i in range(1, len(goals) + 1):
+        per, _, ours, g = goals[i - 1]
+        who = g["name"]["default"]
+        facts = live_facts(s, land, goals[:i], season, goals, False)
+        new = [f for f in dict.fromkeys(facts) if f not in s["ledger"]["surfaced"]]
+        print(f"P{per} {g.get('timeInPeriod')} {'UTA' if ours else 'opp'} goal ({who}) -> {len(new)} new")
+        for f in new:
+            s["ledger"]["surfaced"][f] = {}
+            print(f"   {f}")
+        if per == 2 and (i == len(goals) or goals[i][0] > 2):
+            for f in live_facts(s, land, goals[:i], season, goals, True):
+                if f not in s["ledger"]["surfaced"]:
+                    s["ledger"]["surfaced"][f] = {}
+                    print(f"   [2nd int] {f}")
 
 
 def cmd_replay(game_id):
@@ -801,7 +1304,7 @@ def cmd_replay_season():
     s["hist"]["maxp"] = max((r["points"] for r in prior), default=0)
     print(f"Replay {season}: {len(boxes)} games\n")
     for lines in boxes:
-        pre = pregame_facts(s, [l["pid"] for l in lines["skaters"]] + [l["pid"] for l in lines["goalies"]], "")
+        pre = [t for t, _ in pregame_facts(s, [l["pid"] for l in lines["skaters"]] + [l["pid"] for l in lines["goalies"]])]
         if pre:
             print(f"Pregame ({lines['date']})")
             for i, f in enumerate(pre, 1):
@@ -829,6 +1332,18 @@ if __name__ == "__main__":
         print("seeded")
     elif cmd == "check":
         cmd_check()
+    elif cmd == "tick":
+        cmd_tick()
+    elif cmd == "live":
+        cmd_live()
+    elif cmd == "daily":
+        cmd_daily()
+    elif cmd == "live-replay":
+        cmd_live_replay(int(sys.argv[2]))
+    elif cmd == "backfill":
+        st = load_state()
+        ensure_summaries(st, quiet=False)
+        save_state(st)
     elif cmd == "replay":
         cmd_replay(int(sys.argv[2]))
     elif cmd == "replay-season":
