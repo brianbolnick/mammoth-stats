@@ -343,6 +343,8 @@ def game_summary(land):
     us = them = 0
     first = None
     scorers = {}
+    maxdef = 0
+    pgoals = {}
     for per, _, ours, g in goals:
         if first is None:
             first = "us" if ours else "them"
@@ -350,8 +352,10 @@ def game_summary(land):
             us += 1
             pid = str(g["playerId"])
             scorers[pid] = scorers.get(pid, 0) + 1
+            pgoals[str(per)] = pgoals.get(str(per), 0) + 1
         else:
             them += 1
+        maxdef = max(maxdef, them - us)
         after[per] = [us, them]
     def at(n):
         best = [0, 0]
@@ -359,14 +363,14 @@ def game_summary(land):
             if per <= n:
                 best = after[per]
         return best
-    return {"first": first, "p1": at(1), "p2": at(2), "reg": at(3), "scorers": scorers,
-            "home": home, "opp": land["awayTeam" if home else "homeTeam"]["abbrev"]}
+    return {"first": first, "p1": at(1), "p2": at(2), "reg": at(3), "final": [us, them], "scorers": scorers,
+            "maxdef": maxdef, "pgoals": pgoals, "home": home, "opp": land["awayTeam" if home else "homeTeam"]["abbrev"]}
 
 
 def ensure_summaries(s, quiet=True):
     """Fill s["games"][gameId] for every finished franchise game we don't have yet."""
     games = s.setdefault("games", {})
-    missing = [t["gameId"] for t in s["team_games"] if str(t["gameId"]) not in games]
+    missing = [t["gameId"] for t in s["team_games"] if str(t["gameId"]) not in games or "maxdef" not in games[str(t["gameId"])]]
     for gid in missing:
         games[str(gid)] = game_summary(get(f"{WEB}/gamecenter/{gid}/landing"))
     if missing and not quiet:
@@ -764,8 +768,99 @@ def postgame_facts(s, lines, season, live=False):
                                       GOALIE_RANK_LIMIT[stat], label, GOALIE_TIE_LIMIT.get(stat, 0)):
             facts.append((TIER["goalie"], item[0] if isinstance(item, tuple) else item))
     facts += [(TIER["team"], f) for f in team_facts(s, lines, team_before)]
+    facts += streak_facts(s, lines, season)
     facts.sort(key=lambda x: x[0])
     return [f for _, f in facts]
+
+
+_FR_ROWS = []
+
+
+def franchise_rows():
+    """Every skater game line in franchise history (cached per run)."""
+    if not _FR_ROWS:
+        _FR_ROWS.extend(rest_all("skater/summary", f"franchiseId={FRANCHISE} and gameTypeId=2", game=True))
+    return _FR_ROWS
+
+
+def season_of(game_id):
+    y = int(str(game_id)[:4])
+    return y * 10000 + y + 1
+
+
+def run_length(vals):
+    n = 0
+    for v in reversed(vals):
+        if not v:
+            break
+        n += 1
+    return n
+
+
+def best_run(vals):
+    best = cur = 0
+    for v in vals:
+        cur = cur + 1 if v else 0
+        best = max(best, cur)
+    return best
+
+
+def streak_facts(s, lines, season):
+    """Point streaks of 5+ and goal streaks of 4+ within the season, against the franchise single-season record."""
+    rows = [r for r in franchise_rows() if r["gameId"] < lines["id"]]
+    seqs = {}
+    for r in sorted(rows, key=lambda r: r["gameId"]):
+        seqs.setdefault((str(r["playerId"]), season_of(r["gameId"])), []).append(r)
+    rec = {k: max((best_run([r[k] > 0 for r in seq]) for seq in seqs.values()), default=0) for k in ("points", "goals")}
+    facts = []
+    for l in lines["skaters"]:
+        seq = seqs.get((l["pid"], season), []) + [{"points": l["points"], "goals": l["goals"]}]
+        name = s["players"].get(l["pid"], {}).get("name", l["short"])
+        for k, floor in (("points", 5), ("goals", 4)):
+            n = run_length([r[k] > 0 for r in seq])
+            if n < floor or not l[k]:
+                continue
+            total = sum(r[k] for r in seq[-n:])
+            core = (f"{name} extends his point streak to {n} games ({total} points)" if k == "points"
+                    else f"{name} has scored in {n} straight games ({total} goals)")
+            if n > rec[k]:
+                facts.append((TIER["record"], f"{core}, the longest in franchise history {TAG}"))
+            elif n == rec[k]:
+                facts.append((TIER["record"], f"{core}, tying the franchise record {TAG}"))
+            else:
+                facts.append((TIER["team"], f"{core} {TAG}"))
+    return facts
+
+
+def game_record_facts(s, gid):
+    """Comebacks and scoring records that need the goal sequence: run after tonight's summary exists."""
+    games = s.get("games", {})
+    me = games.get(str(gid))
+    t = next((x for x in s["team_games"] if x["gameId"] == gid), None)
+    if not me or not t:
+        return []
+    prior = [({**x, **games[str(x["gameId"])]}) for x in s["team_games"] if x["gameId"] != gid and str(x["gameId"]) in games]
+    facts = []
+    d = me["maxdef"]
+    if t["win"] and d >= 3:
+        wins = [g for g in prior if g["win"]]
+        best = max((g["maxdef"] for g in wins), default=0)
+        if d > best:
+            facts.append(f"The {TEAM_HANDLE} come back from {d} goals down to win, the largest comeback in franchise history {TAG}")
+        elif d == best:
+            facts.append(f"The {TEAM_HANDLE} come back from {d} goals down to win, tying the largest comeback in franchise history {TAG}")
+        else:
+            k = 1 + sum(1 for g in wins if g["maxdef"] >= d)
+            facts.append(f"The {TEAM_HANDLE} come back from {d} goals down to win for the {ordinal(k)} time in franchise history {TAG}")
+    pmax = max((v for g in prior for v in g["pgoals"].values()), default=0)
+    for per, v in sorted(me["pgoals"].items()):
+        word = "overtime" if int(per) > 3 else f"the {ordinal(int(per))} period"
+        if v > pmax and v >= 4:
+            facts.append(f"The {TEAM_HANDLE} score {v} goals in {word}, the most in any period in franchise history {TAG}")
+    gmax = max((g["final"][0] for g in prior), default=0)
+    if me["final"][0] > gmax:
+        facts.append(f"The {TEAM_HANDLE} score {me['final'][0]} goals, the most in a game in franchise history {TAG}")
+    return facts
 
 
 def streaks(games):
@@ -992,9 +1087,10 @@ def cmd_check(push=True):
             box = get(f"{WEB}/gamecenter/{g['id']}/boxscore")
             lines = utah_lines(box)
             facts = postgame_facts(s, lines, season)
+            ensure_summaries(s)
+            facts += game_record_facts(s, g["id"])
             total += surface(s, facts, game_header(lines), push)
             s["ledger"]["processed"].append(g["id"])
-            ensure_summaries(s)
             changed = True
     t, c = pregame_pass(s, rs)
     total, changed = total + t, changed or c
@@ -1157,7 +1253,142 @@ TEAM_RANKS = [  # (field, higher is better, phrase builder)
     ("shotsAgainstPerGame", False, lambda r, v: f"The {TEAM_HANDLE} {fewest(r, "shots")} in the NHL ({v:.1f})"),
     ("faceoffWinPct", True, lambda r, v: f"The {TEAM_HANDLE} are {r} in the NHL in faceoff percentage ({v * 100:.1f}%)"),
 ]
-RANK_SCORE = {1: 10, 2: 7, 3: 5}
+RANK_SCORE = {1: 10, 2: 7, 3: 5, 4: 3.5, 5: 3}
+DAILY_POSTS = 2
+PLAYER_STATS = [("points", "points"), ("goals", "goals"), ("assists", "assists"), ("ppPoints", "power play points"),
+                ("plusMinus", "plus-minus")]
+EDGE_LOCATIONS = {"high": "from high-danger areas", "long": "from long range", "all": None}
+
+
+def player_rank_facts(s, season, team_gp):
+    """Utah skaters near the top of the league: top 5 overall, top 3 among defensemen and among rookies."""
+    out = []
+    cay = f"seasonId={season} and gameTypeId=2"
+    pools = [("NHL", rest_all("skater/summary", cay), 5, 0),
+             ("NHL defensemen", [r for r in rest_all("skater/summary", cay) if r["positionCode"] == "D"], 3, 0.5),
+             ("NHL rookies", rest_all("skater/summary", cay + ' and isRookie="1"'), 3, 0.5)]
+    for group, rows, limit, penalty in pools:
+        for r in rows:
+            pid = str(r["playerId"])
+            if r.get("teamAbbrevs") and TEAM not in r["teamAbbrevs"]:
+                continue
+            if pid not in s["players"] or not s["players"][pid].get("on_roster"):
+                continue
+            name = s["players"][pid]["name"]
+            for field, word in PLAYER_STATS:
+                v = r.get(field)
+                if not v or v <= 0:
+                    continue
+                lab, rk, tied = rank_label(v, [x[field] for x in rows if x["playerId"] != r["playerId"] and x.get(field) is not None])
+                if rk > limit:
+                    continue
+                shown = f"+{v}" if field == "plusMinus" else str(v)
+                if rk == 1 and not tied:
+                    text = f"{name} leads all {group} in {word} ({shown}) {TAG}" if group != "NHL" else f"{name} leads the NHL in {word} ({shown}) {TAG}"
+                else:
+                    text = f"{name} is {lab} among {group} in {word} ({shown}) {TAG}" if group != "NHL" else f"{name} is {lab} in the NHL in {word} ({shown}) {TAG}"
+                out.append((RANK_SCORE[rk] - penalty - (1 if field == "plusMinus" else 0) - (1.5 if tied else 0), f"player:{pid}:{field}", f"{group}:{rk}", text))
+    gl = rest_all("goalie/summary", cay)
+    qual = [r for r in gl if r["gamesPlayed"] >= max(5, team_gp // 3)]
+    for field, word, hi, fmt in (("savePct", "save percentage", True, lambda v: f"{v:.3f}".lstrip("0")),
+                                 ("goalsAgainstAverage", "goals-against average", False, lambda v: f"{v:.2f}"),
+                                 ("wins", "wins", True, str)):
+        rows = gl if field == "wins" else qual
+        for r in rows:
+            pid = str(r["playerId"])
+            if pid not in s["goalies"] or not s["goalies"][pid].get("on_roster") or (r.get("teamAbbrevs") and TEAM not in r["teamAbbrevs"]):
+                continue
+            key = (lambda x: x[field]) if hi else (lambda x: -x[field])
+            lab, rk, tied = rank_label(key(r), [key(x) for x in rows if x["playerId"] != r["playerId"]])
+            if rk > 3:
+                continue
+            name = s["goalies"][pid]["name"]
+            text = (f"{name} leads NHL goalies in {word} ({fmt(r[field])}) {TAG}" if rk == 1 and not tied
+                    else f"{name} is {lab} among NHL goalies in {word} ({fmt(r[field])}) {TAG}")
+            out.append((RANK_SCORE[rk], f"goalie:{pid}:{field}", str(rk), text))
+    return out
+
+
+def window_facts(s, season, n=10):
+    """Team ranks over Utah's last n games, every team measured over the same dates."""
+    gs = [t for t in s["team_games"] if t["season"] == season]
+    if len(gs) < n + 5:
+        return []
+    since = gs[-n]["date"]
+    rows = rest("team/summary", isAggregate="true", isGame="true", limit=-1,
+                cayenneExp=f'gameDate>="{since}" and gameTypeId=2')["data"]
+    me = next((r for r in rows if r.get("franchiseId") == FRANCHISE), None)
+    if not me:
+        return []
+    out = []
+    w, l, o = me["wins"], me["losses"], me["otLosses"]
+    for field, hi, phrase in TEAM_RANKS[:4] + [("pointPct", True, None)]:
+        v = me[field]
+        key = (lambda x: x) if hi else (lambda x: -x)
+        lab, rk, _ = rank_label(key(v), [key(r[field]) for r in rows if r is not me])
+        if rk > 3:
+            continue
+        if field == "pointPct":
+            text = f"The {TEAM_HANDLE} are {w}-{l}-{o} over their last {n} games, {lab} in the NHL in that span {TAG}"
+        else:
+            text = phrase(lab, v).replace(f"The {TEAM_HANDLE}", f"Over their last {n} games, the {TEAM_HANDLE}", 1) + f" {TAG}"
+        out.append((RANK_SCORE[rk] - 1, f"window:{field}", lab, text))
+    return out
+
+
+def edge_facts(s):
+    """NHL Edge tracking: things nobody can see on a stat sheet. Team ranks are vs the other 31 teams."""
+    out = []
+    try:
+        d = get(f"{WEB}/edge/team-detail/{TEAM_ID}/now")
+    except Exception:  # noqa
+        return out
+    for row in d.get("sogSummary", []):
+        where = EDGE_LOCATIONS.get(row.get("locationCode"))
+        if where and row.get("goalsRank", 99) <= 3:
+            rk = row["goalsRank"]
+            most = "the most" if rk == 1 else f"the {ordinal(rk)}-most"
+            out.append((RANK_SCORE[rk], f"edge:goals:{row['locationCode']}", str(row["goals"]),
+                        f"The {TEAM_HANDLE} have {row['goals']} goals {where} this season, {most} in the NHL {TAG}"))
+    for key, unit, label in (("skatingSpeed", "speedMax", "fastest skating speed"), ("shotSpeed", "topShotSpeed", "hardest shot")):
+        x = (d.get(key) or {}).get(unit) or {}
+        ov = x.get("overlay") or {}
+        if x.get("rank") == 1 and ov.get("player"):
+            who = f"{ov['player']['firstName']['default']} {ov['player']['lastName']['default']}"
+            mph = x["imperial"]
+            when = dt.date.fromisoformat(ov["gameDate"]).strftime("%b %-d")
+            out.append((9, f"edge:{unit}", f"{mph:.2f}", f"{who}'s {mph:.2f} mph on {when} is the {label} recorded in the NHL this season {TAG}"))
+    for key, unit, label in (("skatingSpeed", "burstsOver20", "skating bursts over 20 mph"), ("shotSpeed", "shotAttemptsOver90", "shot attempts over 90 mph")):
+        x = (d.get(key) or {}).get(unit) or {}
+        if x.get("rank", 99) <= 3:
+            most = "the most" if x["rank"] == 1 else f"the {ordinal(x['rank'])}-most"
+            out.append((RANK_SCORE[x["rank"]] - 1, f"edge:{unit}", str(x["value"]),
+                        f"The {TEAM_HANDLE} have {x['value']} {label} this season, {most} in the NHL {TAG}"))
+    try:
+        top = get(f"{WEB}/edge/skater-shot-speed-top-10/all/max/{s['meta']['season']}/2")
+    except Exception:  # noqa
+        top = []
+    for i, r in enumerate(top, 1):
+        if r["player"]["team"]["abbrev"] == TEAM:
+            who = f"{r['player']['firstName']['default']} {r['player']['lastName']['default']}"
+            mph = r["hardestShot"]["imperial"]
+            out.append((RANK_SCORE.get(i, 2.5), f"edge:shot:{who}", f"{i}:{mph}",
+                        f"{who}'s {mph:.1f} mph shot is the {ordinal(i) + ' ' if i > 1 else ''}hardest in the NHL this season {TAG}"))
+    return out
+
+
+def playoff_fact(st_all, me):
+    """Late season: points clear of the first Western team outside a playoff spot."""
+    conf = [r for r in st_all if r["conferenceAbbrev"] == me["conferenceAbbrev"]]
+    inside = {r["teamAbbrev"]["default"] for r in conf if r["divisionSequence"] <= 3}
+    wild = sorted([r for r in conf if r["teamAbbrev"]["default"] not in inside], key=lambda r: r["wildcardSequence"])
+    inside |= {r["teamAbbrev"]["default"] for r in wild[:2]}
+    if TEAM not in inside or len(wild) < 3:
+        return None
+    gap = me["points"] - wild[2]["points"]
+    if gap < 1:
+        return None
+    return (6, "playoff", str(gap), f"The {TEAM_HANDLE} are {gap} points clear of the playoff line in the West with {82 - me['gamesPlayed']} games left {TAG}")
 
 
 def daily_candidates(s, season):
@@ -1171,9 +1402,14 @@ def daily_candidates(s, season):
         v = me[field]
         others = [(-r[field] if not hi else r[field]) for r in rows if r["teamId"] != TEAM_ID]
         lab, rk, _ = rank_label(-v if not hi else v, others)
-        if rk in RANK_SCORE:
+        if rk <= 3:
             out.append((RANK_SCORE[rk], f"rank:{field}", lab, f"{phrase(lab, v)} {TAG}"))
-    st = next((r for r in get(f"{WEB}/standings/now")["standings"] if r["teamAbbrev"]["default"] == TEAM), None)
+    st_all = get(f"{WEB}/standings/now")["standings"]
+    st = next((r for r in st_all if r["teamAbbrev"]["default"] == TEAM), None)
+    if st and st["gamesPlayed"] >= 50:
+        f = playoff_fact(st_all, st)
+        if f:
+            out.append(f)
     if st and st["divisionSequence"] <= 2:
         out.append((6 if st["divisionSequence"] == 1 else 4, "standings", f"{st['divisionSequence']}:{st['points']}",
                     f"The {TEAM_HANDLE} sit {ordinal(st['divisionSequence'])} in the {st['divisionName']} with {st['points']} points through {st['gamesPlayed']} games {TAG}"))
@@ -1191,6 +1427,7 @@ def daily_candidates(s, season):
                                   ("lead2", lambda g: g["p2"][0] > g["p2"][1], "this season when leading after two periods", 0.85),
                                   ("onegoal", lambda g: abs(g["reg"][0] - g["reg"][1]) <= 1 or g["otl"], "in one-goal games this season", 0.7),
                                   ("trail1", lambda g: g["p1"][0] < g["p1"][1], "this season when trailing after the first period", 0.6),
+                                  ("extra", lambda g: g["reg"][0] == g["reg"][1], "in games decided in overtime or a shootout this season", 0.75),
                                   ("home", lambda g: g["home"], "at home this season", 0.75),
                                   ("road", lambda g: not g["home"], "on the road this season", 0.7)):
         f = split_fact([g for g in gs if sub(g)], phrase, min_pct=pct)
@@ -1202,14 +1439,24 @@ def daily_candidates(s, season):
         f = split_fact([g for g in gs if pid in g["scorers"]], f"this season when {p['name']} scores", min_pct=0.8)
         if f:
             out.append((f[0], f"scorer:{pid}", f[1], f[1]))
+    for fn in (lambda: player_rank_facts(s, season, me["gamesPlayed"]), lambda: window_facts(s, season), lambda: edge_facts(s)):
+        try:
+            out += fn()
+        except Exception as e:  # noqa  one bad feed shouldn't cost the whole post
+            print(f"(skipped a source: {e})")
     out.sort(key=lambda x: -x[0])
     return out
 
 
-def pick_daily(s, cands, today):
-    """Best candidate whose family hasn't posted in 3 days and whose exact signature hasn't in 14."""
+def pick_daily(s, cands, today, n=1):
+    """Best n candidates whose family hasn't posted in 3 days and whose exact signature hasn't in 14.
+    At most one per family group (team ranks, a player, splits, edge) so one day isn't two of the same kind."""
     fam = s["ledger"].setdefault("daily", {}).setdefault("fam", {})
+    picks, groups = [], set()
     for score, family, sig, text in cands:
+        group = family.split(":")[0] + (":" + family.split(":")[1] if family.startswith(("player", "goalie")) else "")
+        if group in groups or len(picks) >= n:
+            continue
         last = fam.get(family)
         if last:
             days = (dt.date.fromisoformat(today) - dt.date.fromisoformat(last["at"])).days
@@ -1217,8 +1464,9 @@ def pick_daily(s, cands, today):
                 continue
         if text in s["ledger"]["surfaced"]:
             continue
-        return family, sig, text
-    return None
+        picks.append((family, sig, text))
+        groups.add(group)
+    return picks
 
 
 def daily_pass(s, rs, season, push=True):
@@ -1229,12 +1477,10 @@ def daily_pass(s, rs, season, push=True):
     if now.hour < DAILY_HOUR or d.get("last") == today or any(g["gameDate"] == today for g in rs):
         return 0, False
     d["last"] = today
-    pick = pick_daily(s, daily_candidates(s, season), today)
-    if not pick:
-        return 0, True
-    family, sig, text = pick
-    d.setdefault("fam", {})[family] = {"at": today, "sig": sig}
-    return surface(s, [text], f"Off day ({today})", push), True
+    picks = pick_daily(s, daily_candidates(s, season), today, DAILY_POSTS)
+    for family, sig, _ in picks:
+        d.setdefault("fam", {})[family] = {"at": today, "sig": sig}
+    return surface(s, [t for _, _, t in picks], f"Off day ({today})", push), True
 
 
 def cmd_daily():
@@ -1243,9 +1489,9 @@ def cmd_daily():
     season = season_id_now(sched)
     ensure_summaries(s, quiet=False)
     cands = daily_candidates(s, season)
-    pick = pick_daily(copy.deepcopy(s), cands, local_now().date().isoformat())
+    picks = {t for _, _, t in pick_daily(copy.deepcopy(s), cands, local_now().date().isoformat(), DAILY_POSTS)}
     for score, family, sig, text in cands:
-        print(f"{score:5.1f}  {'>> ' if pick and pick[2] == text else '   '}{text}")
+        print(f"{score:5.1f}  {'>> ' if text in picks else '   '}{text}")
 
 
 def cmd_live_replay(game_id):
