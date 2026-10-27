@@ -5556,6 +5556,11 @@
  },
  "ledger": {
   "alerts": {
+   "8480849:assists:100": {
+    "posted": [
+     3
+    ]
+   },
    "8482699:assists:100": {
     "posted": [
      3
@@ -5590,7 +5595,11 @@
    2026020164,
    2026020177
   ],
-  "pregame_early": {},
+  "pregame_early": {
+   "2026020195": {
+    "Barrett Hayton is 3 assists away from 100 career @NHL assists #TusksUp": "8480849"
+   }
+  },
   "processed": [
    2026020013,
    2026020027,
@@ -5609,6 +5618,10 @@
    "Anders Lee passes Petr Nedved in goals and is now 233rd in @NHL history #TusksUp": {
     "at": "2026-10-25T04:07:57.686082+00:00",
     "game": "UTA 5, TBL 4 (2026-10-24)"
+   },
+   "Barrett Hayton is 3 assists away from 100 career @NHL assists #TusksUp": {
+    "at": "2026-10-27T18:43:18.235346+00:00",
+    "game": "Pregame, UTA vs MIN (2026-10-27)"
    },
    "Dmitri Simashev scores his first @NHL goal #TusksUp": {
     "at": "2026-10-25T04:07:57.686059+00:00",
@@ -5650,7 +5663,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-26T17:37:18.136580+00:00",
+  "last_check": "2026-10-27T18:43:18.404264+00:00",
   "reconciled_at": "2026-10-25T19:44:47.117794+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-25T19:44:40.856861+00:00",
