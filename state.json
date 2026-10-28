@@ -5394,6 +5394,34 @@
     "8482699": 1,
     "8484386": 2
    }
+  },
+  "2026020195": {
+   "final": [
+    1,
+    3
+   ],
+   "first": "them",
+   "home": true,
+   "maxdef": 3,
+   "opp": "MIN",
+   "p1": [
+    0,
+    0
+   ],
+   "p2": [
+    0,
+    1
+   ],
+   "pgoals": {
+    "3": 1
+   },
+   "reg": [
+    1,
+    3
+   ],
+   "scorers": {
+    "8483431": 1
+   }
   }
  },
  "goalies": {
@@ -5408,19 +5436,19 @@
   },
   "8478872": {
    "career": {
-    "gamesPlayed": 272,
+    "gamesPlayed": 273,
     "shutouts": 9,
     "wins": 114
    },
    "fr": {
-    "gamesPlayed": 132,
+    "gamesPlayed": 133,
     "shutouts": 4,
     "wins": 70
    },
    "name": "Karel Vejmelka",
    "on_roster": true,
    "season": {
-    "gamesPlayed": 10,
+    "gamesPlayed": 11,
     "shutouts": 1,
     "wins": 6
    },
@@ -5636,7 +5664,8 @@
    2026020133,
    2026020140,
    2026020164,
-   2026020177
+   2026020177,
+   2026020195
   ],
   "surfaced": {
    "Anders Lee passes Petr Nedved in goals and is now 233rd in @NHL history #TusksUp": {
@@ -5658,6 +5687,10 @@
    "Lawson Crouse passes Michael Kesselring on the franchise PIM leaderboard and is now 5th all time #TusksUp": {
     "at": "2026-10-23T05:08:38.356251+00:00",
     "game": "SEA 5, UTA 3 (2026-10-22)"
+   },
+   "Mikhail Sergachev extends his point streak to 5 games (6 points) #TusksUp": {
+    "at": "2026-10-28T08:15:08.545116+00:00",
+    "game": "MIN 3, UTA 1 (2026-10-27)"
    },
    "Nick DeSimone plays his 100th career @NHL game #TusksUp": {
     "at": "2026-10-23T05:08:38.356225+00:00",
@@ -5687,7 +5720,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-28T04:08:52.552370+00:00",
+  "last_check": "2026-10-28T08:15:08.581926+00:00",
   "reconciled_at": "2026-10-25T19:44:47.117794+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-25T19:44:40.856861+00:00",
@@ -65406,14 +65439,14 @@
   "8475314": {
    "career": {
     "assists": 244,
-    "gamesPlayed": 935,
+    "gamesPlayed": 936,
     "goals": 311,
     "points": 555
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 3,
     "p2": 1,
     "p3": 0,
@@ -65426,7 +65459,7 @@
    "pos": "L",
    "season": {
     "assists": 3,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 3,
     "points": 6
    },
@@ -65617,18 +65650,18 @@
   "8476389": {
    "career": {
     "assists": 396,
-    "gamesPlayed": 880,
+    "gamesPlayed": 881,
     "goals": 242,
     "points": 638
    },
    "fr": {
     "assists": 4,
     "g2": 0,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 3,
     "p2": 1,
     "p3": 0,
-    "penaltyMinutes": 6,
+    "penaltyMinutes": 11,
     "points": 7,
     "ppGoals": 1
    },
@@ -65637,7 +65670,7 @@
    "pos": "C",
    "season": {
     "assists": 4,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 3,
     "points": 7
    },
@@ -65828,18 +65861,18 @@
   "8477070": {
    "career": {
     "assists": 25,
-    "gamesPlayed": 265,
+    "gamesPlayed": 266,
     "goals": 14,
     "points": 39
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 66,
+    "gamesPlayed": 67,
     "goals": 3,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 93,
+    "penaltyMinutes": 98,
     "points": 6,
     "ppGoals": 0
    },
@@ -65848,7 +65881,7 @@
    "pos": "C",
    "season": {
     "assists": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "points": 0
    },
@@ -65939,14 +65972,14 @@
   "8477220": {
    "career": {
     "assists": 206,
-    "gamesPlayed": 835,
+    "gamesPlayed": 836,
     "goals": 58,
     "points": 264
    },
    "fr": {
     "assists": 19,
     "g2": 1,
-    "gamesPlayed": 94,
+    "gamesPlayed": 95,
     "goals": 6,
     "p2": 3,
     "p3": 1,
@@ -65959,7 +65992,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "points": 3
    },
@@ -66095,18 +66128,18 @@
   "8477346": {
    "career": {
     "assists": 218,
-    "gamesPlayed": 641,
+    "gamesPlayed": 642,
     "goals": 65,
     "points": 283
    },
    "fr": {
     "assists": 8,
     "g2": 0,
-    "gamesPlayed": 31,
+    "gamesPlayed": 32,
     "goals": 3,
     "p2": 1,
     "p3": 0,
-    "penaltyMinutes": 39,
+    "penaltyMinutes": 41,
     "points": 11,
     "ppGoals": 0
    },
@@ -66115,7 +66148,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 2,
     "points": 4
    },
@@ -66255,30 +66288,30 @@
   },
   "8477951": {
    "career": {
-    "assists": 328,
-    "gamesPlayed": 682,
+    "assists": 329,
+    "gamesPlayed": 683,
     "goals": 182,
-    "points": 510
+    "points": 511
    },
    "fr": {
-    "assists": 90,
+    "assists": 91,
     "g2": 10,
-    "gamesPlayed": 176,
+    "gamesPlayed": 177,
     "goals": 60,
     "p2": 38,
     "p3": 9,
     "penaltyMinutes": 44,
-    "points": 150,
+    "points": 151,
     "ppGoals": 25
    },
    "name": "Nick Schmaltz",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 6,
-    "gamesPlayed": 12,
+    "assists": 7,
+    "gamesPlayed": 13,
     "goals": 7,
-    "points": 13
+    "points": 14
    },
    "seasons": [
     {
@@ -66394,18 +66427,18 @@
   "8478474": {
    "career": {
     "assists": 123,
-    "gamesPlayed": 678,
+    "gamesPlayed": 679,
     "goals": 140,
     "points": 263
    },
    "fr": {
     "assists": 29,
     "g2": 4,
-    "gamesPlayed": 174,
+    "gamesPlayed": 175,
     "goals": 37,
     "p2": 10,
     "p3": 2,
-    "penaltyMinutes": 91,
+    "penaltyMinutes": 95,
     "points": 66,
     "ppGoals": 2
    },
@@ -66414,7 +66447,7 @@
    "pos": "L",
    "season": {
     "assists": 3,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "points": 4
    },
@@ -66625,14 +66658,14 @@
   "8478831": {
    "career": {
     "assists": 48,
-    "gamesPlayed": 380,
+    "gamesPlayed": 381,
     "goals": 47,
     "points": 95
    },
    "fr": {
     "assists": 32,
     "g2": 0,
-    "gamesPlayed": 174,
+    "gamesPlayed": 175,
     "goals": 19,
     "p2": 8,
     "p3": 1,
@@ -66645,7 +66678,7 @@
    "pos": "C",
    "season": {
     "assists": 4,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "points": 5
    },
@@ -66782,18 +66815,18 @@
   "8479343": {
    "career": {
     "assists": 385,
-    "gamesPlayed": 695,
+    "gamesPlayed": 696,
     "goals": 226,
     "points": 611
    },
    "fr": {
     "assists": 133,
     "g2": 10,
-    "gamesPlayed": 175,
+    "gamesPlayed": 176,
     "goals": 60,
     "p2": 54,
     "p3": 16,
-    "penaltyMinutes": 74,
+    "penaltyMinutes": 80,
     "points": 193,
     "ppGoals": 15
    },
@@ -66802,7 +66835,7 @@
    "pos": "R",
    "season": {
     "assists": 11,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 4,
     "points": 15
    },
@@ -66911,18 +66944,18 @@
   "8479369": {
    "career": {
     "assists": 62,
-    "gamesPlayed": 398,
+    "gamesPlayed": 399,
     "goals": 17,
     "points": 79
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 6,
+    "penaltyMinutes": 8,
     "points": 4,
     "ppGoals": 0
    },
@@ -66931,7 +66964,7 @@
    "pos": "D",
    "season": {
     "assists": 3,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "points": 4
    },
@@ -67021,30 +67054,30 @@
   },
   "8479410": {
    "career": {
-    "assists": 307,
-    "gamesPlayed": 642,
+    "assists": 308,
+    "gamesPlayed": 643,
     "goals": 76,
-    "points": 383
+    "points": 384
    },
    "fr": {
-    "assists": 98,
+    "assists": 99,
     "g2": 1,
-    "gamesPlayed": 167,
+    "gamesPlayed": 168,
     "goals": 28,
     "p2": 25,
     "p3": 9,
-    "penaltyMinutes": 86,
-    "points": 126,
+    "penaltyMinutes": 91,
+    "points": 127,
     "ppGoals": 9
    },
    "name": "Mikhail Sergachev",
    "on_roster": true,
    "pos": "D",
    "season": {
-    "assists": 11,
-    "gamesPlayed": 12,
+    "assists": 12,
+    "gamesPlayed": 13,
     "goals": 3,
-    "points": 14
+    "points": 15
    },
    "seasons": [
     {
@@ -67258,14 +67291,14 @@
   "8479977": {
    "career": {
     "assists": 91,
-    "gamesPlayed": 381,
+    "gamesPlayed": 382,
     "goals": 76,
     "points": 167
    },
    "fr": {
     "assists": 15,
     "g2": 2,
-    "gamesPlayed": 78,
+    "gamesPlayed": 79,
     "goals": 18,
     "p2": 5,
     "p3": 1,
@@ -67278,7 +67311,7 @@
    "pos": "R",
    "season": {
     "assists": 4,
-    "gamesPlayed": 7,
+    "gamesPlayed": 8,
     "goals": 3,
     "points": 7
    },
@@ -67378,14 +67411,14 @@
   "8480084": {
    "career": {
     "assists": 16,
-    "gamesPlayed": 101,
+    "gamesPlayed": 102,
     "goals": 5,
     "points": 21
    },
    "fr": {
     "assists": 11,
     "g2": 0,
-    "gamesPlayed": 63,
+    "gamesPlayed": 64,
     "goals": 3,
     "p2": 1,
     "p3": 0,
@@ -67398,7 +67431,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 3,
+    "gamesPlayed": 4,
     "goals": 0,
     "points": 0
    },
@@ -67485,14 +67518,14 @@
   "8480849": {
    "career": {
     "assists": 97,
-    "gamesPlayed": 370,
+    "gamesPlayed": 371,
     "goals": 66,
     "points": 163
    },
    "fr": {
     "assists": 48,
     "g2": 2,
-    "gamesPlayed": 161,
+    "gamesPlayed": 162,
     "goals": 31,
     "p2": 16,
     "p3": 2,
@@ -67505,7 +67538,7 @@
    "pos": "C",
    "season": {
     "assists": 7,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "points": 8
    },
@@ -67587,14 +67620,14 @@
   "8480855": {
    "career": {
     "assists": 65,
-    "gamesPlayed": 328,
+    "gamesPlayed": 329,
     "goals": 45,
     "points": 110
    },
    "fr": {
     "assists": 32,
     "g2": 0,
-    "gamesPlayed": 169,
+    "gamesPlayed": 170,
     "goals": 23,
     "p2": 8,
     "p3": 1,
@@ -67607,7 +67640,7 @@
    "pos": "C",
    "season": {
     "assists": 2,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 1,
     "points": 3
    },
@@ -67786,14 +67819,14 @@
   "8482699": {
    "career": {
     "assists": 97,
-    "gamesPlayed": 239,
+    "gamesPlayed": 240,
     "goals": 96,
     "points": 193
    },
    "fr": {
     "assists": 71,
     "g2": 13,
-    "gamesPlayed": 161,
+    "gamesPlayed": 162,
     "goals": 72,
     "p2": 37,
     "p3": 9,
@@ -67806,7 +67839,7 @@
    "pos": "R",
    "season": {
     "assists": 5,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 5,
     "points": 10
    },
@@ -67861,19 +67894,19 @@
   "8483431": {
    "career": {
     "assists": 91,
-    "gamesPlayed": 223,
-    "goals": 72,
-    "points": 163
+    "gamesPlayed": 224,
+    "goals": 73,
+    "points": 164
    },
    "fr": {
     "assists": 67,
     "g2": 8,
-    "gamesPlayed": 141,
-    "goals": 52,
+    "gamesPlayed": 142,
+    "goals": 53,
     "p2": 27,
     "p3": 8,
     "penaltyMinutes": 76,
-    "points": 119,
+    "points": 120,
     "ppGoals": 14
    },
    "name": "Logan Cooley",
@@ -67881,9 +67914,9 @@
    "pos": "C",
    "season": {
     "assists": 8,
-    "gamesPlayed": 12,
-    "goals": 3,
-    "points": 11
+    "gamesPlayed": 13,
+    "goals": 4,
+    "points": 12
    },
    "seasons": [
     {
@@ -67975,14 +68008,14 @@
   "8484386": {
    "career": {
     "assists": 3,
-    "gamesPlayed": 40,
+    "gamesPlayed": 41,
     "goals": 2,
     "points": 5
    },
    "fr": {
     "assists": 3,
     "g2": 1,
-    "gamesPlayed": 40,
+    "gamesPlayed": 41,
     "goals": 2,
     "p2": 1,
     "p3": 0,
@@ -67995,7 +68028,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 2,
     "points": 4
    },
@@ -70247,6 +70280,15 @@
    "pts": 2,
    "season": 20262027,
    "win": true
+  },
+  {
+   "date": "2026-10-27",
+   "gameId": 2026020195,
+   "home": true,
+   "otl": false,
+   "pts": 0,
+   "season": 20262027,
+   "win": false
   }
  ]
 }
