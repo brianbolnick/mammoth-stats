@@ -5602,8 +5602,12 @@
      "sig": "7"
     },
     "rank:powerPlayPct": {
-     "at": "2026-10-25",
-     "sig": "1st"
+     "at": "2026-10-28",
+     "sig": "2nd"
+    },
+    "scorer:8477951": {
+     "at": "2026-10-28",
+     "sig": "The @utahmammoth are 5-1-0 this season when Nick Schmaltz scores #TusksUp"
     },
     "split:first": {
      "at": "2026-10-26",
@@ -5614,7 +5618,7 @@
      "sig": "The @utahmammoth are 7-0-0 this season when leading after two periods #TusksUp"
     }
    },
-   "last": "2026-10-26"
+   "last": "2026-10-28"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00"
@@ -5704,6 +5708,10 @@
     "at": "2026-10-26T17:37:17.409017+00:00",
     "game": "Off day (2026-10-26)"
    },
+   "The @utahmammoth are 5-1-0 this season when Nick Schmaltz scores #TusksUp": {
+    "at": "2026-10-28T20:29:07.497092+00:00",
+    "game": "Off day (2026-10-28)"
+   },
    "The @utahmammoth are 7-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-10-25T19:44:48.069136+00:00",
     "game": "Off day (2026-10-25)"
@@ -5715,12 +5723,16 @@
    "The @utahmammoth power play is 1st in the NHL at 38.1% #TusksUp": {
     "at": "2026-10-25T19:44:48.101940+00:00",
     "game": "Off day (2026-10-25)"
+   },
+   "The @utahmammoth power play is 2nd in the NHL at 34.8% #TusksUp": {
+    "at": "2026-10-28T20:29:07.440406+00:00",
+    "game": "Off day (2026-10-28)"
    }
   }
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-28T15:22:48.769559+00:00",
+  "last_check": "2026-10-28T20:29:07.536923+00:00",
   "reconciled_at": "2026-10-28T15:22:48.767230+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-28T15:22:35.468996+00:00",
