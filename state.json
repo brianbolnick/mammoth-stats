@@ -5654,6 +5654,9 @@
   "pregame_early": {
    "2026020195": {
     "Barrett Hayton is 3 assists away from 100 career @NHL assists #TusksUp": "8480849"
+   },
+   "2026020205": {
+    "Andrew Peeke plays his 400th career @NHL game tonight #TusksUp": "8479369"
    }
   },
   "processed": [
@@ -5675,6 +5678,10 @@
    "Anders Lee passes Petr Nedved in goals and is now 233rd in @NHL history #TusksUp": {
     "at": "2026-10-25T04:07:57.686082+00:00",
     "game": "UTA 5, TBL 4 (2026-10-24)"
+   },
+   "Andrew Peeke plays his 400th career @NHL game tonight #TusksUp": {
+    "at": "2026-10-29T19:16:38.633860+00:00",
+    "game": "Pregame, UTA at PIT (2026-10-29)"
    },
    "Barrett Hayton is 3 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-10-27T18:43:18.235346+00:00",
@@ -5732,7 +5739,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-28T20:29:07.536923+00:00",
+  "last_check": "2026-10-29T19:16:38.703721+00:00",
   "reconciled_at": "2026-10-28T15:22:48.767230+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-28T15:22:35.468996+00:00",
