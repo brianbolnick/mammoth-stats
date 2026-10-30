@@ -5628,6 +5628,10 @@
   },
   "daily": {
    "fam": {
+    "edge:goals:high": {
+     "at": "2026-10-30",
+     "sig": "29"
+    },
     "edge:goals:long": {
      "at": "2026-10-26",
      "sig": "7"
@@ -5645,11 +5649,11 @@
      "sig": "The @utahmammoth are 5-0-0 this season when scoring first #TusksUp"
     },
     "split:lead2": {
-     "at": "2026-10-25",
-     "sig": "The @utahmammoth are 7-0-0 this season when leading after two periods #TusksUp"
+     "at": "2026-10-30",
+     "sig": "The @utahmammoth are 8-0-0 this season when leading after two periods #TusksUp"
     }
    },
-   "last": "2026-10-28"
+   "last": "2026-10-30"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -5813,6 +5817,14 @@
     "at": "2026-10-25T19:44:48.069136+00:00",
     "game": "Off day (2026-10-25)"
    },
+   "The @utahmammoth are 8-0-0 this season when leading after two periods #TusksUp": {
+    "at": "2026-10-30T16:39:05.655565+00:00",
+    "game": "Off day (2026-10-30)"
+   },
+   "The @utahmammoth have 29 goals from high-danger areas this season, the 2nd-most in the NHL #TusksUp": {
+    "at": "2026-10-30T16:39:05.689627+00:00",
+    "game": "Off day (2026-10-30)"
+   },
    "The @utahmammoth have 7 goals from long range this season, the most in the NHL #TusksUp": {
     "at": "2026-10-26T17:37:18.039066+00:00",
     "game": "Off day (2026-10-26)"
@@ -5829,7 +5841,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-30T09:54:53.368665+00:00",
+  "last_check": "2026-10-30T16:39:05.716342+00:00",
   "reconciled_at": "2026-10-30T09:54:53.366016+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-30T09:54:44.209312+00:00",
