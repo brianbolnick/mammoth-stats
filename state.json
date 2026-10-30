@@ -5422,6 +5422,37 @@
    "scorers": {
     "8483431": 1
    }
+  },
+  "2026020205": {
+   "final": [
+    4,
+    3
+   ],
+   "first": "us",
+   "home": false,
+   "maxdef": 1,
+   "opp": "PIT",
+   "p1": [
+    2,
+    0
+   ],
+   "p2": [
+    2,
+    1
+   ],
+   "pgoals": {
+    "1": 2,
+    "3": 1,
+    "4": 1
+   },
+   "reg": [
+    3,
+    3
+   ],
+   "scorers": {
+    "8479410": 1,
+    "8483431": 3
+   }
   }
  },
  "goalies": {
@@ -5529,21 +5560,21 @@
   },
   "8482657": {
    "career": {
+    "gamesPlayed": 6,
+    "shutouts": 0,
+    "wins": 4
+   },
+   "fr": {
     "gamesPlayed": 5,
     "shutouts": 0,
     "wins": 3
    },
-   "fr": {
-    "gamesPlayed": 4,
-    "shutouts": 0,
-    "wins": 2
-   },
    "name": "Sebastian Cossa",
    "on_roster": true,
    "season": {
-    "gamesPlayed": 4,
+    "gamesPlayed": 5,
     "shutouts": 0,
-    "wins": 2
+    "wins": 3
    },
    "seasons": [
     {
@@ -5577,7 +5608,7 @@
   }
  },
  "hist": {
-  "hat": 7,
+  "hat": 8,
   "maxg": 4,
   "maxp": 5,
   "p4": 14
@@ -5675,7 +5706,9 @@
    }
   },
   "pairs": {
-   "PIM|8478474|8480891": "2026-10-22"
+   "PIM|8478474|8480891": "2026-10-22",
+   "assists|8478474|8480434": "2026-10-29",
+   "assists|8478507|8480849": "2026-10-29"
   },
   "pregame_done": [
    2026020164,
@@ -5704,16 +5737,25 @@
    2026020140,
    2026020164,
    2026020177,
-   2026020195
+   2026020195,
+   2026020205
   ],
   "surfaced": {
    "Anders Lee passes Petr Nedved in goals and is now 233rd in @NHL history #TusksUp": {
     "at": "2026-10-25T04:07:57.686082+00:00",
     "game": "UTA 5, TBL 4 (2026-10-24)"
    },
+   "Andrew Peeke plays his 400th career @NHL game #TusksUp": {
+    "at": "2026-10-30T02:59:41.859322+00:00",
+    "game": "UTA 4, PIT 3 (2026-10-29)"
+   },
    "Andrew Peeke plays his 400th career @NHL game tonight #TusksUp": {
     "at": "2026-10-29T19:16:38.633860+00:00",
     "game": "Pregame, UTA at PIT (2026-10-29)"
+   },
+   "Artem Duda makes his @NHL debut #TusksUp": {
+    "at": "2026-10-30T02:59:41.614271+00:00",
+    "game": "UTA 4, PIT 3 (2026-10-29)"
    },
    "Barrett Hayton is 3 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-10-27T18:43:18.235346+00:00",
@@ -5746,6 +5788,10 @@
    "Mikhail Sergachev extends his point streak to 5 games (6 points) #TusksUp": {
     "at": "2026-10-28T08:15:08.545116+00:00",
     "game": "MIN 3, UTA 1 (2026-10-27)"
+   },
+   "Mikhail Sergachev extends his point streak to 6 games (7 points) #TusksUp": {
+    "at": "2026-10-30T02:59:41.967834+00:00",
+    "game": "UTA 4, PIT 3 (2026-10-29)"
    },
    "Nick DeSimone plays his 100th career @NHL game #TusksUp": {
     "at": "2026-10-23T05:08:38.356225+00:00",
@@ -5783,7 +5829,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-30T02:02:17.509338+00:00",
+  "last_check": "2026-10-30T02:59:42.076800+00:00",
   "reconciled_at": "2026-10-28T15:22:48.767230+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-28T15:22:35.468996+00:00",
@@ -65502,14 +65548,14 @@
   "8475314": {
    "career": {
     "assists": 244,
-    "gamesPlayed": 936,
+    "gamesPlayed": 937,
     "goals": 311,
     "points": 555
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 3,
     "p2": 1,
     "p3": 0,
@@ -65522,7 +65568,7 @@
    "pos": "L",
    "season": {
     "assists": 3,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 3,
     "points": 6
    },
@@ -65712,30 +65758,30 @@
   },
   "8476389": {
    "career": {
-    "assists": 396,
-    "gamesPlayed": 881,
+    "assists": 397,
+    "gamesPlayed": 882,
     "goals": 242,
-    "points": 638
+    "points": 639
    },
    "fr": {
-    "assists": 4,
+    "assists": 5,
     "g2": 0,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 3,
     "p2": 1,
     "p3": 0,
     "penaltyMinutes": 11,
-    "points": 7,
+    "points": 8,
     "ppGoals": 1
    },
    "name": "Vincent Trocheck",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 4,
-    "gamesPlayed": 13,
+    "assists": 5,
+    "gamesPlayed": 14,
     "goals": 3,
-    "points": 7
+    "points": 8
    },
    "seasons": [
     {
@@ -66044,14 +66090,14 @@
   "8477220": {
    "career": {
     "assists": 206,
-    "gamesPlayed": 836,
+    "gamesPlayed": 837,
     "goals": 58,
     "points": 264
    },
    "fr": {
     "assists": 19,
     "g2": 1,
-    "gamesPlayed": 95,
+    "gamesPlayed": 96,
     "goals": 6,
     "p2": 3,
     "p3": 1,
@@ -66064,7 +66110,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 1,
     "points": 3
    },
@@ -66200,14 +66246,14 @@
   "8477346": {
    "career": {
     "assists": 218,
-    "gamesPlayed": 642,
+    "gamesPlayed": 643,
     "goals": 65,
     "points": 283
    },
    "fr": {
     "assists": 8,
     "g2": 0,
-    "gamesPlayed": 32,
+    "gamesPlayed": 33,
     "goals": 3,
     "p2": 1,
     "p3": 0,
@@ -66220,7 +66266,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 2,
     "points": 4
    },
@@ -66361,14 +66407,14 @@
   "8477951": {
    "career": {
     "assists": 329,
-    "gamesPlayed": 683,
+    "gamesPlayed": 684,
     "goals": 182,
     "points": 511
    },
    "fr": {
     "assists": 91,
     "g2": 10,
-    "gamesPlayed": 177,
+    "gamesPlayed": 178,
     "goals": 60,
     "p2": 38,
     "p3": 9,
@@ -66381,7 +66427,7 @@
    "pos": "C",
    "season": {
     "assists": 7,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 7,
     "points": 14
    },
@@ -66498,30 +66544,30 @@
   },
   "8478474": {
    "career": {
-    "assists": 123,
-    "gamesPlayed": 679,
+    "assists": 124,
+    "gamesPlayed": 680,
     "goals": 140,
-    "points": 263
+    "points": 264
    },
    "fr": {
-    "assists": 29,
+    "assists": 30,
     "g2": 4,
-    "gamesPlayed": 175,
+    "gamesPlayed": 176,
     "goals": 37,
     "p2": 10,
     "p3": 2,
     "penaltyMinutes": 95,
-    "points": 66,
+    "points": 67,
     "ppGoals": 2
    },
    "name": "Lawson Crouse",
    "on_roster": true,
    "pos": "L",
    "season": {
-    "assists": 3,
-    "gamesPlayed": 13,
+    "assists": 4,
+    "gamesPlayed": 14,
     "goals": 1,
-    "points": 4
+    "points": 5
    },
    "seasons": [
     {
@@ -66730,14 +66776,14 @@
   "8478831": {
    "career": {
     "assists": 48,
-    "gamesPlayed": 381,
+    "gamesPlayed": 382,
     "goals": 47,
     "points": 95
    },
    "fr": {
     "assists": 32,
     "g2": 0,
-    "gamesPlayed": 175,
+    "gamesPlayed": 176,
     "goals": 19,
     "p2": 8,
     "p3": 1,
@@ -66750,7 +66796,7 @@
    "pos": "C",
    "season": {
     "assists": 4,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 1,
     "points": 5
    },
@@ -66886,30 +66932,30 @@
   },
   "8479343": {
    "career": {
-    "assists": 385,
-    "gamesPlayed": 696,
+    "assists": 386,
+    "gamesPlayed": 697,
     "goals": 226,
-    "points": 611
+    "points": 612
    },
    "fr": {
-    "assists": 133,
+    "assists": 134,
     "g2": 10,
-    "gamesPlayed": 176,
+    "gamesPlayed": 177,
     "goals": 60,
     "p2": 54,
     "p3": 16,
-    "penaltyMinutes": 80,
-    "points": 193,
+    "penaltyMinutes": 82,
+    "points": 194,
     "ppGoals": 15
    },
    "name": "Clayton Keller",
    "on_roster": true,
    "pos": "R",
    "season": {
-    "assists": 11,
-    "gamesPlayed": 13,
+    "assists": 12,
+    "gamesPlayed": 14,
     "goals": 4,
-    "points": 15
+    "points": 16
    },
    "seasons": [
     {
@@ -67015,30 +67061,30 @@
   },
   "8479369": {
    "career": {
-    "assists": 62,
-    "gamesPlayed": 399,
+    "assists": 63,
+    "gamesPlayed": 400,
     "goals": 17,
-    "points": 79
+    "points": 80
    },
    "fr": {
-    "assists": 3,
+    "assists": 4,
     "g2": 0,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 1,
     "p2": 0,
     "p3": 0,
     "penaltyMinutes": 8,
-    "points": 4,
+    "points": 5,
     "ppGoals": 0
    },
    "name": "Andrew Peeke",
    "on_roster": true,
    "pos": "D",
    "season": {
-    "assists": 3,
-    "gamesPlayed": 13,
+    "assists": 4,
+    "gamesPlayed": 14,
     "goals": 1,
-    "points": 4
+    "points": 5
    },
    "seasons": [
     {
@@ -67127,19 +67173,19 @@
   "8479410": {
    "career": {
     "assists": 308,
-    "gamesPlayed": 643,
-    "goals": 76,
-    "points": 384
+    "gamesPlayed": 644,
+    "goals": 77,
+    "points": 385
    },
    "fr": {
     "assists": 99,
     "g2": 1,
-    "gamesPlayed": 168,
-    "goals": 28,
+    "gamesPlayed": 169,
+    "goals": 29,
     "p2": 25,
     "p3": 9,
     "penaltyMinutes": 91,
-    "points": 127,
+    "points": 128,
     "ppGoals": 9
    },
    "name": "Mikhail Sergachev",
@@ -67147,9 +67193,9 @@
    "pos": "D",
    "season": {
     "assists": 12,
-    "gamesPlayed": 13,
-    "goals": 3,
-    "points": 15
+    "gamesPlayed": 14,
+    "goals": 4,
+    "points": 16
    },
    "seasons": [
     {
@@ -67363,14 +67409,14 @@
   "8479977": {
    "career": {
     "assists": 91,
-    "gamesPlayed": 382,
+    "gamesPlayed": 383,
     "goals": 76,
     "points": 167
    },
    "fr": {
     "assists": 15,
     "g2": 2,
-    "gamesPlayed": 79,
+    "gamesPlayed": 80,
     "goals": 18,
     "p2": 5,
     "p3": 1,
@@ -67383,7 +67429,7 @@
    "pos": "R",
    "season": {
     "assists": 4,
-    "gamesPlayed": 8,
+    "gamesPlayed": 9,
     "goals": 3,
     "points": 7
    },
@@ -67589,30 +67635,30 @@
   },
   "8480849": {
    "career": {
-    "assists": 97,
-    "gamesPlayed": 371,
+    "assists": 98,
+    "gamesPlayed": 372,
     "goals": 66,
-    "points": 163
+    "points": 164
    },
    "fr": {
-    "assists": 48,
+    "assists": 49,
     "g2": 2,
-    "gamesPlayed": 162,
+    "gamesPlayed": 163,
     "goals": 31,
     "p2": 16,
     "p3": 2,
     "penaltyMinutes": 103,
-    "points": 79,
+    "points": 80,
     "ppGoals": 12
    },
    "name": "Barrett Hayton",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 7,
-    "gamesPlayed": 13,
+    "assists": 8,
+    "gamesPlayed": 14,
     "goals": 1,
-    "points": 8
+    "points": 9
    },
    "seasons": [
     {
@@ -67692,14 +67738,14 @@
   "8480855": {
    "career": {
     "assists": 65,
-    "gamesPlayed": 329,
+    "gamesPlayed": 330,
     "goals": 45,
     "points": 110
    },
    "fr": {
     "assists": 32,
     "g2": 0,
-    "gamesPlayed": 170,
+    "gamesPlayed": 171,
     "goals": 23,
     "p2": 8,
     "p3": 1,
@@ -67712,7 +67758,7 @@
    "pos": "C",
    "season": {
     "assists": 2,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 1,
     "points": 3
    },
@@ -67891,14 +67937,14 @@
   "8482699": {
    "career": {
     "assists": 97,
-    "gamesPlayed": 240,
+    "gamesPlayed": 241,
     "goals": 96,
     "points": 193
    },
    "fr": {
     "assists": 71,
     "g2": 13,
-    "gamesPlayed": 162,
+    "gamesPlayed": 163,
     "goals": 72,
     "p2": 37,
     "p3": 9,
@@ -67911,7 +67957,7 @@
    "pos": "R",
    "season": {
     "assists": 5,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 5,
     "points": 10
    },
@@ -67966,19 +68012,19 @@
   "8483431": {
    "career": {
     "assists": 91,
-    "gamesPlayed": 224,
-    "goals": 73,
-    "points": 164
+    "gamesPlayed": 225,
+    "goals": 76,
+    "points": 167
    },
    "fr": {
     "assists": 67,
-    "g2": 8,
-    "gamesPlayed": 142,
-    "goals": 53,
-    "p2": 27,
-    "p3": 8,
+    "g2": 9,
+    "gamesPlayed": 143,
+    "goals": 56,
+    "p2": 28,
+    "p3": 9,
     "penaltyMinutes": 76,
-    "points": 120,
+    "points": 123,
     "ppGoals": 14
    },
    "name": "Logan Cooley",
@@ -67986,9 +68032,9 @@
    "pos": "C",
    "season": {
     "assists": 8,
-    "gamesPlayed": 13,
-    "goals": 4,
-    "points": 12
+    "gamesPlayed": 14,
+    "goals": 7,
+    "points": 15
    },
    "seasons": [
     {
@@ -68032,14 +68078,14 @@
   "8483436": {
    "career": {
     "assists": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "points": 0
    },
    "fr": {
     "assists": 0,
     "g2": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "p2": 0,
     "p3": 0,
@@ -68052,7 +68098,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "points": 0
    },
@@ -68109,14 +68155,14 @@
   "8484386": {
    "career": {
     "assists": 3,
-    "gamesPlayed": 41,
+    "gamesPlayed": 42,
     "goals": 2,
     "points": 5
    },
    "fr": {
     "assists": 3,
     "g2": 1,
-    "gamesPlayed": 41,
+    "gamesPlayed": 42,
     "goals": 2,
     "p2": 1,
     "p3": 0,
@@ -68129,7 +68175,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 2,
     "points": 4
    },
@@ -68157,14 +68203,14 @@
   "8484388": {
    "career": {
     "assists": 6,
-    "gamesPlayed": 41,
+    "gamesPlayed": 42,
     "goals": 5,
     "points": 11
    },
    "fr": {
     "assists": 6,
     "g2": 0,
-    "gamesPlayed": 41,
+    "gamesPlayed": 42,
     "goals": 5,
     "p2": 1,
     "p3": 0,
@@ -68177,7 +68223,7 @@
    "pos": "L",
    "season": {
     "assists": 2,
-    "gamesPlayed": 12,
+    "gamesPlayed": 13,
     "goals": 2,
     "points": 4
    },
@@ -70398,6 +70444,15 @@
    "pts": 0,
    "season": 20262027,
    "win": false
+  },
+  {
+   "date": "2026-10-29",
+   "gameId": 2026020205,
+   "home": false,
+   "otl": false,
+   "pts": 2,
+   "season": 20262027,
+   "win": true
   }
  ]
 }
