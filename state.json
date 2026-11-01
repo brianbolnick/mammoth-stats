@@ -5615,6 +5615,11 @@
  },
  "ledger": {
   "alerts": {
+   "8476389:assists:400": {
+    "posted": [
+     3
+    ]
+   },
    "8480849:assists:100": {
     "posted": [
      3
@@ -5730,6 +5735,9 @@
    },
    "2026020205": {
     "Andrew Peeke plays his 400th career @NHL game tonight #TusksUp": "8479369"
+   },
+   "2026020229": {
+    "Vincent Trocheck is 3 assists away from 400 career @NHL assists #TusksUp": "8476389"
    }
   },
   "processed": [
@@ -5848,12 +5856,16 @@
    "The @utahmammoth power play is 2nd in the NHL at 34.8% #TusksUp": {
     "at": "2026-10-28T20:29:07.440406+00:00",
     "game": "Off day (2026-10-28)"
+   },
+   "Vincent Trocheck is 3 assists away from 400 career @NHL assists #TusksUp": {
+    "at": "2026-11-01T18:50:42.435772+00:00",
+    "game": "Pregame, UTA at PHI (2026-11-01)"
    }
   }
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-10-31T17:57:29.936853+00:00",
+  "last_check": "2026-11-01T18:50:42.818127+00:00",
   "reconciled_at": "2026-10-30T09:54:53.366016+00:00",
   "season": 20262027,
   "seeded_at": "2026-10-30T09:54:44.209312+00:00",
