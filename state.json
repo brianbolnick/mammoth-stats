@@ -5669,16 +5669,16 @@
      "sig": "29"
     },
     "edge:goals:long": {
-     "at": "2026-10-26",
-     "sig": "7"
+     "at": "2026-11-02",
+     "sig": "8"
     },
     "rank:faceoffWinPct": {
      "at": "2026-10-31",
      "sig": "3rd"
     },
     "rank:powerPlayPct": {
-     "at": "2026-10-28",
-     "sig": "2nd"
+     "at": "2026-11-02",
+     "sig": "1st"
     },
     "scorer:8477951": {
      "at": "2026-10-28",
@@ -5693,7 +5693,7 @@
      "sig": "The @utahmammoth are 8-0-0 this season when leading after two periods #TusksUp"
     }
    },
-   "last": "2026-10-31"
+   "last": "2026-11-02"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -5930,6 +5930,14 @@
     "at": "2026-10-26T17:37:18.039066+00:00",
     "game": "Off day (2026-10-26)"
    },
+   "The @utahmammoth have 8 goals from long range this season, the most in the NHL #TusksUp": {
+    "at": "2026-11-02T19:43:09.675573+00:00",
+    "game": "Off day (2026-11-02)"
+   },
+   "The @utahmammoth power play is 1st in the NHL at 34.6% #TusksUp": {
+    "at": "2026-11-02T19:43:09.475388+00:00",
+    "game": "Off day (2026-11-02)"
+   },
    "The @utahmammoth power play is 1st in the NHL at 38.1% #TusksUp": {
     "at": "2026-10-25T19:44:48.101940+00:00",
     "game": "Off day (2026-10-25)"
@@ -5946,7 +5954,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-02T09:17:37.448049+00:00",
+  "last_check": "2026-11-02T19:43:09.837166+00:00",
   "reconciled_at": "2026-11-02T09:17:37.445702+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-02T09:17:27.703894+00:00",
