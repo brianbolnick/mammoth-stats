@@ -5799,7 +5799,8 @@
    2026020177,
    2026020195,
    2026020205,
-   2026020229
+   2026020229,
+   2026020236
   ],
   "pregame_early": {
    "2026020195": {
@@ -5946,6 +5947,14 @@
     "at": "2026-10-28T20:29:07.440406+00:00",
     "game": "Off day (2026-10-28)"
    },
+   "Tonight Barrett Hayton is set to pass Ian Cole on the franchise games played leaderboard and will be t-7th all time #TusksUp": {
+    "at": "2026-11-03T22:28:54.307318+00:00",
+    "game": "Pregame, UTA at TOR (2026-11-03)"
+   },
+   "Tonight Dylan Guenther is set to pass Ian Cole on the franchise games played leaderboard and will be t-7th all time #TusksUp": {
+    "at": "2026-11-03T22:28:54.349348+00:00",
+    "game": "Pregame, UTA at TOR (2026-11-03)"
+   },
    "Vincent Trocheck is 3 assists away from 400 career @NHL assists #TusksUp": {
     "at": "2026-11-01T18:50:42.435772+00:00",
     "game": "Pregame, UTA at PHI (2026-11-01)"
@@ -5954,7 +5963,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-02T19:43:09.837166+00:00",
+  "last_check": "2026-11-03T22:28:54.378520+00:00",
   "reconciled_at": "2026-11-02T09:17:37.445702+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-02T09:17:27.703894+00:00",
