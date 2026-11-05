@@ -5692,6 +5692,11 @@
     "posted": [
      3
     ]
+   },
+   "8482699:goals:100": {
+    "posted": [
+     2
+    ]
    }
   },
   "daily": {
@@ -5870,6 +5875,9 @@
    },
    "2026020229": {
     "Vincent Trocheck is 3 assists away from 400 career @NHL assists #TusksUp": "8476389"
+   },
+   "2026020251": {
+    "Dylan Guenther is 2 goals away from 100 career @NHL goals #TusksUp": "8482699"
    }
   },
   "processed": [
@@ -5926,6 +5934,10 @@
    "Dmitri Simashev scores his first @NHL goal #TusksUp": {
     "at": "2026-10-25T04:07:57.686059+00:00",
     "game": "UTA 5, TBL 4 (2026-10-24)"
+   },
+   "Dylan Guenther is 2 goals away from 100 career @NHL goals #TusksUp": {
+    "at": "2026-11-05T20:00:22.106644+00:00",
+    "game": "Pregame, UTA at MTL (2026-11-05)"
    },
    "Dylan Guenther is 3 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-10-23T00:09:11.363429+00:00",
@@ -6047,7 +6059,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-04T17:55:56.968833+00:00",
+  "last_check": "2026-11-05T20:00:22.255126+00:00",
   "reconciled_at": "2026-11-04T09:55:59.240510+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-04T09:55:49.886255+00:00",
