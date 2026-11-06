@@ -6046,6 +6046,10 @@
     "at": "2026-11-06T02:37:00.007317+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
    },
+   "Nick Schmaltz passes Mikhail Sergachev on the franchise 3+ point games leaderboard and is now t-2nd all time #TusksUp": {
+    "at": "2026-11-06T02:37:16.761765+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
+   },
    "The @utahmammoth are 3rd in the NHL in faceoff percentage (54.9%) #TusksUp": {
     "at": "2026-10-31T17:57:29.734331+00:00",
     "game": "Off day (2026-10-31)"
@@ -6065,6 +6069,10 @@
    "The @utahmammoth are 6-0-0 this season when scoring first #TusksUp": {
     "at": "2026-10-31T17:57:29.498959+00:00",
     "game": "Off day (2026-10-31)"
+   },
+   "The @utahmammoth are 6-1-0 this season when Nick Schmaltz scores #TusksUp": {
+    "at": "2026-11-06T02:37:16.935676+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
    },
    "The @utahmammoth are 7-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-10-25T19:44:48.069136+00:00",
@@ -6122,7 +6130,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-06T02:37:00.363154+00:00",
+  "last_check": "2026-11-06T02:37:17.109345+00:00",
   "reconciled_at": "2026-11-04T09:55:59.240510+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-04T09:55:49.886255+00:00",
