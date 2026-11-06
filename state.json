@@ -5864,6 +5864,10 @@
      "sig": "8482964|8481523,8481618",
      "since": "2026-11-06T00:58:22.200540+00:00"
     },
+    "631": {
+     "sig": "8483431|8477951,8479343",
+     "since": "2026-11-06T01:31:13.905264+00:00"
+    },
     "75": {
      "sig": "8483431|8477220,8476389",
      "since": "2026-11-06T00:58:22.200540+00:00"
@@ -5978,9 +5982,21 @@
     "at": "2026-11-06T01:08:25.832047+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
    },
+   "Logan Cooley passes Nick Schmaltz on the franchise 3+ point games leaderboard and is now 2nd all time #TusksUp": {
+    "at": "2026-11-06T01:41:19.237074+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
+   },
    "Logan Cooley records the 8th hat trick in franchise history #TusksUp": {
     "at": "2026-10-30T01:54:11.866930+00:00",
     "game": "Live, UTA at PIT (2026-10-29)"
+   },
+   "Logan Cooley records the 9th hat trick in franchise history #TusksUp": {
+    "at": "2026-11-06T01:41:18.875349+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
+   },
+   "Logan Cooley ties Clayton Keller for 3rd on the franchise goals leaderboard #TusksUp": {
+    "at": "2026-11-06T01:41:19.062958+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
    },
    "Mikhail Sergachev extends his point streak to 5 games (6 points) #TusksUp": {
     "at": "2026-10-28T08:15:08.545116+00:00",
@@ -6086,7 +6102,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-06T01:08:26.192471+00:00",
+  "last_check": "2026-11-06T01:41:19.411316+00:00",
   "reconciled_at": "2026-11-04T09:55:59.240510+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-04T09:55:49.886255+00:00",
