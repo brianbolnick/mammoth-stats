@@ -5737,8 +5737,8 @@
      "sig": "29"
     },
     "edge:goals:long": {
-     "at": "2026-11-02",
-     "sig": "8"
+     "at": "2026-11-06",
+     "sig": "10"
     },
     "rank:faceoffWinPct": {
      "at": "2026-10-31",
@@ -5757,15 +5757,15 @@
      "sig": "The @utahmammoth are 5-0-0 this season when Dylan Guenther scores #TusksUp"
     },
     "split:first": {
-     "at": "2026-10-31",
-     "sig": "The @utahmammoth are 6-0-0 this season when scoring first #TusksUp"
+     "at": "2026-11-06",
+     "sig": "The @utahmammoth are 7-0-1 this season when scoring first #TusksUp"
     },
     "split:lead2": {
      "at": "2026-11-04",
      "sig": "The @utahmammoth are 9-0-0 this season when leading after two periods #TusksUp"
     }
    },
-   "last": "2026-11-04"
+   "last": "2026-11-06"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6136,6 +6136,10 @@
     "at": "2026-11-06T01:08:26.017577+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
    },
+   "The @utahmammoth are 7-0-1 this season when scoring first #TusksUp": {
+    "at": "2026-11-06T21:25:43.546144+00:00",
+    "game": "Off day (2026-11-06)"
+   },
    "The @utahmammoth are 8-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-10-30T16:39:05.655565+00:00",
     "game": "Off day (2026-10-30)"
@@ -6143,6 +6147,10 @@
    "The @utahmammoth are 9-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-11-04T17:55:56.888389+00:00",
     "game": "Off day (2026-11-04)"
+   },
+   "The @utahmammoth have 10 goals from long range this season, the most in the NHL #TusksUp": {
+    "at": "2026-11-06T21:25:43.459783+00:00",
+    "game": "Off day (2026-11-06)"
    },
    "The @utahmammoth have 29 goals from high-danger areas this season, the 2nd-most in the NHL #TusksUp": {
     "at": "2026-10-30T16:39:05.689627+00:00",
@@ -6184,7 +6192,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-06T15:51:02.255291+00:00",
+  "last_check": "2026-11-06T21:25:43.627338+00:00",
   "reconciled_at": "2026-11-06T15:51:02.253248+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-06T15:50:52.730795+00:00",
