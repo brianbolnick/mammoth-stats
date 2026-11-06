@@ -5856,6 +5856,14 @@
      "sig": "8483431|8477951,8479410",
      "since": "2026-11-06T00:58:22.200540+00:00"
     },
+    "302": {
+     "sig": "8481523|8480018,8483457",
+     "since": "2026-11-06T02:15:04.758585+00:00"
+    },
+    "303": {
+     "sig": "8477951|8483431,8482699",
+     "since": "2026-11-06T02:26:54.932393+00:00"
+    },
     "378": {
      "sig": "8480018|8483515,8480865",
      "since": "2026-11-06T00:58:22.200540+00:00"
@@ -5982,6 +5990,10 @@
     "at": "2026-11-06T01:08:25.832047+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
    },
+   "Logan Cooley passes Mikhail Sergachev on the franchise 3+ point games leaderboard and is now t-2nd all time #TusksUp": {
+    "at": "2026-11-06T02:37:00.181137+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
+   },
    "Logan Cooley passes Nick Schmaltz on the franchise 3+ point games leaderboard and is now 2nd all time #TusksUp": {
     "at": "2026-11-06T01:41:19.237074+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
@@ -5996,6 +6008,10 @@
    },
    "Logan Cooley ties Clayton Keller for 3rd on the franchise goals leaderboard #TusksUp": {
     "at": "2026-11-06T01:41:19.062958+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
+   },
+   "Logan Cooley's 4-point game is the 15th 4+ point game in franchise history #TusksUp": {
+    "at": "2026-11-06T02:36:59.832415+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
    },
    "Mikhail Sergachev extends his point streak to 5 games (6 points) #TusksUp": {
@@ -6025,6 +6041,10 @@
    "Nick Schmaltz passes Clayton Keller on the franchise goals leaderboard and is now 2nd all time #TusksUp": {
     "at": "2026-11-04T02:49:54.950428+00:00",
     "game": "Live, UTA at TOR (2026-11-03)"
+   },
+   "Nick Schmaltz passes Dylan Guenther on the franchise power play goals leaderboard and is now 1st all time #TusksUp": {
+    "at": "2026-11-06T02:37:00.007317+00:00",
+    "game": "Live, UTA at MTL (2026-11-05)"
    },
    "The @utahmammoth are 3rd in the NHL in faceoff percentage (54.9%) #TusksUp": {
     "at": "2026-10-31T17:57:29.734331+00:00",
@@ -6102,7 +6122,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-06T01:41:19.411316+00:00",
+  "last_check": "2026-11-06T02:37:00.363154+00:00",
   "reconciled_at": "2026-11-04T09:55:59.240510+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-04T09:55:49.886255+00:00",
