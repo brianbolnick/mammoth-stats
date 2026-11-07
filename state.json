@@ -5711,7 +5711,8 @@
   "alerts": {
    "8476389:assists:400": {
     "posted": [
-     3
+     3,
+     1
     ]
    },
    "8480849:assists:100": {
@@ -5954,6 +5955,9 @@
    },
    "2026020251": {
     "Dylan Guenther is 2 goals away from 100 career @NHL goals #TusksUp": "8482699"
+   },
+   "2026020269": {
+    "Vincent Trocheck is 1 assist away from 400 career @NHL assists #TusksUp": "8476389"
    }
   },
   "processed": [
@@ -6184,6 +6188,10 @@
     "at": "2026-11-03T22:28:54.349348+00:00",
     "game": "Pregame, UTA at TOR (2026-11-03)"
    },
+   "Vincent Trocheck is 1 assist away from 400 career @NHL assists #TusksUp": {
+    "at": "2026-11-07T18:59:52.938986+00:00",
+    "game": "Pregame, UTA at OTT (2026-11-07)"
+   },
    "Vincent Trocheck is 3 assists away from 400 career @NHL assists #TusksUp": {
     "at": "2026-11-01T18:50:42.435772+00:00",
     "game": "Pregame, UTA at PHI (2026-11-01)"
@@ -6192,7 +6200,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-06T21:25:43.627338+00:00",
+  "last_check": "2026-11-07T18:59:53.183222+00:00",
   "reconciled_at": "2026-11-06T15:51:02.253248+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-06T15:50:52.730795+00:00",
