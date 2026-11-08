@@ -5771,6 +5771,10 @@
      "at": "2026-11-06",
      "sig": "10"
     },
+    "pace": {
+     "at": "2026-11-08",
+     "sig": "96"
+    },
     "rank:faceoffWinPct": {
      "at": "2026-10-31",
      "sig": "3rd"
@@ -5792,11 +5796,11 @@
      "sig": "The @utahmammoth are 7-0-1 this season when scoring first #TusksUp"
     },
     "split:lead2": {
-     "at": "2026-11-04",
-     "sig": "The @utahmammoth are 9-0-0 this season when leading after two periods #TusksUp"
+     "at": "2026-11-08",
+     "sig": "The @utahmammoth are 9-0-1 this season when leading after two periods #TusksUp"
     }
    },
-   "last": "2026-11-06"
+   "last": "2026-11-08"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6220,6 +6224,14 @@
     "at": "2026-11-04T17:55:56.888389+00:00",
     "game": "Off day (2026-11-04)"
    },
+   "The @utahmammoth are 9-0-1 this season when leading after two periods #TusksUp": {
+    "at": "2026-11-08T20:22:06.998361+00:00",
+    "game": "Off day (2026-11-08)"
+   },
+   "The @utahmammoth are on pace for 96 points. The franchise record is 92 #TusksUp": {
+    "at": "2026-11-08T20:22:06.768759+00:00",
+    "game": "Off day (2026-11-08)"
+   },
    "The @utahmammoth have 10 goals from long range this season, the most in the NHL #TusksUp": {
     "at": "2026-11-06T21:25:43.459783+00:00",
     "game": "Off day (2026-11-06)"
@@ -6268,7 +6280,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-08T15:54:11.918734+00:00",
+  "last_check": "2026-11-08T20:22:07.227770+00:00",
   "reconciled_at": "2026-11-08T15:54:11.916512+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-08T15:54:03.765777+00:00",
