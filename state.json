@@ -5775,6 +5775,10 @@
      "at": "2026-11-08",
      "sig": "96"
     },
+    "player:8479343:ppPoints": {
+     "at": "2026-11-10",
+     "sig": "NHL:3"
+    },
     "rank:faceoffWinPct": {
      "at": "2026-10-31",
      "sig": "3rd"
@@ -5784,8 +5788,8 @@
      "sig": "2nd"
     },
     "scorer:8477951": {
-     "at": "2026-10-28",
-     "sig": "The @utahmammoth are 5-1-0 this season when Nick Schmaltz scores #TusksUp"
+     "at": "2026-11-10",
+     "sig": "The @utahmammoth are 6-1-1 this season when Nick Schmaltz scores #TusksUp"
     },
     "scorer:8482699": {
      "at": "2026-11-04",
@@ -5804,7 +5808,7 @@
      "sig": "The @utahmammoth are 5-0-1 in one-goal games this season #TusksUp"
     }
    },
-   "last": "2026-11-09"
+   "last": "2026-11-10"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6080,6 +6084,10 @@
     "at": "2026-11-08T08:51:16.365983+00:00",
     "game": "OTT 4, UTA 2 (2026-11-07)"
    },
+   "Clayton Keller is 3rd in the NHL in power play points (15) #TusksUp": {
+    "at": "2026-11-10T21:45:27.116456+00:00",
+    "game": "Off day (2026-11-10)"
+   },
    "Clayton Keller passes Logan Cooley on the franchise goals leaderboard and is now 3rd all time #TusksUp": {
     "at": "2026-11-08T02:03:03.388291+00:00",
     "game": "Live, UTA at OTT (2026-11-07)"
@@ -6212,6 +6220,10 @@
     "at": "2026-11-06T02:37:16.935676+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
    },
+   "The @utahmammoth are 6-1-1 this season when Nick Schmaltz scores #TusksUp": {
+    "at": "2026-11-10T21:45:26.855361+00:00",
+    "game": "Off day (2026-11-10)"
+   },
    "The @utahmammoth are 7-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-10-25T19:44:48.069136+00:00",
     "game": "Off day (2026-10-25)"
@@ -6292,7 +6304,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-10T00:24:11.239366+00:00",
+  "last_check": "2026-11-10T21:45:27.342044+00:00",
   "reconciled_at": "2026-11-08T15:54:11.916512+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-08T15:54:03.765777+00:00",
