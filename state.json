@@ -6029,6 +6029,9 @@
    },
    "2026020269": {
     "Vincent Trocheck is 1 assist away from 400 career @NHL assists #TusksUp": "8476389"
+   },
+   "2026020296": {
+    "Tonight Barrett Hayton is set to pass Dylan Guenther on the franchise games played leaderboard and will be 7th all time #TusksUp": "8480849"
    }
   },
   "processed": [
@@ -6284,6 +6287,10 @@
     "at": "2026-11-10T00:24:11.018689+00:00",
     "game": "Off day (2026-11-09)"
    },
+   "Tonight Barrett Hayton is set to pass Dylan Guenther on the franchise games played leaderboard and will be 7th all time #TusksUp": {
+    "at": "2026-11-11T23:38:47.720550+00:00",
+    "game": "Pregame, UTA at VGK (2026-11-11)"
+   },
    "Tonight Barrett Hayton is set to pass Ian Cole on the franchise games played leaderboard and will be t-7th all time #TusksUp": {
     "at": "2026-11-03T22:28:54.307318+00:00",
     "game": "Pregame, UTA at TOR (2026-11-03)"
@@ -6304,7 +6311,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-10T21:45:27.342044+00:00",
+  "last_check": "2026-11-11T23:38:47.774043+00:00",
   "reconciled_at": "2026-11-08T15:54:11.916512+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-08T15:54:03.765777+00:00",
