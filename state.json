@@ -5609,6 +5609,30 @@
     "8480855": 1,
     "8484386": 1
    }
+  },
+  "2026020307": {
+   "final": [
+    0,
+    0
+   ],
+   "first": null,
+   "home": true,
+   "maxdef": 0,
+   "opp": "STL",
+   "p1": [
+    0,
+    0
+   ],
+   "p2": [
+    0,
+    0
+   ],
+   "pgoals": {},
+   "reg": [
+    0,
+    0
+   ],
+   "scorers": {}
   }
  },
  "goalies": {
@@ -5623,19 +5647,19 @@
   },
   "8478872": {
    "career": {
-    "gamesPlayed": 275,
+    "gamesPlayed": 276,
     "shutouts": 9,
     "wins": 114
    },
    "fr": {
-    "gamesPlayed": 135,
+    "gamesPlayed": 136,
     "shutouts": 4,
     "wins": 70
    },
    "name": "Karel Vejmelka",
    "on_roster": true,
    "season": {
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "shutouts": 1,
     "wins": 6
    },
@@ -6126,7 +6150,8 @@
    2026020236,
    2026020251,
    2026020269,
-   2026020296
+   2026020296,
+   2026020307
   ],
   "surfaced": {
    "Anders Lee passes Petr Nedved in goals and is now 233rd in @NHL history #TusksUp": {
@@ -6401,7 +6426,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-13T05:23:25.020746+00:00",
+  "last_check": "2026-11-13T09:24:04.355392+00:00",
   "reconciled_at": "2026-11-12T13:08:37.042679+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-12T13:08:29.994929+00:00",
@@ -66168,18 +66193,18 @@
   "8475314": {
    "career": {
     "assists": 246,
-    "gamesPlayed": 943,
+    "gamesPlayed": 944,
     "goals": 311,
     "points": 557
    },
    "fr": {
     "assists": 5,
     "g2": 0,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 3,
     "p2": 1,
     "p3": 0,
-    "penaltyMinutes": 0,
+    "penaltyMinutes": 2,
     "points": 8,
     "ppGoals": 0
    },
@@ -66188,7 +66213,7 @@
    "pos": "L",
    "season": {
     "assists": 5,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 3,
     "points": 8
    },
@@ -66379,14 +66404,14 @@
   "8476389": {
    "career": {
     "assists": 399,
-    "gamesPlayed": 888,
+    "gamesPlayed": 889,
     "goals": 242,
     "points": 641
    },
    "fr": {
     "assists": 7,
     "g2": 0,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 3,
     "p2": 1,
     "p3": 0,
@@ -66399,7 +66424,7 @@
    "pos": "C",
    "season": {
     "assists": 7,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 3,
     "points": 10
    },
@@ -66590,18 +66615,18 @@
   "8477070": {
    "career": {
     "assists": 25,
-    "gamesPlayed": 272,
+    "gamesPlayed": 273,
     "goals": 14,
     "points": 39
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 73,
+    "gamesPlayed": 74,
     "goals": 3,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 107,
+    "penaltyMinutes": 112,
     "points": 6,
     "ppGoals": 0
    },
@@ -66610,7 +66635,7 @@
    "pos": "C",
    "season": {
     "assists": 0,
-    "gamesPlayed": 7,
+    "gamesPlayed": 8,
     "goals": 0,
     "points": 0
    },
@@ -66866,14 +66891,14 @@
   "8477346": {
    "career": {
     "assists": 219,
-    "gamesPlayed": 649,
+    "gamesPlayed": 650,
     "goals": 65,
     "points": 284
    },
    "fr": {
     "assists": 9,
     "g2": 0,
-    "gamesPlayed": 39,
+    "gamesPlayed": 40,
     "goals": 3,
     "p2": 1,
     "p3": 0,
@@ -66886,7 +66911,7 @@
    "pos": "D",
    "season": {
     "assists": 3,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 2,
     "points": 5
    },
@@ -67165,14 +67190,14 @@
   "8478474": {
    "career": {
     "assists": 126,
-    "gamesPlayed": 686,
+    "gamesPlayed": 687,
     "goals": 142,
     "points": 268
    },
    "fr": {
     "assists": 32,
     "g2": 4,
-    "gamesPlayed": 182,
+    "gamesPlayed": 183,
     "goals": 39,
     "p2": 12,
     "p3": 2,
@@ -67185,7 +67210,7 @@
    "pos": "L",
    "season": {
     "assists": 6,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 3,
     "points": 9
    },
@@ -67396,18 +67421,18 @@
   "8478831": {
    "career": {
     "assists": 48,
-    "gamesPlayed": 388,
+    "gamesPlayed": 389,
     "goals": 47,
     "points": 95
    },
    "fr": {
     "assists": 32,
     "g2": 0,
-    "gamesPlayed": 182,
+    "gamesPlayed": 183,
     "goals": 19,
     "p2": 8,
     "p3": 1,
-    "penaltyMinutes": 74,
+    "penaltyMinutes": 78,
     "points": 51,
     "ppGoals": 0
    },
@@ -67416,7 +67441,7 @@
    "pos": "C",
    "season": {
     "assists": 4,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 1,
     "points": 5
    },
@@ -67553,18 +67578,18 @@
   "8479343": {
    "career": {
     "assists": 395,
-    "gamesPlayed": 703,
+    "gamesPlayed": 704,
     "goals": 227,
     "points": 622
    },
    "fr": {
     "assists": 143,
     "g2": 10,
-    "gamesPlayed": 183,
+    "gamesPlayed": 184,
     "goals": 61,
     "p2": 57,
     "p3": 17,
-    "penaltyMinutes": 82,
+    "penaltyMinutes": 84,
     "points": 204,
     "ppGoals": 15
    },
@@ -67573,7 +67598,7 @@
    "pos": "R",
    "season": {
     "assists": 21,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 5,
     "points": 26
    },
@@ -67682,14 +67707,14 @@
   "8479369": {
    "career": {
     "assists": 67,
-    "gamesPlayed": 406,
+    "gamesPlayed": 407,
     "goals": 18,
     "points": 85
    },
    "fr": {
     "assists": 8,
     "g2": 0,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 2,
     "p2": 2,
     "p3": 0,
@@ -67702,7 +67727,7 @@
    "pos": "D",
    "season": {
     "assists": 8,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 2,
     "points": 10
    },
@@ -67793,14 +67818,14 @@
   "8479410": {
    "career": {
     "assists": 311,
-    "gamesPlayed": 650,
+    "gamesPlayed": 651,
     "goals": 78,
     "points": 389
    },
    "fr": {
     "assists": 102,
     "g2": 1,
-    "gamesPlayed": 175,
+    "gamesPlayed": 176,
     "goals": 30,
     "p2": 26,
     "p3": 9,
@@ -67813,7 +67838,7 @@
    "pos": "D",
    "season": {
     "assists": 15,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 5,
     "points": 20
    },
@@ -67922,14 +67947,14 @@
   "8479619": {
    "career": {
     "assists": 39,
-    "gamesPlayed": 247,
+    "gamesPlayed": 248,
     "goals": 51,
     "points": 90
    },
    "fr": {
     "assists": 28,
     "g2": 1,
-    "gamesPlayed": 143,
+    "gamesPlayed": 144,
     "goals": 24,
     "p2": 7,
     "p3": 0,
@@ -67942,7 +67967,7 @@
    "pos": "L",
    "season": {
     "assists": 1,
-    "gamesPlayed": 11,
+    "gamesPlayed": 12,
     "goals": 1,
     "points": 2
    },
@@ -68029,14 +68054,14 @@
   "8479977": {
    "career": {
     "assists": 91,
-    "gamesPlayed": 385,
+    "gamesPlayed": 386,
     "goals": 76,
     "points": 167
    },
    "fr": {
     "assists": 15,
     "g2": 2,
-    "gamesPlayed": 82,
+    "gamesPlayed": 83,
     "goals": 18,
     "p2": 5,
     "p3": 1,
@@ -68049,7 +68074,7 @@
    "pos": "R",
    "season": {
     "assists": 4,
-    "gamesPlayed": 11,
+    "gamesPlayed": 12,
     "goals": 3,
     "points": 7
    },
@@ -68256,14 +68281,14 @@
   "8480849": {
    "career": {
     "assists": 98,
-    "gamesPlayed": 378,
+    "gamesPlayed": 379,
     "goals": 67,
     "points": 165
    },
    "fr": {
     "assists": 49,
     "g2": 2,
-    "gamesPlayed": 169,
+    "gamesPlayed": 170,
     "goals": 32,
     "p2": 16,
     "p3": 2,
@@ -68276,7 +68301,7 @@
    "pos": "C",
    "season": {
     "assists": 8,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 2,
     "points": 10
    },
@@ -68358,14 +68383,14 @@
   "8480855": {
    "career": {
     "assists": 69,
-    "gamesPlayed": 336,
+    "gamesPlayed": 337,
     "goals": 47,
     "points": 116
    },
    "fr": {
     "assists": 36,
     "g2": 0,
-    "gamesPlayed": 177,
+    "gamesPlayed": 178,
     "goals": 25,
     "p2": 10,
     "p3": 3,
@@ -68378,7 +68403,7 @@
    "pos": "C",
    "season": {
     "assists": 6,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 3,
     "points": 9
    },
@@ -68488,14 +68513,14 @@
   "8481708": {
    "career": {
     "assists": 24,
-    "gamesPlayed": 115,
+    "gamesPlayed": 116,
     "goals": 4,
     "points": 28
    },
    "fr": {
     "assists": 0,
     "g2": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "p2": 0,
     "p3": 0,
@@ -68508,7 +68533,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "points": 0
    },
@@ -68576,14 +68601,14 @@
   "8481827": {
    "career": {
     "assists": 0,
-    "gamesPlayed": 2,
+    "gamesPlayed": 3,
     "goals": 0,
     "points": 0
    },
    "fr": {
     "assists": 0,
     "g2": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "p2": 0,
     "p3": 0,
@@ -68596,7 +68621,7 @@
    "pos": "L",
    "season": {
     "assists": 0,
-    "gamesPlayed": 0,
+    "gamesPlayed": 1,
     "goals": 0,
     "points": 0
    },
@@ -68802,11 +68827,11 @@
    "fr": {
     "assists": 0,
     "g2": 0,
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 0,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 0,
+    "penaltyMinutes": 2,
     "points": 0,
     "ppGoals": 0
    },
@@ -68814,7 +68839,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 5,
+    "gamesPlayed": 6,
     "goals": 0,
     "points": 0
    },
@@ -68871,14 +68896,14 @@
   "8484386": {
    "career": {
     "assists": 3,
-    "gamesPlayed": 48,
+    "gamesPlayed": 49,
     "goals": 5,
     "points": 8
    },
    "fr": {
     "assists": 3,
     "g2": 1,
-    "gamesPlayed": 48,
+    "gamesPlayed": 49,
     "goals": 5,
     "p2": 1,
     "p3": 0,
@@ -68891,7 +68916,7 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 20,
+    "gamesPlayed": 21,
     "goals": 5,
     "points": 7
    },
@@ -68919,14 +68944,14 @@
   "8484388": {
    "career": {
     "assists": 6,
-    "gamesPlayed": 44,
+    "gamesPlayed": 45,
     "goals": 5,
     "points": 11
    },
    "fr": {
     "assists": 6,
     "g2": 0,
-    "gamesPlayed": 44,
+    "gamesPlayed": 45,
     "goals": 5,
     "p2": 1,
     "p3": 0,
@@ -68939,7 +68964,7 @@
    "pos": "L",
    "season": {
     "assists": 2,
-    "gamesPlayed": 15,
+    "gamesPlayed": 16,
     "goals": 2,
     "points": 4
    },
@@ -71243,6 +71268,15 @@
    "home": false,
    "otl": false,
    "pts": 0,
+   "season": 20262027,
+   "win": false
+  },
+  {
+   "date": "2026-11-12",
+   "gameId": 2026020307,
+   "home": true,
+   "otl": true,
+   "pts": 1,
    "season": 20262027,
    "win": false
   }
