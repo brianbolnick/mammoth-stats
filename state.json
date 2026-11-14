@@ -6129,7 +6129,10 @@
    "2026020296": {
     "Tonight Barrett Hayton is set to pass Dylan Guenther on the franchise games played leaderboard and will be 7th all time #TusksUp": "8480849"
    },
-   "2026020307": {}
+   "2026020307": {},
+   "2026020323": {
+    "Tonight Clayton Keller is set to pass Nick Schmaltz on the franchise games played leaderboard and will be 1st all time #TusksUp": "8479343"
+   }
   },
   "processed": [
    2026020013,
@@ -6414,6 +6417,10 @@
     "at": "2026-11-03T22:28:54.307318+00:00",
     "game": "Pregame, UTA at TOR (2026-11-03)"
    },
+   "Tonight Clayton Keller is set to pass Nick Schmaltz on the franchise games played leaderboard and will be 1st all time #TusksUp": {
+    "at": "2026-11-14T20:58:47.774043+00:00",
+    "game": "Pregame, UTA vs SJS (2026-11-14)"
+   },
    "Tonight Dylan Guenther is set to pass Ian Cole on the franchise games played leaderboard and will be t-7th all time #TusksUp": {
     "at": "2026-11-03T22:28:54.349348+00:00",
     "game": "Pregame, UTA at TOR (2026-11-03)"
@@ -6430,7 +6437,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-13T17:20:38.274999+00:00",
+  "last_check": "2026-11-14T20:58:47.801493+00:00",
   "reconciled_at": "2026-11-13T17:20:36.096933+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-13T17:20:27.740511+00:00",
