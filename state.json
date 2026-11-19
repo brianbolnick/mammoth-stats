@@ -5934,6 +5934,10 @@
      "at": "2026-11-17",
      "sig": "NHL:2"
     },
+    "player:8484386:goals": {
+     "at": "2026-11-19",
+     "sig": "NHL defensemen:2"
+    },
     "rank:faceoffWinPct": {
      "at": "2026-10-31",
      "sig": "3rd"
@@ -5955,8 +5959,8 @@
      "sig": "The @utahmammoth are 5-0-0 this season when Dylan Guenther scores #TusksUp"
     },
     "split:first": {
-     "at": "2026-11-15",
-     "sig": "The @utahmammoth are 7-0-2 this season when scoring first #TusksUp"
+     "at": "2026-11-19",
+     "sig": "The @utahmammoth are 8-0-2 this season when scoring first #TusksUp"
     },
     "split:lead2": {
      "at": "2026-11-17",
@@ -5967,7 +5971,7 @@
      "sig": "The @utahmammoth are 5-0-2 in one-goal games this season #TusksUp"
     }
    },
-   "last": "2026-11-17"
+   "last": "2026-11-19"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6368,6 +6372,10 @@
     "at": "2026-11-04T09:56:00.362798+00:00",
     "game": "UTA 3, TOR 2 (2026-11-03)"
    },
+   "Dmitri Simashev is 2nd among NHL defensemen in goals (5) #TusksUp": {
+    "at": "2026-11-19T22:05:38.193014+00:00",
+    "game": "Off day (2026-11-19)"
+   },
    "Dmitri Simashev scores his first @NHL goal #TusksUp": {
     "at": "2026-10-25T04:07:57.686059+00:00",
     "game": "UTA 5, TBL 4 (2026-10-24)"
@@ -6556,6 +6564,10 @@
     "at": "2026-10-30T16:39:05.655565+00:00",
     "game": "Off day (2026-10-30)"
    },
+   "The @utahmammoth are 8-0-2 this season when scoring first #TusksUp": {
+    "at": "2026-11-19T22:05:38.010693+00:00",
+    "game": "Off day (2026-11-19)"
+   },
    "The @utahmammoth are 9-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-11-04T17:55:56.888389+00:00",
     "game": "Off day (2026-11-04)"
@@ -6636,7 +6648,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-19T13:57:28.229112+00:00",
+  "last_check": "2026-11-19T22:05:38.304236+00:00",
   "reconciled_at": "2026-11-19T13:57:27.034578+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-19T13:57:16.882780+00:00",
