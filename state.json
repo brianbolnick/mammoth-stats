@@ -5895,7 +5895,23 @@
      1
     ]
    },
+   "8478831:goals:50": {
+    "posted": [
+     1
+    ]
+   },
+   "8478831:points:100": {
+    "posted": [
+     1
+    ]
+   },
    "8479343:assists:400": {
+    "posted": [
+     3,
+     1
+    ]
+   },
+   "8479977:assists:100": {
     "posted": [
      3
     ]
@@ -6276,6 +6292,12 @@
    },
    "2026020346": {
     "Clayton Keller is 3 assists away from 400 career @NHL assists #TusksUp": "8479343"
+   },
+   "2026020370": {
+    "Clayton Keller is 1 assist away from 400 career @NHL assists #TusksUp": "8479343",
+    "Kailer Yamamoto is 3 assists away from 100 career @NHL assists #TusksUp": "8479977",
+    "Kevin Stenlund is 1 goal away from 50 career @NHL goals #TusksUp": "8478831",
+    "Kevin Stenlund is 1 point away from 100 career @NHL points #TusksUp": "8478831"
    }
   },
   "processed": [
@@ -6348,6 +6370,10 @@
     "at": "2026-11-12T13:08:37.756045+00:00",
     "game": "VGK 5, UTA 3 (2026-11-11)"
    },
+   "Clayton Keller is 1 assist away from 400 career @NHL assists #TusksUp": {
+    "at": "2026-11-21T21:55:47.031887+00:00",
+    "game": "Pregame, UTA vs ANA (2026-11-21)"
+   },
    "Clayton Keller is 3 assists away from 400 career @NHL assists #TusksUp": {
     "at": "2026-11-18T23:36:47.916838+00:00",
     "game": "Pregame, UTA vs COL (2026-11-18)"
@@ -6400,9 +6426,21 @@
     "at": "2026-11-12T13:08:37.844644+00:00",
     "game": "VGK 5, UTA 3 (2026-11-11)"
    },
+   "Kailer Yamamoto is 3 assists away from 100 career @NHL assists #TusksUp": {
+    "at": "2026-11-21T21:55:47.300461+00:00",
+    "game": "Pregame, UTA vs ANA (2026-11-21)"
+   },
    "Kailer Yamamoto passes Sean Durzi on the franchise points leaderboard and is now 15th all time #TusksUp": {
     "at": "2026-11-19T13:57:27.597737+00:00",
     "game": "UTA 4, COL 1 (2026-11-18)"
+   },
+   "Kevin Stenlund is 1 goal away from 50 career @NHL goals #TusksUp": {
+    "at": "2026-11-21T21:55:47.760237+00:00",
+    "game": "Pregame, UTA vs ANA (2026-11-21)"
+   },
+   "Kevin Stenlund is 1 point away from 100 career @NHL points #TusksUp": {
+    "at": "2026-11-21T21:55:47.524907+00:00",
+    "game": "Pregame, UTA vs ANA (2026-11-21)"
    },
    "Kevin Stenlund passes Michael Carcone on the franchise points leaderboard and is now t-9th all time #TusksUp": {
     "at": "2026-11-19T13:57:27.814238+00:00",
@@ -6656,7 +6694,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-20T20:27:06.322033+00:00",
+  "last_check": "2026-11-21T21:55:47.977186+00:00",
   "reconciled_at": "2026-11-19T13:57:27.034578+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-19T13:57:16.882780+00:00",
