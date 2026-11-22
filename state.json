@@ -5866,21 +5866,21 @@
   },
   "8482657": {
    "career": {
-    "gamesPlayed": 12,
-    "shutouts": 0,
-    "wins": 8
-   },
-   "fr": {
     "gamesPlayed": 11,
     "shutouts": 0,
     "wins": 7
+   },
+   "fr": {
+    "gamesPlayed": 10,
+    "shutouts": 0,
+    "wins": 6
    },
    "name": "Sebastian Cossa",
    "on_roster": true,
    "season": {
-    "gamesPlayed": 11,
+    "gamesPlayed": 10,
     "shutouts": 0,
-    "wins": 7
+    "wins": 6
    },
    "seasons": [
     {
@@ -5894,12 +5894,12 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 9,
+     "gamesPlayed": 10,
      "goals": 0,
      "points": 0,
      "season": 20262027,
      "shutouts": 0,
-     "wins": 5
+     "wins": 6
     }
    ]
   },
@@ -5914,10 +5914,10 @@
   }
  },
  "hist": {
-  "hat": 9,
-  "maxg": 4,
-  "maxp": 5,
-  "p4": 15
+  "hat": 1,
+  "maxg": 3,
+  "maxp": 4,
+  "p4": 1
  },
  "ledger": {
   "alerts": {
@@ -5971,12 +5971,12 @@
      "sig": "29"
     },
     "edge:goals:long": {
-     "at": "2026-11-06",
-     "sig": "10"
+     "at": "2026-11-22",
+     "sig": "11"
     },
     "pace": {
-     "at": "2026-11-08",
-     "sig": "96"
+     "at": "2026-11-22",
+     "sig": "92"
     },
     "player:8479343:ppPoints": {
      "at": "2026-11-17",
@@ -6019,7 +6019,7 @@
      "sig": "The @utahmammoth are 5-0-2 in one-goal games this season #TusksUp"
     }
    },
-   "last": "2026-11-20"
+   "last": "2026-11-22"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6712,6 +6712,10 @@
     "at": "2026-11-17T18:28:04.151673+00:00",
     "game": "Off day (2026-11-17)"
    },
+   "The @utahmammoth are on pace for 92 points. The franchise record is 54 #TusksUp": {
+    "at": "2026-11-22T17:43:56.989216+00:00",
+    "game": "Off day (2026-11-22)"
+   },
    "The @utahmammoth are on pace for 96 points. The franchise record is 92 #TusksUp": {
     "at": "2026-11-08T20:22:06.768759+00:00",
     "game": "Off day (2026-11-08)"
@@ -6719,6 +6723,10 @@
    "The @utahmammoth have 10 goals from long range this season, the most in the NHL #TusksUp": {
     "at": "2026-11-06T21:25:43.459783+00:00",
     "game": "Off day (2026-11-06)"
+   },
+   "The @utahmammoth have 11 goals from long range this season, the most in the NHL #TusksUp": {
+    "at": "2026-11-22T17:43:56.898122+00:00",
+    "game": "Off day (2026-11-22)"
    },
    "The @utahmammoth have 29 goals from high-danger areas this season, the 2nd-most in the NHL #TusksUp": {
     "at": "2026-10-30T16:39:05.689627+00:00",
@@ -6784,14 +6792,14 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-22T09:50:47.451446+00:00",
-  "reconciled_at": "2026-11-19T13:57:27.034578+00:00",
+  "last_check": "2026-11-22T17:43:57.028989+00:00",
+  "reconciled_at": "2026-11-22T17:43:56.173243+00:00",
   "season": 20262027,
-  "seeded_at": "2026-11-19T13:57:16.882780+00:00",
+  "seeded_at": "2026-11-22T17:43:48.565155+00:00",
   "team": "UTA"
  },
  "nhl": {
-  "at": "2026-11-22T02:03:39.843175+00:00",
+  "at": "2026-11-22T17:43:56.172645+00:00",
   "d_lists": {
    "assists": [
     [
@@ -9947,7 +9955,7 @@
     "g2": 0,
     "gamesPlayed": 164,
     "goals": 4,
-    "p2": 4,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 127,
     "points": 40,
@@ -9989,18 +9997,18 @@
   "8475314": {
    "career": {
     "assists": 248,
-    "gamesPlayed": 948,
+    "gamesPlayed": 947,
     "goals": 311,
     "points": 559
    },
    "fr": {
     "assists": 7,
     "g2": 0,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 3,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 8,
+    "penaltyMinutes": 6,
     "points": 10,
     "ppGoals": 0
    },
@@ -10009,7 +10017,7 @@
    "pos": "L",
    "season": {
     "assists": 7,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 3,
     "points": 10
    },
@@ -10142,7 +10150,7 @@
     },
     {
      "assists": 7,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 3,
      "points": 10,
      "season": 20262027,
@@ -10178,10 +10186,10 @@
    "career": null,
    "fr": {
     "assists": 11,
-    "g2": 1,
+    "g2": 0,
     "gamesPlayed": 66,
     "goals": 8,
-    "p2": 2,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 16,
     "points": 19,
@@ -10199,30 +10207,30 @@
   },
   "8476389": {
    "career": {
-    "assists": 401,
-    "gamesPlayed": 893,
-    "goals": 246,
-    "points": 647
+    "assists": 400,
+    "gamesPlayed": 892,
+    "goals": 245,
+    "points": 645
    },
    "fr": {
-    "assists": 9,
+    "assists": 8,
     "g2": 0,
-    "gamesPlayed": 25,
-    "goals": 7,
-    "p2": 3,
+    "gamesPlayed": 24,
+    "goals": 6,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 17,
-    "points": 16,
-    "ppGoals": 4
+    "points": 14,
+    "ppGoals": 3
    },
    "name": "Vincent Trocheck",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 9,
-    "gamesPlayed": 25,
-    "goals": 7,
-    "points": 16
+    "assists": 8,
+    "gamesPlayed": 24,
+    "goals": 6,
+    "points": 14
    },
    "seasons": [
     {
@@ -10353,9 +10361,9 @@
     },
     {
      "assists": 8,
-     "gamesPlayed": 23,
-     "goals": 5,
-     "points": 13,
+     "gamesPlayed": 24,
+     "goals": 6,
+     "points": 14,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -10369,7 +10377,7 @@
     "g2": 0,
     "gamesPlayed": 92,
     "goals": 2,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 18,
     "points": 19,
@@ -10389,11 +10397,11 @@
    "career": null,
    "fr": {
     "assists": 23,
-    "g2": 2,
+    "g2": 0,
     "gamesPlayed": 115,
     "goals": 18,
-    "p2": 8,
-    "p3": 2,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 37,
     "points": 41,
     "ppGoals": 0
@@ -10411,19 +10419,19 @@
   "8477070": {
    "career": {
     "assists": 25,
-    "gamesPlayed": 277,
-    "goals": 16,
-    "points": 41
+    "gamesPlayed": 276,
+    "goals": 15,
+    "points": 40
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 78,
-    "goals": 5,
+    "gamesPlayed": 77,
+    "goals": 4,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 122,
-    "points": 8,
+    "penaltyMinutes": 117,
+    "points": 7,
     "ppGoals": 0
    },
    "name": "Liam O'Brien",
@@ -10431,9 +10439,9 @@
    "pos": "C",
    "season": {
     "assists": 0,
-    "gamesPlayed": 12,
-    "goals": 2,
-    "points": 2
+    "gamesPlayed": 11,
+    "goals": 1,
+    "points": 1
    },
    "seasons": [
     {
@@ -10519,7 +10527,7 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 1,
      "points": 1,
      "season": 20262027,
@@ -10537,11 +10545,11 @@
    },
    "fr": {
     "assists": 20,
-    "g2": 1,
+    "g2": 0,
     "gamesPlayed": 99,
     "goals": 6,
-    "p2": 3,
-    "p3": 1,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 22,
     "points": 26,
     "ppGoals": 0
@@ -10686,30 +10694,30 @@
   },
   "8477346": {
    "career": {
-    "assists": 221,
-    "gamesPlayed": 654,
+    "assists": 220,
+    "gamesPlayed": 653,
     "goals": 65,
-    "points": 286
+    "points": 285
    },
    "fr": {
-    "assists": 11,
+    "assists": 10,
     "g2": 0,
-    "gamesPlayed": 44,
+    "gamesPlayed": 43,
     "goals": 3,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 51,
-    "points": 14,
+    "penaltyMinutes": 49,
+    "points": 13,
     "ppGoals": 0
    },
    "name": "MacKenzie Weegar",
    "on_roster": true,
    "pos": "D",
    "season": {
-    "assists": 5,
-    "gamesPlayed": 25,
+    "assists": 4,
+    "gamesPlayed": 24,
     "goals": 2,
-    "points": 7
+    "points": 6
    },
    "seasons": [
     {
@@ -10813,7 +10821,7 @@
     },
     {
      "assists": 4,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 2,
      "points": 6,
      "season": 20262027,
@@ -10854,11 +10862,11 @@
    },
    "fr": {
     "assists": 95,
-    "g2": 10,
+    "g2": 1,
     "gamesPlayed": 183,
     "goals": 62,
-    "p2": 40,
-    "p3": 10,
+    "p2": 2,
+    "p3": 1,
     "penaltyMinutes": 46,
     "points": 157,
     "ppGoals": 27
@@ -10986,17 +10994,17 @@
   "8478474": {
    "career": {
     "assists": 125,
-    "gamesPlayed": 691,
+    "gamesPlayed": 690,
     "goals": 141,
     "points": 266
    },
    "fr": {
     "assists": 31,
-    "g2": 4,
-    "gamesPlayed": 187,
+    "g2": 0,
+    "gamesPlayed": 186,
     "goals": 38,
-    "p2": 11,
-    "p3": 2,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 104,
     "points": 69,
     "ppGoals": 2
@@ -11006,7 +11014,7 @@
    "pos": "L",
    "season": {
     "assists": 5,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 2,
     "points": 7
    },
@@ -11103,7 +11111,7 @@
     },
     {
      "assists": 5,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 2,
      "points": 7,
      "season": 20262027,
@@ -11124,8 +11132,8 @@
     "g2": 0,
     "gamesPlayed": 124,
     "goals": 7,
-    "p2": 9,
-    "p3": 2,
+    "p2": 1,
+    "p3": 0,
     "penaltyMinutes": 20,
     "points": 55,
     "ppGoals": 1
@@ -11216,30 +11224,30 @@
   },
   "8478831": {
    "career": {
-    "assists": 50,
-    "gamesPlayed": 393,
-    "goals": 49,
-    "points": 99
+    "assists": 49,
+    "gamesPlayed": 392,
+    "goals": 48,
+    "points": 97
    },
    "fr": {
-    "assists": 34,
+    "assists": 33,
     "g2": 0,
-    "gamesPlayed": 187,
-    "goals": 21,
-    "p2": 10,
-    "p3": 1,
+    "gamesPlayed": 186,
+    "goals": 20,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 78,
-    "points": 55,
+    "points": 53,
     "ppGoals": 0
    },
    "name": "Kevin Stenlund",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 6,
-    "gamesPlayed": 25,
-    "goals": 3,
-    "points": 9
+    "assists": 5,
+    "gamesPlayed": 24,
+    "goals": 2,
+    "points": 7
    },
    "seasons": [
     {
@@ -11316,7 +11324,7 @@
     },
     {
      "assists": 5,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 2,
      "points": 7,
      "season": 20262027,
@@ -11373,30 +11381,30 @@
   },
   "8479343": {
    "career": {
-    "assists": 399,
-    "gamesPlayed": 707,
+    "assists": 398,
+    "gamesPlayed": 706,
     "goals": 227,
-    "points": 626
+    "points": 625
    },
    "fr": {
-    "assists": 147,
-    "g2": 10,
-    "gamesPlayed": 187,
+    "assists": 146,
+    "g2": 1,
+    "gamesPlayed": 186,
     "goals": 61,
-    "p2": 58,
-    "p3": 17,
+    "p2": 4,
+    "p3": 2,
     "penaltyMinutes": 88,
-    "points": 208,
+    "points": 207,
     "ppGoals": 15
    },
    "name": "Clayton Keller",
    "on_roster": true,
    "pos": "R",
    "season": {
-    "assists": 25,
-    "gamesPlayed": 24,
+    "assists": 24,
+    "gamesPlayed": 23,
     "goals": 5,
-    "points": 30
+    "points": 29
    },
    "seasons": [
     {
@@ -11503,16 +11511,16 @@
   "8479369": {
    "career": {
     "assists": 65,
-    "gamesPlayed": 411,
+    "gamesPlayed": 410,
     "goals": 19,
     "points": 84
    },
    "fr": {
     "assists": 6,
     "g2": 0,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 3,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 24,
     "points": 9,
@@ -11523,7 +11531,7 @@
    "pos": "D",
    "season": {
     "assists": 6,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 3,
     "points": 9
    },
@@ -11602,9 +11610,9 @@
     },
     {
      "assists": 6,
-     "gamesPlayed": 23,
-     "goals": 2,
-     "points": 8,
+     "gamesPlayed": 24,
+     "goals": 3,
+     "points": 9,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -11614,17 +11622,17 @@
   "8479410": {
    "career": {
     "assists": 312,
-    "gamesPlayed": 655,
+    "gamesPlayed": 654,
     "goals": 79,
     "points": 391
    },
    "fr": {
     "assists": 103,
-    "g2": 1,
-    "gamesPlayed": 180,
+    "g2": 0,
+    "gamesPlayed": 179,
     "goals": 31,
-    "p2": 27,
-    "p3": 9,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 95,
     "points": 134,
     "ppGoals": 11
@@ -11634,7 +11642,7 @@
    "pos": "D",
    "season": {
     "assists": 16,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 6,
     "points": 22
    },
@@ -11731,7 +11739,7 @@
     },
     {
      "assists": 16,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 6,
      "points": 22,
      "season": 20262027,
@@ -11743,16 +11751,16 @@
   "8479619": {
    "career": {
     "assists": 40,
-    "gamesPlayed": 252,
+    "gamesPlayed": 251,
     "goals": 51,
     "points": 91
    },
    "fr": {
     "assists": 29,
-    "g2": 1,
-    "gamesPlayed": 148,
+    "g2": 0,
+    "gamesPlayed": 147,
     "goals": 24,
-    "p2": 7,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 62,
     "points": 53,
@@ -11763,7 +11771,7 @@
    "pos": "L",
    "season": {
     "assists": 2,
-    "gamesPlayed": 16,
+    "gamesPlayed": 15,
     "goals": 1,
     "points": 3
    },
@@ -11815,7 +11823,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 14,
+     "gamesPlayed": 15,
      "goals": 1,
      "points": 3,
      "season": 20262027,
@@ -11849,30 +11857,30 @@
   },
   "8479977": {
    "career": {
-    "assists": 97,
-    "gamesPlayed": 390,
+    "assists": 96,
+    "gamesPlayed": 389,
     "goals": 76,
-    "points": 173
+    "points": 172
    },
    "fr": {
-    "assists": 21,
-    "g2": 2,
-    "gamesPlayed": 87,
+    "assists": 20,
+    "g2": 0,
+    "gamesPlayed": 86,
     "goals": 18,
-    "p2": 6,
-    "p3": 2,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 20,
-    "points": 39,
+    "points": 38,
     "ppGoals": 1
    },
    "name": "Kailer Yamamoto",
    "on_roster": true,
    "pos": "R",
    "season": {
-    "assists": 10,
-    "gamesPlayed": 16,
+    "assists": 9,
+    "gamesPlayed": 15,
     "goals": 3,
-    "points": 13
+    "points": 12
    },
    "seasons": [
     {
@@ -11958,7 +11966,7 @@
     },
     {
      "assists": 9,
-     "gamesPlayed": 14,
+     "gamesPlayed": 15,
      "goals": 3,
      "points": 12,
      "season": 20262027,
@@ -11970,16 +11978,16 @@
   "8480084": {
    "career": {
     "assists": 16,
-    "gamesPlayed": 110,
+    "gamesPlayed": 109,
     "goals": 5,
     "points": 21
    },
    "fr": {
     "assists": 11,
     "g2": 0,
-    "gamesPlayed": 72,
+    "gamesPlayed": 71,
     "goals": 3,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 12,
     "points": 14,
@@ -11990,7 +11998,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 12,
+    "gamesPlayed": 11,
     "goals": 0,
     "points": 0
    },
@@ -12042,7 +12050,7 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 10,
+     "gamesPlayed": 11,
      "goals": 0,
      "points": 0,
      "season": 20262027,
@@ -12058,7 +12066,7 @@
     "g2": 0,
     "gamesPlayed": 90,
     "goals": 9,
-    "p2": 3,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 69,
     "points": 38,
@@ -12076,30 +12084,30 @@
   },
   "8480849": {
    "career": {
-    "assists": 100,
-    "gamesPlayed": 383,
+    "assists": 99,
+    "gamesPlayed": 382,
     "goals": 69,
-    "points": 169
+    "points": 168
    },
    "fr": {
-    "assists": 51,
-    "g2": 2,
-    "gamesPlayed": 174,
+    "assists": 50,
+    "g2": 0,
+    "gamesPlayed": 173,
     "goals": 34,
-    "p2": 16,
-    "p3": 2,
-    "penaltyMinutes": 113,
-    "points": 85,
+    "p2": 0,
+    "p3": 0,
+    "penaltyMinutes": 109,
+    "points": 84,
     "ppGoals": 13
    },
    "name": "Barrett Hayton",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 10,
-    "gamesPlayed": 25,
+    "assists": 9,
+    "gamesPlayed": 24,
     "goals": 4,
-    "points": 14
+    "points": 13
    },
    "seasons": [
     {
@@ -12167,7 +12175,7 @@
     },
     {
      "assists": 9,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 4,
      "points": 13,
      "season": 20262027,
@@ -12179,18 +12187,18 @@
   "8480855": {
    "career": {
     "assists": 67,
-    "gamesPlayed": 341,
+    "gamesPlayed": 340,
     "goals": 47,
     "points": 114
    },
    "fr": {
     "assists": 34,
     "g2": 0,
-    "gamesPlayed": 182,
+    "gamesPlayed": 181,
     "goals": 25,
-    "p2": 9,
-    "p3": 2,
-    "penaltyMinutes": 197,
+    "p2": 0,
+    "p3": 0,
+    "penaltyMinutes": 192,
     "points": 59,
     "ppGoals": 1
    },
@@ -12199,7 +12207,7 @@
    "pos": "C",
    "season": {
     "assists": 4,
-    "gamesPlayed": 25,
+    "gamesPlayed": 24,
     "goals": 3,
     "points": 7
    },
@@ -12251,7 +12259,7 @@
     },
     {
      "assists": 4,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 3,
      "points": 7,
      "season": 20262027,
@@ -12267,7 +12275,7 @@
     "g2": 0,
     "gamesPlayed": 82,
     "goals": 7,
-    "p2": 5,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 89,
     "points": 29,
@@ -12290,7 +12298,7 @@
     "g2": 0,
     "gamesPlayed": 23,
     "goals": 2,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 2,
     "points": 5,
@@ -12309,16 +12317,16 @@
   "8481708": {
    "career": {
     "assists": 24,
-    "gamesPlayed": 121,
+    "gamesPlayed": 120,
     "goals": 6,
     "points": 30
    },
    "fr": {
     "assists": 0,
-    "g2": 1,
-    "gamesPlayed": 6,
+    "g2": 0,
+    "gamesPlayed": 5,
     "goals": 2,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 0,
     "points": 2,
@@ -12329,7 +12337,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 6,
+    "gamesPlayed": 5,
     "goals": 2,
     "points": 2
    },
@@ -12381,7 +12389,7 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 4,
+     "gamesPlayed": 5,
      "goals": 2,
      "points": 2,
      "season": 20262027,
@@ -12394,10 +12402,10 @@
    "career": null,
    "fr": {
     "assists": 10,
-    "g2": 3,
+    "g2": 0,
     "gamesPlayed": 55,
     "goals": 8,
-    "p2": 3,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 8,
     "points": 18,
@@ -12452,7 +12460,7 @@
     },
     {
      "assists": 0,
-     "gamesPlayed": 2,
+     "gamesPlayed": 3,
      "goals": 0,
      "points": 0,
      "season": 20262027,
@@ -12465,11 +12473,11 @@
    "career": null,
    "fr": {
     "assists": 22,
-    "g2": 2,
+    "g2": 0,
     "gamesPlayed": 82,
     "goals": 25,
-    "p2": 6,
-    "p3": 2,
+    "p2": 0,
+    "p3": 0,
     "penaltyMinutes": 28,
     "points": 47,
     "ppGoals": 3
@@ -12491,7 +12499,7 @@
     "g2": 0,
     "gamesPlayed": 51,
     "goals": 7,
-    "p2": 2,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 8,
     "points": 19,
@@ -12516,11 +12524,11 @@
    },
    "fr": {
     "assists": 72,
-    "g2": 13,
+    "g2": 0,
     "gamesPlayed": 167,
     "goals": 73,
-    "p2": 37,
-    "p3": 9,
+    "p2": 2,
+    "p3": 0,
     "penaltyMinutes": 62,
     "points": 145,
     "ppGoals": 26
@@ -12584,30 +12592,30 @@
   },
   "8483431": {
    "career": {
-    "assists": 97,
-    "gamesPlayed": 233,
+    "assists": 96,
+    "gamesPlayed": 232,
     "goals": 81,
-    "points": 178
+    "points": 177
    },
    "fr": {
-    "assists": 73,
-    "g2": 10,
-    "gamesPlayed": 151,
+    "assists": 72,
+    "g2": 1,
+    "gamesPlayed": 150,
     "goals": 61,
-    "p2": 31,
-    "p3": 10,
+    "p2": 1,
+    "p3": 1,
     "penaltyMinutes": 82,
-    "points": 134,
+    "points": 133,
     "ppGoals": 17
    },
    "name": "Logan Cooley",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 14,
-    "gamesPlayed": 22,
+    "assists": 13,
+    "gamesPlayed": 21,
     "goals": 12,
-    "points": 26
+    "points": 25
    },
    "seasons": [
     {
@@ -12638,10 +12646,10 @@
      "wins": 0
     },
     {
-     "assists": 12,
-     "gamesPlayed": 20,
-     "goals": 11,
-     "points": 23,
+     "assists": 13,
+     "gamesPlayed": 21,
+     "goals": 12,
+     "points": 25,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -12738,19 +12746,19 @@
   "8484386": {
    "career": {
     "assists": 3,
-    "gamesPlayed": 53,
-    "goals": 6,
-    "points": 9
+    "gamesPlayed": 52,
+    "goals": 5,
+    "points": 8
    },
    "fr": {
     "assists": 3,
-    "g2": 1,
-    "gamesPlayed": 53,
-    "goals": 6,
-    "p2": 1,
+    "g2": 0,
+    "gamesPlayed": 52,
+    "goals": 5,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 27,
-    "points": 9,
+    "points": 8,
     "ppGoals": 0
    },
    "name": "Dmitri Simashev",
@@ -12758,9 +12766,9 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 25,
-    "goals": 6,
-    "points": 8
+    "gamesPlayed": 24,
+    "goals": 5,
+    "points": 7
    },
    "seasons": [
     {
@@ -12774,7 +12782,7 @@
     },
     {
      "assists": 2,
-     "gamesPlayed": 23,
+     "gamesPlayed": 24,
      "goals": 5,
      "points": 7,
      "season": 20262027,
@@ -12786,16 +12794,16 @@
   "8484388": {
    "career": {
     "assists": 7,
-    "gamesPlayed": 49,
+    "gamesPlayed": 48,
     "goals": 5,
     "points": 12
    },
    "fr": {
     "assists": 7,
     "g2": 0,
-    "gamesPlayed": 49,
+    "gamesPlayed": 48,
     "goals": 5,
-    "p2": 1,
+    "p2": 0,
     "p3": 0,
     "penaltyMinutes": 10,
     "points": 12,
@@ -12806,7 +12814,7 @@
    "pos": "L",
    "season": {
     "assists": 3,
-    "gamesPlayed": 20,
+    "gamesPlayed": 19,
     "goals": 2,
     "points": 5
    },
@@ -12821,10 +12829,10 @@
      "wins": 0
     },
     {
-     "assists": 2,
-     "gamesPlayed": 18,
+     "assists": 3,
+     "gamesPlayed": 19,
      "goals": 2,
-     "points": 4,
+     "points": 5,
      "season": 20262027,
      "shutouts": 0,
      "wins": 0
@@ -12873,11 +12881,11 @@
    "season": 20252026
   },
   {
-   "assists": 12,
-   "goals": 11,
+   "assists": 13,
+   "goals": 12,
    "name": "Logan Cooley",
    "pid": "8483431",
-   "points": 23,
+   "points": 25,
    "season": 20262027
   },
   {
@@ -12913,11 +12921,11 @@
    "season": 20242025
   },
   {
-   "assists": 2,
+   "assists": 3,
    "goals": 2,
    "name": "Daniil But",
    "pid": "8484388",
-   "points": 4,
+   "points": 5,
    "season": 20262027
   },
   {
@@ -13073,20 +13081,20 @@
    "season": 20252026
   },
   {
-   "assists": 14,
-   "goals": 14,
-   "name": "Kevin Stenlund",
-   "pid": "8478831",
-   "points": 28,
-   "season": 20242025
-  },
-  {
    "assists": 1,
    "goals": 0,
    "name": "Maveric Lamoureux",
    "pid": "8483472",
    "points": 1,
    "season": 20252026
+  },
+  {
+   "assists": 14,
+   "goals": 14,
+   "name": "Kevin Stenlund",
+   "pid": "8478831",
+   "points": 28,
+   "season": 20242025
   },
   {
    "assists": 3,
@@ -13121,22 +13129,6 @@
    "season": 20242025
   },
   {
-   "assists": 17,
-   "goals": 11,
-   "name": "Alexander Kerfoot",
-   "pid": "8477021",
-   "points": 28,
-   "season": 20242025
-  },
-  {
-   "assists": 4,
-   "goals": 3,
-   "name": "Daniil But",
-   "pid": "8484388",
-   "points": 7,
-   "season": 20252026
-  },
-  {
    "assists": 6,
    "goals": 6,
    "name": "Dylan Guenther",
@@ -13158,6 +13150,206 @@
    "name": "Andrew Agozzino",
    "pid": "8475461",
    "points": 0,
+   "season": 20252026
+  },
+  {
+   "assists": 11,
+   "goals": 9,
+   "name": "Nick Schmaltz",
+   "pid": "8477951",
+   "points": 20,
+   "season": 20262027
+  },
+  {
+   "assists": 14,
+   "goals": 4,
+   "name": "Kevin Stenlund",
+   "pid": "8478831",
+   "points": 18,
+   "season": 20252026
+  },
+  {
+   "assists": 0,
+   "goals": 0,
+   "name": "Nick DeSimone",
+   "pid": "8480084",
+   "points": 0,
+   "season": 20262027
+  },
+  {
+   "assists": 2,
+   "goals": 1,
+   "name": "Maveric Lamoureux",
+   "pid": "8483472",
+   "points": 3,
+   "season": 20242025
+  },
+  {
+   "assists": 2,
+   "goals": 1,
+   "name": "Michael Carcone",
+   "pid": "8479619",
+   "points": 3,
+   "season": 20262027
+  },
+  {
+   "assists": 9,
+   "goals": 4,
+   "name": "Barrett Hayton",
+   "pid": "8480849",
+   "points": 13,
+   "season": 20262027
+  },
+  {
+   "assists": 8,
+   "goals": 6,
+   "name": "Vincent Trocheck",
+   "pid": "8476389",
+   "points": 14,
+   "season": 20262027
+  },
+  {
+   "assists": 6,
+   "goals": 7,
+   "name": "Alexander Kerfoot",
+   "pid": "8477021",
+   "points": 13,
+   "season": 20252026
+  },
+  {
+   "assists": 2,
+   "goals": 0,
+   "name": "Robert Bortuzzo",
+   "pid": "8474145",
+   "points": 2,
+   "season": 20242025
+  },
+  {
+   "assists": 41,
+   "goals": 33,
+   "name": "Nick Schmaltz",
+   "pid": "8477951",
+   "points": 74,
+   "season": 20252026
+  },
+  {
+   "assists": 6,
+   "goals": 2,
+   "name": "Nick DeSimone",
+   "pid": "8480084",
+   "points": 8,
+   "season": 20252026
+  },
+  {
+   "assists": 9,
+   "goals": 3,
+   "name": "Kailer Yamamoto",
+   "pid": "8479977",
+   "points": 12,
+   "season": 20262027
+  },
+  {
+   "assists": 1,
+   "goals": 3,
+   "name": "Liam O'Brien",
+   "pid": "8477070",
+   "points": 4,
+   "season": 20252026
+  },
+  {
+   "assists": 49,
+   "goals": 10,
+   "name": "Mikhail Sergachev",
+   "pid": "8479410",
+   "points": 59,
+   "season": 20252026
+  },
+  {
+   "assists": 0,
+   "goals": 2,
+   "name": "Zac Jones",
+   "pid": "8481708",
+   "points": 2,
+   "season": 20262027
+  },
+  {
+   "assists": 20,
+   "goals": 24,
+   "name": "Lawson Crouse",
+   "pid": "8478474",
+   "points": 44,
+   "season": 20252026
+  },
+  {
+   "assists": 5,
+   "goals": 2,
+   "name": "Kevin Stenlund",
+   "pid": "8478831",
+   "points": 7,
+   "season": 20262027
+  },
+  {
+   "assists": 3,
+   "goals": 0,
+   "name": "Brandon Tanev",
+   "pid": "8479293",
+   "points": 3,
+   "season": 20252026
+  },
+  {
+   "assists": 17,
+   "goals": 5,
+   "name": "Nate Schmidt",
+   "pid": "8477220",
+   "points": 22,
+   "season": 20252026
+  },
+  {
+   "assists": 62,
+   "goals": 26,
+   "name": "Clayton Keller",
+   "pid": "8479343",
+   "points": 88,
+   "season": 20252026
+  },
+  {
+   "assists": 43,
+   "goals": 20,
+   "name": "Nick Schmaltz",
+   "pid": "8477951",
+   "points": 63,
+   "season": 20242025
+  },
+  {
+   "assists": 16,
+   "goals": 2,
+   "name": "Olli Maatta",
+   "pid": "8476874",
+   "points": 18,
+   "season": 20242025
+  },
+  {
+   "assists": 33,
+   "goals": 40,
+   "name": "Dylan Guenther",
+   "pid": "8482699",
+   "points": 73,
+   "season": 20252026
+  },
+  {
+   "assists": 17,
+   "goals": 11,
+   "name": "Alexander Kerfoot",
+   "pid": "8477021",
+   "points": 28,
+   "season": 20242025
+  },
+  {
+   "assists": 4,
+   "goals": 3,
+   "name": "Daniil But",
+   "pid": "8484388",
+   "points": 7,
    "season": 20252026
   },
   {
@@ -13185,14 +13377,6 @@
    "season": 20242025
   },
   {
-   "assists": 2,
-   "goals": 1,
-   "name": "Maveric Lamoureux",
-   "pid": "8483472",
-   "points": 3,
-   "season": 20242025
-  },
-  {
    "assists": 0,
    "goals": 0,
    "name": "Artem Duda",
@@ -13217,30 +13401,6 @@
    "season": 20252026
   },
   {
-   "assists": 8,
-   "goals": 5,
-   "name": "Vincent Trocheck",
-   "pid": "8476389",
-   "points": 13,
-   "season": 20262027
-  },
-  {
-   "assists": 6,
-   "goals": 7,
-   "name": "Alexander Kerfoot",
-   "pid": "8477021",
-   "points": 13,
-   "season": 20252026
-  },
-  {
-   "assists": 2,
-   "goals": 0,
-   "name": "Robert Bortuzzo",
-   "pid": "8474145",
-   "points": 2,
-   "season": 20242025
-  },
-  {
    "assists": 60,
    "goals": 30,
    "name": "Clayton Keller",
@@ -13262,30 +13422,6 @@
    "name": "Ian Cole",
    "pid": "8474013",
    "points": 23,
-   "season": 20252026
-  },
-  {
-   "assists": 0,
-   "goals": 0,
-   "name": "Dakota Mermis",
-   "pid": "8477541",
-   "points": 0,
-   "season": 20242025
-  },
-  {
-   "assists": 22,
-   "goals": 5,
-   "name": "Sean Durzi",
-   "pid": "8480434",
-   "points": 27,
-   "season": 20252026
-  },
-  {
-   "assists": 0,
-   "goals": 1,
-   "name": "Kevin Rooney",
-   "pid": "8479291",
-   "points": 1,
    "season": 20252026
   },
   {
@@ -13322,162 +13458,34 @@
   },
   {
    "assists": 6,
-   "goals": 2,
+   "goals": 3,
    "name": "Andrew Peeke",
    "pid": "8479369",
-   "points": 8,
+   "points": 9,
    "season": 20262027
-  },
-  {
-   "assists": 43,
-   "goals": 20,
-   "name": "Nick Schmaltz",
-   "pid": "8477951",
-   "points": 63,
-   "season": 20242025
-  },
-  {
-   "assists": 16,
-   "goals": 2,
-   "name": "Olli Maatta",
-   "pid": "8476874",
-   "points": 18,
-   "season": 20242025
-  },
-  {
-   "assists": 33,
-   "goals": 40,
-   "name": "Dylan Guenther",
-   "pid": "8482699",
-   "points": 73,
-   "season": 20252026
-  },
-  {
-   "assists": 11,
-   "goals": 9,
-   "name": "Nick Schmaltz",
-   "pid": "8477951",
-   "points": 20,
-   "season": 20262027
-  },
-  {
-   "assists": 14,
-   "goals": 4,
-   "name": "Kevin Stenlund",
-   "pid": "8478831",
-   "points": 18,
-   "season": 20252026
   },
   {
    "assists": 0,
    "goals": 0,
-   "name": "Nick DeSimone",
-   "pid": "8480084",
+   "name": "Dakota Mermis",
+   "pid": "8477541",
    "points": 0,
-   "season": 20262027
+   "season": 20242025
   },
   {
-   "assists": 2,
-   "goals": 1,
-   "name": "Michael Carcone",
-   "pid": "8479619",
-   "points": 3,
-   "season": 20262027
-  },
-  {
-   "assists": 9,
-   "goals": 4,
-   "name": "Barrett Hayton",
-   "pid": "8480849",
-   "points": 13,
-   "season": 20262027
-  },
-  {
-   "assists": 41,
-   "goals": 33,
-   "name": "Nick Schmaltz",
-   "pid": "8477951",
-   "points": 74,
-   "season": 20252026
-  },
-  {
-   "assists": 6,
-   "goals": 2,
-   "name": "Nick DeSimone",
-   "pid": "8480084",
-   "points": 8,
-   "season": 20252026
-  },
-  {
-   "assists": 9,
-   "goals": 3,
-   "name": "Kailer Yamamoto",
-   "pid": "8479977",
-   "points": 12,
-   "season": 20262027
-  },
-  {
-   "assists": 1,
-   "goals": 3,
-   "name": "Liam O'Brien",
-   "pid": "8477070",
-   "points": 4,
-   "season": 20252026
-  },
-  {
-   "assists": 5,
-   "goals": 2,
-   "name": "Kevin Stenlund",
-   "pid": "8478831",
-   "points": 7,
-   "season": 20262027
-  },
-  {
-   "assists": 3,
-   "goals": 0,
-   "name": "Brandon Tanev",
-   "pid": "8479293",
-   "points": 3,
-   "season": 20252026
-  },
-  {
-   "assists": 17,
+   "assists": 22,
    "goals": 5,
-   "name": "Nate Schmidt",
-   "pid": "8477220",
-   "points": 22,
-   "season": 20252026
-  },
-  {
-   "assists": 62,
-   "goals": 26,
-   "name": "Clayton Keller",
-   "pid": "8479343",
-   "points": 88,
-   "season": 20252026
-  },
-  {
-   "assists": 49,
-   "goals": 10,
-   "name": "Mikhail Sergachev",
-   "pid": "8479410",
-   "points": 59,
+   "name": "Sean Durzi",
+   "pid": "8480434",
+   "points": 27,
    "season": 20252026
   },
   {
    "assists": 0,
-   "goals": 2,
-   "name": "Zac Jones",
-   "pid": "8481708",
-   "points": 2,
-   "season": 20262027
-  },
-  {
-   "assists": 20,
-   "goals": 24,
-   "name": "Lawson Crouse",
-   "pid": "8478474",
-   "points": 44,
+   "goals": 1,
+   "name": "Kevin Rooney",
+   "pid": "8479291",
+   "points": 1,
    "season": 20252026
   }
  ],
@@ -13510,33 +13518,6 @@
    "win": true
   },
   {
-   "date": "2024-10-14",
-   "gameId": 2024020044,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2024-10-16",
-   "gameId": 2024020060,
-   "home": false,
-   "otl": true,
-   "pts": 1,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2024-10-19",
-   "gameId": 2024020086,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
    "date": "2024-10-22",
    "gameId": 2024020104,
    "home": true,
@@ -13551,24 +13532,6 @@
    "home": true,
    "otl": false,
    "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2024-10-26",
-   "gameId": 2024020124,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2024-10-28",
-   "gameId": 2024020145,
-   "home": true,
-   "otl": true,
-   "pts": 1,
    "season": 20242025,
    "win": false
   },
@@ -13609,15 +13572,6 @@
    "win": true
   },
   {
-   "date": "2024-11-09",
-   "gameId": 2024020232,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
    "date": "2024-11-13",
    "gameId": 2024020254,
    "home": true,
@@ -13625,15 +13579,6 @@
    "pts": 2,
    "season": 20242025,
    "win": true
-  },
-  {
-   "date": "2024-11-15",
-   "gameId": 2024020270,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
   },
   {
    "date": "2024-11-18",
@@ -13717,15 +13662,6 @@
    "win": true
   },
   {
-   "date": "2024-12-08",
-   "gameId": 2024020441,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
    "date": "2024-12-10",
    "gameId": 2024020454,
    "home": true,
@@ -13762,15 +13698,6 @@
    "win": true
   },
   {
-   "date": "2024-12-20",
-   "gameId": 2024020526,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
    "date": "2024-12-22",
    "gameId": 2024020542,
    "home": true,
@@ -13780,35 +13707,8 @@
    "win": false
   },
   {
-   "date": "2024-12-23",
-   "gameId": 2024020556,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2024-12-27",
-   "gameId": 2024020564,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
    "date": "2024-12-30",
    "gameId": 2024020588,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2024-12-31",
-   "gameId": 2024020601,
    "home": false,
    "otl": false,
    "pts": 0,
@@ -13823,15 +13723,6 @@
    "pts": 2,
    "season": 20242025,
    "win": true
-  },
-  {
-   "date": "2025-01-04",
-   "gameId": 2024020628,
-   "home": false,
-   "otl": true,
-   "pts": 1,
-   "season": 20242025,
-   "win": false
   },
   {
    "date": "2025-01-08",
@@ -13852,63 +13743,9 @@
    "win": true
   },
   {
-   "date": "2025-01-11",
-   "gameId": 2024020680,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
    "date": "2025-01-14",
    "gameId": 2024020704,
    "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-01-16",
-   "gameId": 2024020717,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-01-18",
-   "gameId": 2024020734,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-01-20",
-   "gameId": 2024020747,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-01-23",
-   "gameId": 2024020766,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-01-24",
-   "gameId": 2024020775,
-   "home": false,
    "otl": false,
    "pts": 0,
    "season": 20242025,
@@ -13940,51 +13777,6 @@
    "pts": 1,
    "season": 20242025,
    "win": false
-  },
-  {
-   "date": "2025-02-02",
-   "gameId": 2024020841,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-02-04",
-   "gameId": 2024020854,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-02-06",
-   "gameId": 2024020865,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-02-08",
-   "gameId": 2024020878,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-02-09",
-   "gameId": 2024020890,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
   },
   {
    "date": "2025-02-22",
@@ -14041,15 +13833,6 @@
    "win": true
   },
   {
-   "date": "2025-03-07",
-   "gameId": 2024020999,
-   "home": false,
-   "otl": true,
-   "pts": 1,
-   "season": 20242025,
-   "win": false
-  },
-  {
    "date": "2025-03-10",
    "gameId": 2024021024,
    "home": true,
@@ -14086,42 +13869,6 @@
    "win": true
   },
   {
-   "date": "2025-03-18",
-   "gameId": 2024021085,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-03-20",
-   "gameId": 2024021100,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-03-22",
-   "gameId": 2024021111,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-03-24",
-   "gameId": 2024021128,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
    "date": "2025-03-27",
    "gameId": 2024021145,
    "home": false,
@@ -14140,63 +13887,9 @@
    "win": false
   },
   {
-   "date": "2025-03-30",
-   "gameId": 2024021173,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
    "date": "2025-04-01",
    "gameId": 2024021188,
    "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-04-03",
-   "gameId": 2024021202,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-04-05",
-   "gameId": 2024021219,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-04-08",
-   "gameId": 2024021243,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20242025,
-   "win": true
-  },
-  {
-   "date": "2025-04-10",
-   "gameId": 2024021257,
-   "home": true,
-   "otl": true,
-   "pts": 1,
-   "season": 20242025,
-   "win": false
-  },
-  {
-   "date": "2025-04-12",
-   "gameId": 2024021272,
-   "home": false,
    "otl": false,
    "pts": 2,
    "season": 20242025,
@@ -14257,45 +13950,9 @@
    "win": true
   },
   {
-   "date": "2025-10-17",
-   "gameId": 2025020075,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2025-10-19",
-   "gameId": 2025020092,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
    "date": "2025-10-21",
    "gameId": 2025020107,
    "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2025-10-23",
-   "gameId": 2025020117,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2025-10-25",
-   "gameId": 2025020131,
-   "home": false,
    "otl": false,
    "pts": 2,
    "season": 20252026,
@@ -14311,36 +13968,9 @@
    "win": true
   },
   {
-   "date": "2025-10-28",
-   "gameId": 2025020162,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
    "date": "2025-11-02",
    "gameId": 2025020194,
    "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2025-11-04",
-   "gameId": 2025020203,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2025-11-05",
-   "gameId": 2025020213,
-   "home": false,
    "otl": false,
    "pts": 0,
    "season": 20252026,
@@ -14354,24 +13984,6 @@
    "pts": 0,
    "season": 20252026,
    "win": false
-  },
-  {
-   "date": "2025-11-09",
-   "gameId": 2025020247,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2025-11-12",
-   "gameId": 2025020267,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
   },
   {
    "date": "2025-11-14",
@@ -14428,24 +14040,6 @@
    "win": true
   },
   {
-   "date": "2025-11-26",
-   "gameId": 2025020372,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2025-11-28",
-   "gameId": 2025020390,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
    "date": "2025-11-29",
    "gameId": 2025020398,
    "home": false,
@@ -14453,24 +14047,6 @@
    "pts": 0,
    "season": 20252026,
    "win": false
-  },
-  {
-   "date": "2025-12-01",
-   "gameId": 2025020410,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2025-12-03",
-   "gameId": 2025020424,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
   },
   {
    "date": "2025-12-05",
@@ -14500,15 +14076,6 @@
    "win": false
   },
   {
-   "date": "2025-12-10",
-   "gameId": 2025020478,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
    "date": "2025-12-12",
    "gameId": 2025020494,
    "home": true,
@@ -14516,24 +14083,6 @@
    "pts": 2,
    "season": 20252026,
    "win": true
-  },
-  {
-   "date": "2025-12-14",
-   "gameId": 2025020509,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2025-12-16",
-   "gameId": 2025020519,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
   },
   {
    "date": "2025-12-17",
@@ -14554,63 +14103,9 @@
    "win": false
   },
   {
-   "date": "2025-12-21",
-   "gameId": 2025020569,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2025-12-23",
-   "gameId": 2025020584,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2025-12-29",
-   "gameId": 2025020612,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
    "date": "2026-01-01",
    "gameId": 2025020633,
    "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-01-03",
-   "gameId": 2025020645,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2026-01-05",
-   "gameId": 2025020662,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-01-07",
-   "gameId": 2025020680,
-   "home": true,
    "otl": false,
    "pts": 2,
    "season": 20252026,
@@ -14635,26 +14130,8 @@
    "win": false
   },
   {
-   "date": "2026-01-13",
-   "gameId": 2025020733,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
    "date": "2026-01-15",
    "gameId": 2025020746,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-01-17",
-   "gameId": 2025020757,
    "home": true,
    "otl": false,
    "pts": 2,
@@ -14665,15 +14142,6 @@
    "date": "2026-01-21",
    "gameId": 2025020790,
    "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-01-24",
-   "gameId": 2025020811,
-   "home": false,
    "otl": false,
    "pts": 2,
    "season": 20252026,
@@ -14707,44 +14175,8 @@
    "win": false
   },
   {
-   "date": "2026-01-31",
-   "gameId": 2025020870,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2026-02-02",
-   "gameId": 2025020884,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
    "date": "2026-02-04",
    "gameId": 2025020898,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-02-25",
-   "gameId": 2025020914,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2026-02-27",
-   "gameId": 2025020932,
    "home": true,
    "otl": false,
    "pts": 2,
@@ -14763,24 +14195,6 @@
   {
    "date": "2026-03-03",
    "gameId": 2025020962,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-03-05",
-   "gameId": 2025020976,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-03-07",
-   "gameId": 2025020995,
    "home": false,
    "otl": false,
    "pts": 2,
@@ -14833,15 +14247,6 @@
    "win": true
   },
   {
-   "date": "2026-03-19",
-   "gameId": 2025021091,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
    "date": "2026-03-20",
    "gameId": 2025021098,
    "home": true,
@@ -14860,15 +14265,6 @@
    "win": true
   },
   {
-   "date": "2026-03-24",
-   "gameId": 2025021132,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
    "date": "2026-03-26",
    "gameId": 2025021146,
    "home": true,
@@ -14876,33 +14272,6 @@
    "pts": 0,
    "season": 20252026,
    "win": false
-  },
-  {
-   "date": "2026-03-28",
-   "gameId": 2025021164,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-04-02",
-   "gameId": 2025021203,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-04-04",
-   "gameId": 2025021216,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
   },
   {
    "date": "2026-04-07",
@@ -14914,33 +14283,6 @@
    "win": true
   },
   {
-   "date": "2026-04-09",
-   "gameId": 2025021257,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20252026,
-   "win": true
-  },
-  {
-   "date": "2026-04-11",
-   "gameId": 2025021269,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2026-04-12",
-   "gameId": 2025021281,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
    "date": "2026-04-14",
    "gameId": 2025021297,
    "home": true,
@@ -14948,42 +14290,6 @@
    "pts": 2,
    "season": 20252026,
    "win": true
-  },
-  {
-   "date": "2026-04-16",
-   "gameId": 2025021309,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20252026,
-   "win": false
-  },
-  {
-   "date": "2026-10-01",
-   "gameId": 2026020013,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20262027,
-   "win": true
-  },
-  {
-   "date": "2026-10-03",
-   "gameId": 2026020027,
-   "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20262027,
-   "win": true
-  },
-  {
-   "date": "2026-10-04",
-   "gameId": 2026020036,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20262027,
-   "win": false
   },
   {
    "date": "2026-10-06",
@@ -15007,15 +14313,6 @@
    "date": "2026-10-10",
    "gameId": 2026020074,
    "home": false,
-   "otl": false,
-   "pts": 2,
-   "season": 20262027,
-   "win": true
-  },
-  {
-   "date": "2026-10-13",
-   "gameId": 2026020102,
-   "home": true,
    "otl": false,
    "pts": 2,
    "season": 20262027,
@@ -15058,24 +14355,6 @@
    "win": false
   },
   {
-   "date": "2026-10-24",
-   "gameId": 2026020177,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20262027,
-   "win": true
-  },
-  {
-   "date": "2026-10-27",
-   "gameId": 2026020195,
-   "home": true,
-   "otl": false,
-   "pts": 0,
-   "season": 20262027,
-   "win": false
-  },
-  {
    "date": "2026-10-29",
    "gameId": 2026020205,
    "home": false,
@@ -15083,15 +14362,6 @@
    "pts": 2,
    "season": 20262027,
    "win": true
-  },
-  {
-   "date": "2026-11-01",
-   "gameId": 2026020229,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20262027,
-   "win": false
   },
   {
    "date": "2026-11-03",
@@ -15103,47 +14373,11 @@
    "win": true
   },
   {
-   "date": "2026-11-05",
-   "gameId": 2026020251,
-   "home": false,
-   "otl": true,
-   "pts": 1,
-   "season": 20262027,
-   "win": false
-  },
-  {
-   "date": "2026-11-07",
-   "gameId": 2026020269,
-   "home": false,
-   "otl": false,
-   "pts": 0,
-   "season": 20262027,
-   "win": false
-  },
-  {
    "date": "2026-11-11",
    "gameId": 2026020296,
    "home": false,
    "otl": false,
    "pts": 0,
-   "season": 20262027,
-   "win": false
-  },
-  {
-   "date": "2026-11-12",
-   "gameId": 2026020307,
-   "home": true,
-   "otl": true,
-   "pts": 1,
-   "season": 20262027,
-   "win": false
-  },
-  {
-   "date": "2026-11-14",
-   "gameId": 2026020323,
-   "home": true,
-   "otl": true,
-   "pts": 1,
    "season": 20262027,
    "win": false
   },
@@ -15155,24 +14389,6 @@
    "pts": 0,
    "season": 20262027,
    "win": false
-  },
-  {
-   "date": "2026-11-18",
-   "gameId": 2026020346,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20262027,
-   "win": true
-  },
-  {
-   "date": "2026-11-21",
-   "gameId": 2026020370,
-   "home": true,
-   "otl": false,
-   "pts": 2,
-   "season": 20262027,
-   "win": true
   }
  ]
 }
