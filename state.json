@@ -5950,7 +5950,8 @@
    },
    "8480849:assists:100": {
     "posted": [
-     3
+     3,
+     1
     ]
    },
    "8482699:assists:100": {
@@ -6322,7 +6323,8 @@
    2026020323,
    2026020332,
    2026020346,
-   2026020370
+   2026020370,
+   2026020382
   ],
   "pregame_early": {
    "2026020195": {
@@ -6407,6 +6409,10 @@
    "Barrett Hayton becomes the 2002nd player in @NHL history to record 100 career assists #TusksUp": {
     "at": "2026-11-19T13:57:27.372451+00:00",
     "game": "UTA 4, COL 1 (2026-11-18)"
+   },
+   "Barrett Hayton is 1 assist away from 100 career @NHL assists #TusksUp": {
+    "at": "2026-11-24T01:15:37.765181+00:00",
+    "game": "Pregame, UTA at WPG (2026-11-23)"
    },
    "Barrett Hayton is 3 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-10-27T18:43:18.235346+00:00",
@@ -6792,7 +6798,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-22T17:43:57.028989+00:00",
+  "last_check": "2026-11-24T01:15:37.954729+00:00",
   "reconciled_at": "2026-11-22T17:43:56.173243+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-22T17:43:48.565155+00:00",
