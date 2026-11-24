@@ -6017,8 +6017,8 @@
      "sig": "NHL defensemen:2"
     },
     "rank:faceoffWinPct": {
-     "at": "2026-10-31",
-     "sig": "3rd"
+     "at": "2026-11-24",
+     "sig": "2nd"
     },
     "rank:powerPlayPct": {
      "at": "2026-11-20",
@@ -6041,15 +6041,15 @@
      "sig": "The @utahmammoth are 8-0-2 this season when scoring first #TusksUp"
     },
     "split:lead2": {
-     "at": "2026-11-20",
-     "sig": "The @utahmammoth are 10-0-2 this season when leading after two periods #TusksUp"
+     "at": "2026-11-24",
+     "sig": "The @utahmammoth are 6-0-0 this season when leading after two periods #TusksUp"
     },
     "split:onegoal": {
      "at": "2026-11-13",
      "sig": "The @utahmammoth are 5-0-2 in one-goal games this season #TusksUp"
     }
    },
-   "last": "2026-11-22"
+   "last": "2026-11-24"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6750,6 +6750,10 @@
     "at": "2026-11-20T20:27:06.244001+00:00",
     "game": "Off day (2026-11-20)"
    },
+   "The @utahmammoth are 2nd in the NHL in faceoff percentage (55.4%) #TusksUp": {
+    "at": "2026-11-24T21:33:30.658133+00:00",
+    "game": "Off day (2026-11-24)"
+   },
    "The @utahmammoth are 3rd in the NHL in faceoff percentage (54.9%) #TusksUp": {
     "at": "2026-10-31T17:57:29.734331+00:00",
     "game": "Off day (2026-10-31)"
@@ -6773,6 +6777,10 @@
    "The @utahmammoth are 5-1-0 this season when Nick Schmaltz scores #TusksUp": {
     "at": "2026-10-28T20:29:07.497092+00:00",
     "game": "Off day (2026-10-28)"
+   },
+   "The @utahmammoth are 6-0-0 this season when leading after two periods #TusksUp": {
+    "at": "2026-11-24T21:33:30.598427+00:00",
+    "game": "Off day (2026-11-24)"
    },
    "The @utahmammoth are 6-0-0 this season when scoring first #TusksUp": {
     "at": "2026-10-31T17:57:29.498959+00:00",
@@ -6902,7 +6910,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-24T11:32:51.291595+00:00",
+  "last_check": "2026-11-24T21:33:30.697152+00:00",
   "reconciled_at": "2026-11-24T11:32:49.210087+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-24T11:32:40.196102+00:00",
