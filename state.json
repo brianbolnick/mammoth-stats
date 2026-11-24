@@ -6287,6 +6287,28 @@
      "sig": "8479369|8483431,8484388",
      "since": "2026-11-22T03:14:26.042279+00:00"
     }
+   },
+   "2026020382": {
+    "116": {
+     "sig": "8480014|8478398,8477504",
+     "since": "2026-11-24T01:15:40.197001+00:00"
+    },
+    "135": {
+     "sig": "8479369|8484388,8478831",
+     "since": "2026-11-24T01:15:40.197001+00:00"
+    },
+    "150": {
+     "sig": "8480014|8478398,8480049",
+     "since": "2026-11-24T01:15:40.197001+00:00"
+    },
+    "243": {
+     "sig": "8478474|8483431,8477346",
+     "since": "2026-11-24T01:15:40.197001+00:00"
+    },
+    "347": {
+     "sig": "8480289|8486025,8479983",
+     "since": "2026-11-24T01:15:40.197001+00:00"
+    }
    }
   },
   "pairs": {
@@ -6470,6 +6492,10 @@
     "at": "2026-11-04T09:56:00.362798+00:00",
     "game": "UTA 3, TOR 2 (2026-11-03)"
    },
+   "Daniil But passes Ron Anderson in assists and is now t-59th in @NHL history #TusksUp": {
+    "at": "2026-11-24T01:25:42.837171+00:00",
+    "game": "Live, UTA at WPG (2026-11-23)"
+   },
    "Dmitri Simashev is 2nd among NHL defensemen in goals (5) #TusksUp": {
     "at": "2026-11-19T22:05:38.193014+00:00",
     "game": "Off day (2026-11-19)"
@@ -6522,6 +6548,10 @@
     "at": "2026-11-21T21:55:47.524907+00:00",
     "game": "Pregame, UTA vs ANA (2026-11-21)"
    },
+   "Kevin Stenlund passes Gary Aldcorn in points and is now 32nd in @NHL history #TusksUp": {
+    "at": "2026-11-24T01:25:43.025625+00:00",
+    "game": "Live, UTA at WPG (2026-11-23)"
+   },
    "Kevin Stenlund passes Michael Carcone on the franchise points leaderboard and is now t-9th all time #TusksUp": {
     "at": "2026-11-19T13:57:27.814238+00:00",
     "game": "UTA 4, COL 1 (2026-11-18)"
@@ -6529,6 +6559,10 @@
    "Kevin Stenlund passes Nick Schmaltz on the franchise games played leaderboard and is now t-2nd all time #TusksUp": {
     "at": "2026-11-17T08:58:50.241360+00:00",
     "game": "VAN 3, UTA 2 (2026-11-16)"
+   },
+   "Kevin Stenlund passes Paul Andrea in assists and is now 36th in @NHL history #TusksUp": {
+    "at": "2026-11-24T01:25:43.170817+00:00",
+    "game": "Live, UTA at WPG (2026-11-23)"
    },
    "Lawson Crouse passes Liam O'Brien on the franchise PIM leaderboard and is now 4th all time #TusksUp": {
     "at": "2026-11-02T01:53:40.995915+00:00",
@@ -6798,14 +6832,14 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-24T01:15:37.954729+00:00",
+  "last_check": "2026-11-24T01:25:43.294118+00:00",
   "reconciled_at": "2026-11-22T17:43:56.173243+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-22T17:43:48.565155+00:00",
   "team": "UTA"
  },
  "nhl": {
-  "at": "2026-11-22T17:43:56.172645+00:00",
+  "at": "2026-11-24T01:15:39.850528+00:00",
   "d_lists": {
    "assists": [
     [
