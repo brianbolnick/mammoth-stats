@@ -5992,6 +5992,11 @@
     "posted": [
      2
     ]
+   },
+   "8483431:assists:100": {
+    "posted": [
+     2
+    ]
    }
   },
   "daily": {
@@ -6383,7 +6388,8 @@
    2026020332,
    2026020346,
    2026020370,
-   2026020382
+   2026020382,
+   2026020396
   ],
   "pregame_early": {
    "2026020195": {
@@ -6646,6 +6652,10 @@
     "at": "2026-11-06T07:52:31.363959+00:00",
     "game": "MTL 5, UTA 4 (2026-11-05)"
    },
+   "Logan Cooley is 2 assists away from 100 career @NHL assists #TusksUp": {
+    "at": "2026-11-25T23:39:34.662253+00:00",
+    "game": "Pregame, UTA at MIN (2026-11-25)"
+   },
    "Logan Cooley passes Clayton Keller on the franchise power play goals leaderboard and is now 3rd all time #TusksUp": {
     "at": "2026-11-06T01:08:25.832047+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
@@ -6894,6 +6904,10 @@
     "at": "2026-11-03T22:28:54.349348+00:00",
     "game": "Pregame, UTA at TOR (2026-11-03)"
    },
+   "Tonight Jack McBain is set to pass Nick Schmaltz on the franchise games played leaderboard and will be 4th all time #TusksUp": {
+    "at": "2026-11-25T23:39:34.519010+00:00",
+    "game": "Pregame, UTA at MIN (2026-11-25)"
+   },
    "Vincent Trocheck becomes the 334th player in @NHL history to record 400 career assists #TusksUp": {
     "at": "2026-11-19T05:36:46.575075+00:00",
     "game": "Live, UTA vs COL (2026-11-18)"
@@ -6910,7 +6924,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-24T21:33:30.697152+00:00",
+  "last_check": "2026-11-25T23:39:34.772377+00:00",
   "reconciled_at": "2026-11-24T11:32:49.210087+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-24T11:32:40.196102+00:00",
