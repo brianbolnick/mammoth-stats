@@ -91,12 +91,32 @@ def rest(path, **params):
     return get(f"{REST}/{path}?" + urllib.parse.urlencode(q, quote_via=urllib.parse.quote))
 
 
+PAGE = 100  # the stats REST API returns at most 100 rows per call and ignores limit=-1
+
+
 def rest_all(path, cayenne, sort=None, aggregate=False, game=False):
-    params = dict(isAggregate="true" if aggregate else "false", isGame="true" if game else "false",
-                  limit=-1, cayenneExp=cayenne)
-    if sort:
-        params["sort"] = sort
-    return rest(path, **params)["data"]
+    """Every row, fetched page by page, ordered on a unique key so pages never overlap or skip."""
+    ident = "teamId" if path.startswith("team/") else "playerId"
+    if game:
+        keys = ["gameId", ident]
+    elif aggregate:
+        keys = [ident]
+    else:
+        keys = [ident, "seasonId"]
+    order = (json.loads(sort) if sort else []) + [{"property": k, "direction": "ASC"} for k in keys]
+    out, start, total = [], 0, None
+    while total is None or start < total:
+        page = rest(path, isAggregate="true" if aggregate else "false", isGame="true" if game else "false",
+                    sort=json.dumps(order), start=start, limit=PAGE, cayenneExp=cayenne)
+        rows = page["data"]
+        total = page.get("total", len(rows))
+        if not rows:
+            break
+        out.extend(rows)
+        start += len(rows)
+    if len(out) < total:
+        raise RuntimeError(f"{path}: got {len(out)} of {total} rows for {cayenne}")
+    return out
 
 # ----------------------------------------------------------------------------- helpers
 
