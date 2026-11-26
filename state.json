@@ -6070,12 +6070,12 @@
      "sig": "The @utahmammoth are 6-1-1 this season when Nick Schmaltz scores #TusksUp"
     },
     "scorer:8482699": {
-     "at": "2026-11-04",
-     "sig": "The @utahmammoth are 5-0-0 this season when Dylan Guenther scores #TusksUp"
+     "at": "2026-11-26",
+     "sig": "The @utahmammoth are 6-0-0 this season when Dylan Guenther scores #TusksUp"
     },
     "split:first": {
-     "at": "2026-11-19",
-     "sig": "The @utahmammoth are 8-0-2 this season when scoring first #TusksUp"
+     "at": "2026-11-26",
+     "sig": "The @utahmammoth are 9-0-2 this season when scoring first #TusksUp"
     },
     "split:lead2": {
      "at": "2026-11-24",
@@ -6086,7 +6086,7 @@
      "sig": "The @utahmammoth are 5-0-2 in one-goal games this season #TusksUp"
     }
    },
-   "last": "2026-11-24"
+   "last": "2026-11-26"
   },
   "final_seen": {
    "2026020195": "2026-10-28T04:08:52.552314+00:00",
@@ -6869,6 +6869,10 @@
     "at": "2026-10-28T20:29:07.497092+00:00",
     "game": "Off day (2026-10-28)"
    },
+   "The @utahmammoth are 6-0-0 this season when Dylan Guenther scores #TusksUp": {
+    "at": "2026-11-26T23:59:44.548635+00:00",
+    "game": "Off day (2026-11-26)"
+   },
    "The @utahmammoth are 6-0-0 this season when leading after two periods #TusksUp": {
     "at": "2026-11-24T21:33:30.598427+00:00",
     "game": "Off day (2026-11-24)"
@@ -6920,6 +6924,10 @@
    "The @utahmammoth are 9-0-2 this season when leading after two periods #TusksUp": {
     "at": "2026-11-17T18:28:04.151673+00:00",
     "game": "Off day (2026-11-17)"
+   },
+   "The @utahmammoth are 9-0-2 this season when scoring first #TusksUp": {
+    "at": "2026-11-26T23:59:44.576438+00:00",
+    "game": "Off day (2026-11-26)"
    },
    "The @utahmammoth are on pace for 92 points. The franchise record is 54 #TusksUp": {
     "at": "2026-11-22T17:43:56.989216+00:00",
@@ -7005,6 +7013,7 @@
  },
  "meta": {
   "franchise": 40,
+  "last_check": "2026-11-26T23:59:44.606000+00:00",
   "reconciled_at": "2026-11-26T20:31:33.893090+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-26T20:31:19.048968+00:00",
