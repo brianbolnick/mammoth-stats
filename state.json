@@ -5788,6 +5788,38 @@
     "8478474": 1,
     "8479369": 1
    }
+  },
+  "2026020396": {
+   "final": [
+    4,
+    3
+   ],
+   "first": "us",
+   "home": false,
+   "maxdef": 0,
+   "opp": "MIN",
+   "p1": [
+    1,
+    0
+   ],
+   "p2": [
+    4,
+    2
+   ],
+   "pgoals": {
+    "1": 1,
+    "2": 3
+   },
+   "reg": [
+    4,
+    3
+   ],
+   "scorers": {
+    "8478474": 1,
+    "8482699": 1,
+    "8483431": 1,
+    "8484386": 1
+   }
   }
  },
  "goalies": {
@@ -5802,21 +5834,21 @@
   },
   "8478872": {
    "career": {
-    "gamesPlayed": 278,
+    "gamesPlayed": 279,
     "shutouts": 10,
-    "wins": 114
+    "wins": 115
    },
    "fr": {
-    "gamesPlayed": 138,
+    "gamesPlayed": 139,
     "shutouts": 5,
-    "wins": 70
+    "wins": 71
    },
    "name": "Karel Vejmelka",
    "on_roster": true,
    "season": {
-    "gamesPlayed": 16,
+    "gamesPlayed": 17,
     "shutouts": 2,
-    "wins": 6
+    "wins": 7
    },
    "seasons": [
     {
@@ -6069,7 +6101,8 @@
    "2026020332": "2026-11-17T08:58:48.511435+00:00",
    "2026020346": "2026-11-19T06:11:00.189682+00:00",
    "2026020370": "2026-11-22T04:48:48.984222+00:00",
-   "2026020382": "2026-11-24T03:21:18.767343+00:00"
+   "2026020382": "2026-11-24T03:21:18.767343+00:00",
+   "2026020396": "2026-11-26T05:29:35.474830+00:00"
   },
   "live": {
    "2026020195": {
@@ -6351,8 +6384,10 @@
    }
   },
   "pairs": {
+   "2+ point games|8477951|8483431": "2026-11-25",
    "3+ point games|8477951|8479410": "2026-11-05",
    "3+ point games|8479410|8483431": "2026-11-05",
+   "PIM|8474013|8477070": "2026-11-25",
    "PIM|8477070|8478474": "2026-11-01",
    "PIM|8477070|8480849": "2026-11-05",
    "PIM|8478474|8480849": "2026-11-14",
@@ -6365,7 +6400,8 @@
    "games played|8477951|8478474": "2026-11-16",
    "games played|8477951|8478831": "2026-11-16",
    "games played|8477951|8479343": "2026-11-14",
-   "goals|8479343|8483431": "2026-11-07",
+   "games played|8477951|8480855": "2026-11-25",
+   "goals|8479343|8483431": "2026-11-25",
    "goals|8479619|8480855": "2026-11-11",
    "points|8478831|8479619": "2026-11-18",
    "points|8479410|8483431": "2026-11-23",
@@ -6449,7 +6485,8 @@
    2026020332,
    2026020346,
    2026020370,
-   2026020382
+   2026020382,
+   2026020396
   ],
   "surfaced": {
    "Anders Lee passes Petr Nedved in goals and is now 233rd in @NHL history #TusksUp": {
@@ -6544,9 +6581,17 @@
     "at": "2026-11-04T09:56:00.362798+00:00",
     "game": "UTA 3, TOR 2 (2026-11-03)"
    },
+   "Daniil But passes John Arbour in assists and is now 58th in @NHL history #TusksUp": {
+    "at": "2026-11-26T05:29:37.416695+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
+   },
    "Daniil But passes Lloyd Andrews in points and is now 61st in @NHL history #TusksUp": {
     "at": "2026-11-24T11:32:49.461101+00:00",
     "game": "WPG 4, UTA 2 (2026-11-23)"
+   },
+   "Daniil But passes Ozzie Aubuchon in games played and is now 60th in @NHL history #TusksUp": {
+    "at": "2026-11-26T05:29:37.619915+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
    },
    "Daniil But passes Ron Anderson in assists and is now t-59th in @NHL history #TusksUp": {
     "at": "2026-11-24T01:25:42.837171+00:00",
@@ -6567,6 +6612,14 @@
    "Dmitri Simashev passes Chris Ahrens in games played and is now 59th in @NHL history #TusksUp": {
     "at": "2026-11-22T09:50:47.376500+00:00",
     "game": "UTA 3, ANA 2 (2026-11-21)"
+   },
+   "Dmitri Simashev passes Dave Amadio in goals and is now t-13th in @NHL history (defence) #TusksUp": {
+    "at": "2026-11-26T05:29:38.080571+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
+   },
+   "Dmitri Simashev passes Lloyd Andrews in games played and is now 58th in @NHL history #TusksUp": {
+    "at": "2026-11-26T05:29:38.223841+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
    },
    "Dmitri Simashev scores his first @NHL goal #TusksUp": {
     "at": "2026-10-25T04:07:57.686059+00:00",
@@ -6595,6 +6648,10 @@
    "Jack McBain passes Michael Carcone on the franchise goals leaderboard and is now t-8th all time #TusksUp": {
     "at": "2026-11-12T13:08:37.844644+00:00",
     "game": "VGK 5, UTA 3 (2026-11-11)"
+   },
+   "Jack McBain passes Nick Schmaltz on the franchise games played leaderboard and is now 4th all time #TusksUp": {
+    "at": "2026-11-26T05:29:38.674560+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
    },
    "Kailer Yamamoto is 3 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-11-21T21:55:47.300461+00:00",
@@ -6640,6 +6697,10 @@
     "at": "2026-10-23T05:08:38.356251+00:00",
     "game": "SEA 5, UTA 3 (2026-10-22)"
    },
+   "Lawson Crouse passes Mike Allison in points and is now 14th in @NHL history #TusksUp": {
+    "at": "2026-11-26T05:29:37.765775+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
+   },
    "Lawson Crouse passes Nick Schmaltz on the franchise games played leaderboard and is now t-2nd all time #TusksUp": {
     "at": "2026-11-17T08:58:50.214019+00:00",
     "game": "VAN 3, UTA 2 (2026-11-16)"
@@ -6652,9 +6713,17 @@
     "at": "2026-11-06T07:52:31.363959+00:00",
     "game": "MTL 5, UTA 4 (2026-11-05)"
    },
+   "Liam O'Brien passes Ian Cole on the franchise PIM leaderboard and is now 2nd all time #TusksUp": {
+    "at": "2026-11-26T05:29:38.817253+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
+   },
    "Logan Cooley is 2 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-11-25T23:39:34.662253+00:00",
     "game": "Pregame, UTA at MIN (2026-11-25)"
+   },
+   "Logan Cooley passes Clayton Keller on the franchise goals leaderboard and is now t-2nd all time #TusksUp": {
+    "at": "2026-11-26T05:29:38.524450+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
    },
    "Logan Cooley passes Clayton Keller on the franchise power play goals leaderboard and is now 3rd all time #TusksUp": {
     "at": "2026-11-06T01:08:25.832047+00:00",
@@ -6664,6 +6733,10 @@
     "at": "2026-11-22T03:24:28.286228+00:00",
     "game": "Live, UTA vs ANA (2026-11-21)"
    },
+   "Logan Cooley passes Jack Adams in goals and is now t-19th in @NHL history #TusksUp": {
+    "at": "2026-11-26T05:29:37.921273+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
+   },
    "Logan Cooley passes Mikhail Sergachev on the franchise 3+ point games leaderboard and is now t-2nd all time #TusksUp": {
     "at": "2026-11-06T02:37:00.181137+00:00",
     "game": "Live, UTA at MTL (2026-11-05)"
@@ -6671,6 +6744,10 @@
    "Logan Cooley passes Mikhail Sergachev on the franchise points leaderboard and is now 4th all time #TusksUp": {
     "at": "2026-11-24T11:32:50.628931+00:00",
     "game": "WPG 4, UTA 2 (2026-11-23)"
+   },
+   "Logan Cooley passes Nick Schmaltz on the franchise 2+ point games leaderboard and is now 3rd all time #TusksUp": {
+    "at": "2026-11-26T05:29:38.976427+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
    },
    "Logan Cooley passes Nick Schmaltz on the franchise 3+ point games leaderboard and is now 2nd all time #TusksUp": {
     "at": "2026-11-06T01:41:19.237074+00:00",
@@ -6727,6 +6804,10 @@
    "Nick DeSimone passes Earl Anderson in games played and is now 51st in @NHL history #TusksUp": {
     "at": "2026-11-22T09:50:47.426390+00:00",
     "game": "UTA 3, ANA 2 (2026-11-21)"
+   },
+   "Nick DeSimone passes Ossie Asmundson in games played and is now 50th in @NHL history #TusksUp": {
+    "at": "2026-11-26T05:29:38.372618+00:00",
+    "game": "UTA 4, MIN 3 (2026-11-25)"
    },
    "Nick DeSimone plays his 100th career @NHL game #TusksUp": {
     "at": "2026-10-23T05:08:38.356225+00:00",
@@ -6924,14 +7005,14 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-25T23:39:34.772377+00:00",
+  "last_check": "2026-11-26T05:29:39.125438+00:00",
   "reconciled_at": "2026-11-24T11:32:49.210087+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-24T11:32:40.196102+00:00",
   "team": "UTA"
  },
  "nhl": {
-  "at": "2026-11-24T11:32:49.209303+00:00",
+  "at": "2026-11-26T05:29:36.493507+00:00",
   "d_lists": {
    "assists": [
     [
@@ -10128,30 +10209,30 @@
   },
   "8475314": {
    "career": {
-    "assists": 248,
-    "gamesPlayed": 949,
+    "assists": 249,
+    "gamesPlayed": 950,
     "goals": 311,
-    "points": 559
+    "points": 560
    },
    "fr": {
-    "assists": 7,
+    "assists": 8,
     "g2": 0,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 3,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 6,
-    "points": 10,
+    "penaltyMinutes": 8,
+    "points": 11,
     "ppGoals": 0
    },
    "name": "Anders Lee",
    "on_roster": true,
    "pos": "L",
    "season": {
-    "assists": 7,
-    "gamesPlayed": 26,
+    "assists": 8,
+    "gamesPlayed": 27,
     "goals": 3,
-    "points": 10
+    "points": 11
    },
    "seasons": [
     {
@@ -10339,30 +10420,30 @@
   },
   "8476389": {
    "career": {
-    "assists": 402,
-    "gamesPlayed": 894,
+    "assists": 403,
+    "gamesPlayed": 895,
     "goals": 245,
-    "points": 647
+    "points": 648
    },
    "fr": {
-    "assists": 10,
+    "assists": 11,
     "g2": 0,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 6,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 17,
-    "points": 16,
+    "penaltyMinutes": 19,
+    "points": 17,
     "ppGoals": 3
    },
    "name": "Vincent Trocheck",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 10,
-    "gamesPlayed": 26,
+    "assists": 11,
+    "gamesPlayed": 27,
     "goals": 6,
-    "points": 16
+    "points": 17
    },
    "seasons": [
     {
@@ -10551,18 +10632,18 @@
   "8477070": {
    "career": {
     "assists": 25,
-    "gamesPlayed": 278,
+    "gamesPlayed": 279,
     "goals": 15,
     "points": 40
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 79,
+    "gamesPlayed": 80,
     "goals": 4,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 121,
+    "penaltyMinutes": 128,
     "points": 7,
     "ppGoals": 0
    },
@@ -10571,7 +10652,7 @@
    "pos": "C",
    "season": {
     "assists": 0,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 1,
     "points": 1
    },
@@ -10827,14 +10908,14 @@
   "8477346": {
    "career": {
     "assists": 220,
-    "gamesPlayed": 655,
+    "gamesPlayed": 656,
     "goals": 65,
     "points": 285
    },
    "fr": {
     "assists": 10,
     "g2": 0,
-    "gamesPlayed": 45,
+    "gamesPlayed": 46,
     "goals": 3,
     "p2": 0,
     "p3": 0,
@@ -10847,7 +10928,7 @@
    "pos": "D",
    "season": {
     "assists": 4,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 2,
     "points": 6
    },
@@ -11126,19 +11207,19 @@
   "8478474": {
    "career": {
     "assists": 125,
-    "gamesPlayed": 692,
-    "goals": 143,
-    "points": 268
+    "gamesPlayed": 693,
+    "goals": 144,
+    "points": 269
    },
    "fr": {
     "assists": 31,
     "g2": 0,
-    "gamesPlayed": 188,
-    "goals": 40,
+    "gamesPlayed": 189,
+    "goals": 41,
     "p2": 0,
     "p3": 0,
     "penaltyMinutes": 104,
-    "points": 71,
+    "points": 72,
     "ppGoals": 2
    },
    "name": "Lawson Crouse",
@@ -11146,9 +11227,9 @@
    "pos": "L",
    "season": {
     "assists": 5,
-    "gamesPlayed": 26,
-    "goals": 4,
-    "points": 9
+    "gamesPlayed": 27,
+    "goals": 5,
+    "points": 10
    },
    "seasons": [
     {
@@ -11357,14 +11438,14 @@
   "8478831": {
    "career": {
     "assists": 51,
-    "gamesPlayed": 394,
+    "gamesPlayed": 395,
     "goals": 48,
     "points": 99
    },
    "fr": {
     "assists": 35,
     "g2": 0,
-    "gamesPlayed": 188,
+    "gamesPlayed": 189,
     "goals": 20,
     "p2": 0,
     "p3": 0,
@@ -11377,7 +11458,7 @@
    "pos": "C",
    "season": {
     "assists": 7,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 2,
     "points": 9
    },
@@ -11514,14 +11595,14 @@
   "8479343": {
    "career": {
     "assists": 398,
-    "gamesPlayed": 708,
+    "gamesPlayed": 709,
     "goals": 227,
     "points": 625
    },
    "fr": {
     "assists": 146,
     "g2": 1,
-    "gamesPlayed": 188,
+    "gamesPlayed": 189,
     "goals": 61,
     "p2": 3,
     "p3": 1,
@@ -11534,7 +11615,7 @@
    "pos": "R",
    "season": {
     "assists": 24,
-    "gamesPlayed": 25,
+    "gamesPlayed": 26,
     "goals": 5,
     "points": 29
    },
@@ -11642,30 +11723,30 @@
   },
   "8479369": {
    "career": {
-    "assists": 65,
-    "gamesPlayed": 412,
+    "assists": 66,
+    "gamesPlayed": 413,
     "goals": 21,
-    "points": 86
+    "points": 87
    },
    "fr": {
-    "assists": 6,
+    "assists": 7,
     "g2": 0,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 5,
     "p2": 0,
     "p3": 0,
     "penaltyMinutes": 24,
-    "points": 11,
+    "points": 12,
     "ppGoals": 0
    },
    "name": "Andrew Peeke",
    "on_roster": true,
    "pos": "D",
    "season": {
-    "assists": 6,
-    "gamesPlayed": 26,
+    "assists": 7,
+    "gamesPlayed": 27,
     "goals": 5,
-    "points": 11
+    "points": 12
    },
    "seasons": [
     {
@@ -11753,30 +11834,30 @@
   },
   "8479410": {
    "career": {
-    "assists": 312,
-    "gamesPlayed": 656,
+    "assists": 313,
+    "gamesPlayed": 657,
     "goals": 79,
-    "points": 391
+    "points": 392
    },
    "fr": {
-    "assists": 103,
+    "assists": 104,
     "g2": 0,
-    "gamesPlayed": 181,
+    "gamesPlayed": 182,
     "goals": 31,
     "p2": 0,
     "p3": 0,
     "penaltyMinutes": 119,
-    "points": 134,
+    "points": 135,
     "ppGoals": 11
    },
    "name": "Mikhail Sergachev",
    "on_roster": true,
    "pos": "D",
    "season": {
-    "assists": 16,
-    "gamesPlayed": 26,
+    "assists": 17,
+    "gamesPlayed": 27,
     "goals": 6,
-    "points": 22
+    "points": 23
    },
    "seasons": [
     {
@@ -11990,18 +12071,18 @@
   "8479977": {
    "career": {
     "assists": 96,
-    "gamesPlayed": 391,
+    "gamesPlayed": 392,
     "goals": 76,
     "points": 172
    },
    "fr": {
     "assists": 20,
     "g2": 0,
-    "gamesPlayed": 88,
+    "gamesPlayed": 89,
     "goals": 18,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 20,
+    "penaltyMinutes": 22,
     "points": 38,
     "ppGoals": 1
    },
@@ -12010,7 +12091,7 @@
    "pos": "R",
    "season": {
     "assists": 9,
-    "gamesPlayed": 17,
+    "gamesPlayed": 18,
     "goals": 3,
     "points": 12
    },
@@ -12110,14 +12191,14 @@
   "8480084": {
    "career": {
     "assists": 16,
-    "gamesPlayed": 111,
+    "gamesPlayed": 112,
     "goals": 5,
     "points": 21
    },
    "fr": {
     "assists": 11,
     "g2": 0,
-    "gamesPlayed": 73,
+    "gamesPlayed": 74,
     "goals": 3,
     "p2": 0,
     "p3": 0,
@@ -12130,7 +12211,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 13,
+    "gamesPlayed": 14,
     "goals": 0,
     "points": 0
    },
@@ -12217,18 +12298,18 @@
   "8480849": {
    "career": {
     "assists": 99,
-    "gamesPlayed": 384,
+    "gamesPlayed": 385,
     "goals": 69,
     "points": 168
    },
    "fr": {
     "assists": 50,
     "g2": 0,
-    "gamesPlayed": 175,
+    "gamesPlayed": 176,
     "goals": 34,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 113,
+    "penaltyMinutes": 119,
     "points": 84,
     "ppGoals": 13
    },
@@ -12237,7 +12318,7 @@
    "pos": "C",
    "season": {
     "assists": 9,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 4,
     "points": 13
    },
@@ -12319,18 +12400,18 @@
   "8480855": {
    "career": {
     "assists": 67,
-    "gamesPlayed": 342,
+    "gamesPlayed": 343,
     "goals": 47,
     "points": 114
    },
    "fr": {
     "assists": 34,
     "g2": 0,
-    "gamesPlayed": 183,
+    "gamesPlayed": 184,
     "goals": 25,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 192,
+    "penaltyMinutes": 197,
     "points": 59,
     "ppGoals": 1
    },
@@ -12339,7 +12420,7 @@
    "pos": "C",
    "season": {
     "assists": 4,
-    "gamesPlayed": 26,
+    "gamesPlayed": 27,
     "goals": 3,
     "points": 7
    },
@@ -12449,14 +12530,14 @@
   "8481708": {
    "career": {
     "assists": 24,
-    "gamesPlayed": 122,
+    "gamesPlayed": 123,
     "goals": 6,
     "points": 30
    },
    "fr": {
     "assists": 0,
     "g2": 0,
-    "gamesPlayed": 7,
+    "gamesPlayed": 8,
     "goals": 2,
     "p2": 0,
     "p3": 0,
@@ -12469,7 +12550,7 @@
    "pos": "D",
    "season": {
     "assists": 0,
-    "gamesPlayed": 7,
+    "gamesPlayed": 8,
     "goals": 2,
     "points": 2
    },
@@ -12649,30 +12730,30 @@
   },
   "8482699": {
    "career": {
-    "assists": 98,
-    "gamesPlayed": 247,
-    "goals": 97,
-    "points": 195
+    "assists": 99,
+    "gamesPlayed": 248,
+    "goals": 98,
+    "points": 197
    },
    "fr": {
-    "assists": 72,
+    "assists": 73,
     "g2": 0,
-    "gamesPlayed": 169,
-    "goals": 73,
-    "p2": 2,
+    "gamesPlayed": 170,
+    "goals": 74,
+    "p2": 3,
     "p3": 0,
     "penaltyMinutes": 62,
-    "points": 145,
+    "points": 147,
     "ppGoals": 26
    },
    "name": "Dylan Guenther",
    "on_roster": true,
    "pos": "R",
    "season": {
-    "assists": 6,
-    "gamesPlayed": 20,
-    "goals": 6,
-    "points": 12
+    "assists": 7,
+    "gamesPlayed": 21,
+    "goals": 7,
+    "points": 14
    },
    "seasons": [
     {
@@ -12724,30 +12805,30 @@
   },
   "8483431": {
    "career": {
-    "assists": 98,
-    "gamesPlayed": 234,
-    "goals": 81,
-    "points": 179
+    "assists": 99,
+    "gamesPlayed": 235,
+    "goals": 82,
+    "points": 181
    },
    "fr": {
-    "assists": 74,
+    "assists": 75,
     "g2": 1,
-    "gamesPlayed": 152,
-    "goals": 61,
-    "p2": 1,
+    "gamesPlayed": 153,
+    "goals": 62,
+    "p2": 2,
     "p3": 1,
     "penaltyMinutes": 82,
-    "points": 135,
-    "ppGoals": 17
+    "points": 137,
+    "ppGoals": 18
    },
    "name": "Logan Cooley",
    "on_roster": true,
    "pos": "C",
    "season": {
-    "assists": 15,
-    "gamesPlayed": 23,
-    "goals": 12,
-    "points": 27
+    "assists": 16,
+    "gamesPlayed": 24,
+    "goals": 13,
+    "points": 29
    },
    "seasons": [
     {
@@ -12878,19 +12959,19 @@
   "8484386": {
    "career": {
     "assists": 3,
-    "gamesPlayed": 54,
-    "goals": 5,
-    "points": 8
+    "gamesPlayed": 55,
+    "goals": 6,
+    "points": 9
    },
    "fr": {
     "assists": 3,
     "g2": 0,
-    "gamesPlayed": 54,
-    "goals": 5,
+    "gamesPlayed": 55,
+    "goals": 6,
     "p2": 0,
     "p3": 0,
-    "penaltyMinutes": 27,
-    "points": 8,
+    "penaltyMinutes": 31,
+    "points": 9,
     "ppGoals": 0
    },
    "name": "Dmitri Simashev",
@@ -12898,9 +12979,9 @@
    "pos": "D",
    "season": {
     "assists": 2,
-    "gamesPlayed": 26,
-    "goals": 5,
-    "points": 7
+    "gamesPlayed": 27,
+    "goals": 6,
+    "points": 8
    },
    "seasons": [
     {
@@ -12925,30 +13006,30 @@
   },
   "8484388": {
    "career": {
-    "assists": 9,
-    "gamesPlayed": 50,
+    "assists": 10,
+    "gamesPlayed": 51,
     "goals": 5,
-    "points": 14
+    "points": 15
    },
    "fr": {
-    "assists": 9,
+    "assists": 10,
     "g2": 0,
-    "gamesPlayed": 50,
+    "gamesPlayed": 51,
     "goals": 5,
     "p2": 0,
     "p3": 0,
     "penaltyMinutes": 10,
-    "points": 14,
+    "points": 15,
     "ppGoals": 1
    },
    "name": "Daniil But",
    "on_roster": true,
    "pos": "L",
    "season": {
-    "assists": 5,
-    "gamesPlayed": 21,
+    "assists": 6,
+    "gamesPlayed": 22,
     "goals": 2,
-    "points": 7
+    "points": 8
    },
    "seasons": [
     {
@@ -14530,6 +14611,15 @@
    "pts": 0,
    "season": 20262027,
    "win": false
+  },
+  {
+   "date": "2026-11-25",
+   "gameId": 2026020396,
+   "home": false,
+   "otl": false,
+   "pts": 2,
+   "season": 20262027,
+   "win": true
   }
  ]
 }
