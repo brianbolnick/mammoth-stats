@@ -6017,12 +6017,18 @@
    },
    "8482699:assists:100": {
     "posted": [
-     3
+     3,
+     1
     ]
    },
    "8482699:goals:100": {
     "posted": [
      2
+    ]
+   },
+   "8482699:points:200": {
+    "posted": [
+     3
     ]
    },
    "8483431:assists:100": {
@@ -6425,7 +6431,8 @@
    2026020346,
    2026020370,
    2026020382,
-   2026020396
+   2026020396,
+   2026020402
   ],
   "pregame_early": {
    "2026020195": {
@@ -6625,6 +6632,10 @@
     "at": "2026-10-25T04:07:57.686059+00:00",
     "game": "UTA 5, TBL 4 (2026-10-24)"
    },
+   "Dylan Guenther is 1 assist away from 100 career @NHL assists #TusksUp": {
+    "at": "2026-11-27T18:29:56.484244+00:00",
+    "game": "Pregame, UTA at NSH (2026-11-27)"
+   },
    "Dylan Guenther is 2 goals away from 100 career @NHL goals #TusksUp": {
     "at": "2026-11-05T20:00:22.106644+00:00",
     "game": "Pregame, UTA at MTL (2026-11-05)"
@@ -6632,6 +6643,10 @@
    "Dylan Guenther is 3 assists away from 100 career @NHL assists #TusksUp": {
     "at": "2026-10-23T00:09:11.363429+00:00",
     "game": "Pregame, UTA at SEA (2026-10-22)"
+   },
+   "Dylan Guenther is 3 points away from 200 career @NHL points #TusksUp": {
+    "at": "2026-11-27T18:29:56.453474+00:00",
+    "game": "Pregame, UTA at NSH (2026-11-27)"
    },
    "Jack McBain passes George Allen in games played and is now 25th in @NHL history #TusksUp": {
     "at": "2026-11-22T09:50:47.216658+00:00",
@@ -7013,7 +7028,7 @@
  },
  "meta": {
   "franchise": 40,
-  "last_check": "2026-11-26T23:59:44.606000+00:00",
+  "last_check": "2026-11-27T18:29:56.510668+00:00",
   "reconciled_at": "2026-11-26T20:31:33.893090+00:00",
   "season": 20262027,
   "seeded_at": "2026-11-26T20:31:19.048968+00:00",
